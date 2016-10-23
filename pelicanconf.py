@@ -33,5 +33,7 @@ SOCIAL = (('GitHub', 'https://github.com/rcassani'),
 
 DEFAULT_PAGINATION = 6
 
+IGNORE_FILES = ['drafts']
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
