@@ -2,15 +2,129 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+#'''
+#General information
+#
+#'''
 AUTHOR = u'Ray Cassani'
 SITENAME = u'CastorisCausa'
-SITEURL = ''
+#SITEURL = 'wwww.castoriscausa.com'
+#THEME = "..//pelican-themes//blueidea"
+#THEME = "..//pelican-themes//pelican-simplegrey" OK
+#THEME = "..//pelican-themes//new-bootstrap2"
+#THEME = "..//pelican-themes//pelican-bootstrap3" OK
+THEME = "..//pelican-themes//pelican-bootstrap3" #https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3                 
 
-PATH = 'content'
 
+# pelican-bootstrap3 EXTRAS
+# See more here
+#BOOTSTRAP_THEME = ''  #slate, readable, '' for default
+SHOW_ARTICLE_AUTHOR = False
+USE_PAGER = False 
+# USER_PAGER
+# TRUE = shows 'Older posts' and 'Newer post' buttons 
+# FALSE = shows arrows and numbers of pages <<, 1,2,3 >>
+#SITELOGO = 'images/dr_pk.jpg'
+#SITELOGO_SIZE = 50
+HIDE_SITENAME = False
+DISPLAY_BREADCRUMBS = False # HOME > Something > something
+BOOTSTRAP_NAVBAR_INVERSE = True
+#FAVICON = 'images/dr_pk.jpg.png'
+DISPLAY_ARTICLE_INFO_ON_INDEX = False #Shows Date and Tag in articles summaries
+#BANNER = 'images/dr_pk.jpg'
+#BANNER_ALL_PAGES = True
+#SIDEBAR_IMAGES_HEADER = 'My Images' 
+SIDEBAR_IMAGES = ['../images/dr_pk.jpg' ] #This path is accessible to index and for pages/posts
+
+DISQUSURL = 'http://blog.yourdomain.com'
+DISQUS_SITENAME = "castoriscausa"
+
+TAG_CLOUD_MAX_ITEMS = 10
+
+
+# Language and Timezone
 TIMEZONE = 'America/Montreal'
-
 DEFAULT_LANG = u'en'
+DATE_FORMATS = '%a, %d %b %Y'
+
+
+DELETE_OUTPUT_DIRECTORY = True
+OUTPUT_RETENTION = ['.git', 'ray_notes.txt']
+
+
+''' 
+ CONTENT
+Defines the Paths for different elements of content
+'''
+# Content root directory
+PATH = 'content'
+# Page directories 
+PAGE_PATHS = ['pages']
+# Article directories
+ARTICLE_PATHS = ['articles']
+# Ignored files
+IGNORE_FILES = ['drafts']
+# Directories to be copied to OUTPUT
+STATIC_PATHS = ['images', '..//extras']
+# Plugins directory
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['tipue_search']
+DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'search')
+
+'''
+ OUTPUT
+Defines paths and filenames for Output files
+'''
+OUTPUT_PATH = 'output/'
+# HTML files for Pages
+PAGE_SAVE_AS = 'pages/{slug}.html'
+# HTML files for Articles
+ARTICLE_SAVE_AS = 'posts/{slug}.html' 
+# HTML files for Articles with translation
+ARTICLE_LANG_SAVE_AS = 'posts/{slug}-{lang}.html'
+
+
+
+'''
+ URLS
+Defines the URL for the elements in the website
+www.site.com/+ ...
+'''
+# Pages 
+PAGE_URL = 'pages/{slug}'
+# Articles
+ARTICLE_URL = 'posts/{slug}'
+# Articles with translation 
+ARTICLE_LANG_URL = 'posts/{slug}-{lang}'
+
+
+
+'''
+INDEX HTML LOOK
+'''
+# Display pages list on the top menu
+DISPLAY_PAGES_ON_MENU = True
+# Display categories list on the top menu
+DISPLAY_CATEGORIES_ON_MENU = False
+# Display categories list as a submenu of the top menu
+DISPLAY_CATEGORIES_ON_SUBMENU = True
+# Display the category in the article's info
+DISPLAY_CATEGORIES_ON_POSTINFO = False
+# Display the author in the article's info
+DISPLAY_AUTHOR_ON_POSTINFO = False
+# Display the search form
+DISPLAY_SEARCH_FORM = True 
+# Sort pages list by a given attribute
+#  Add the fiel Sortorder to the page MD documentm e.g. Sortorder: 2
+PAGES_SORT_ATTRIBUTE = 'sortorder'
+# Measured in Words
+SUMMARY_MAX_LENGTH = 50
+# Google Analytics Track-ID
+GOOGLE_ANALYTICS = 'UA-86432394-1'
+# Number of articles per page
+DEFAULT_PAGINATION = 1
+# Order of Articles
+NEWEST_FIRST_ARCHIVES = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -31,9 +145,8 @@ LINKS = (
 SOCIAL = (('GitHub', 'https://github.com/rcassani'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 6
-
-IGNORE_FILES = ['drafts']
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+JINJA_EXTENSIONS = []

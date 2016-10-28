@@ -58,7 +58,7 @@ def serve():
     server.serve_forever()
 
 def reserve():
-    """`build`, then `serve`"""
+    """`clean, build`, then `serve`"""
     build()
     serve()
 

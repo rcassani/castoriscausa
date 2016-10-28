@@ -1,12 +1,11 @@
-Title: About
+Title: Main
 Date: 2016-10-22
 Category: About MyCat
 Tag: me, cc
-Slug: about-me
-Author: Ray Cassani
+Slug: main
+Author: Raymundo Cassani
 Summary: Just about me
-Sortorder: 3
-
-# About me
+Sortorder: 1
+# About Main
 
 What a moment to be alive!
