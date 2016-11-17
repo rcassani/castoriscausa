@@ -2,42 +2,50 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-#'''
-#General information
-#
-#'''
+# To deplot locally:
+# 1. $ fab build
+# 2. $ fab serve, alternatively, $ fab reserve, does build and serve
+# 3. Open http://localhost:8000/index.html in browser
+
+# Site general information
 AUTHOR = u'Ray Cassani'
 SITENAME = u'CastorisCausa'
-#SITEURL = 'wwww.castoriscausa.com'
-#THEME = "..//pelican-themes//blueidea"
-#THEME = "..//pelican-themes//pelican-simplegrey" OK
-#THEME = "..//pelican-themes//new-bootstrap2"
-#THEME = "..//pelican-themes//pelican-bootstrap3" OK
-THEME = "..//pelican-themes//pelican-bootstrap3" #https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3                 
+# SITEURL = 'wwww.castoriscausa.com'
+
+THEME = "..//themes-castoriscausa//pelican-bootstrap3-castoris"
+# https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
+
+# Other THEMES I like how the look:
+# THEME = "..//pelican-themes//blueidea"
+# THEME = "..//pelican-themes//pelican-simplegrey" OK
+# THEME = "..//pelican-themes//new-bootstrap2"
+# THEME = "..//pelican-themes//pelican-bootstrap3" OK
 
 
 # pelican-bootstrap3 EXTRAS
-# See more here
-#BOOTSTRAP_THEME = ''  #slate, readable, '' for default
+# See more here:
+BOOTSTRAP_THEME = ''  # slate, readable, '' for default
 SHOW_ARTICLE_AUTHOR = False
-USE_PAGER = False 
+USE_PAGER = False
 # USER_PAGER
-# TRUE = shows 'Older posts' and 'Newer post' buttons 
+# TRUE = shows 'Older posts' and 'Newer post' buttons
 # FALSE = shows arrows and numbers of pages <<, 1,2,3 >>
-#SITELOGO = 'images/dr_pk.jpg'
-#SITELOGO_SIZE = 50
+# SITELOGO = 'images/dr_pk.jpg'
+# SITELOGO_SIZE = 50
 HIDE_SITENAME = False
-DISPLAY_BREADCRUMBS = False # HOME > Something > something
+DISPLAY_BREADCRUMBS = False  # HOME > Something > something
 BOOTSTRAP_NAVBAR_INVERSE = True
-#FAVICON = 'images/dr_pk.jpg.png'
-DISPLAY_ARTICLE_INFO_ON_INDEX = False #Shows Date and Tag in articles summaries
-#BANNER = 'images/dr_pk.jpg'
-#BANNER_ALL_PAGES = True
-#SIDEBAR_IMAGES_HEADER = 'My Images' 
-SIDEBAR_IMAGES = ['../images/dr_pk.jpg' ] #This path is accessible to index and for pages/posts
+# FAVICON = 'images/dr_pk.jpg.png'
+DISPLAY_ARTICLE_INFO_ON_INDEX = False  # Shows Date and Tag in articles summaries
+# BANNER = 'images/dr_pk.jpg'
+# BANNER_ALL_PAGES = True
+# SIDEBAR_IMAGES_HEADER = 'My Images'
+SIDEBAR_IMAGES = ['../images/dr_pk.jpg']  # This path is accessible to index and for pages/posts
 
-DISQUSURL = 'http://blog.yourdomain.com'
-DISQUS_SITENAME = "castoriscausa"
+DISQUSURL = 'http://castoriscausa.com'
+DISQUS_SITENAME = u"castoriscausa"
+DISQUS_NO_ID = True
+DISQUS_DISPLAY_COUNTS = True
 
 TAG_CLOUD_MAX_ITEMS = 10
 
@@ -49,16 +57,18 @@ DATE_FORMATS = '%a, %d %b %Y'
 
 
 DELETE_OUTPUT_DIRECTORY = True
-OUTPUT_RETENTION = ['.git', 'ray_notes.txt']
+OUTPUT_RETENTION = ['.git', 'CNAME']
 
+TYPOGRIFY = True
+CC_LICENSE = "CC-BY-NC-SA"
 
-''' 
+'''
  CONTENT
 Defines the Paths for different elements of content
 '''
 # Content root directory
 PATH = 'content'
-# Page directories 
+# Page directories
 PAGE_PATHS = ['pages']
 # Article directories
 ARTICLE_PATHS = ['articles']
@@ -79,10 +89,9 @@ OUTPUT_PATH = 'output/'
 # HTML files for Pages
 PAGE_SAVE_AS = 'pages/{slug}.html'
 # HTML files for Articles
-ARTICLE_SAVE_AS = 'posts/{slug}.html' 
+ARTICLE_SAVE_AS = 'posts/{slug}.html'
 # HTML files for Articles with translation
 ARTICLE_LANG_SAVE_AS = 'posts/{slug}-{lang}.html'
-
 
 
 '''
@@ -90,13 +99,12 @@ ARTICLE_LANG_SAVE_AS = 'posts/{slug}-{lang}.html'
 Defines the URL for the elements in the website
 www.site.com/+ ...
 '''
-# Pages 
+# Pages
 PAGE_URL = 'pages/{slug}'
 # Articles
 ARTICLE_URL = 'posts/{slug}'
-# Articles with translation 
+# Articles with translation
 ARTICLE_LANG_URL = 'posts/{slug}-{lang}'
-
 
 
 '''
@@ -113,7 +121,7 @@ DISPLAY_CATEGORIES_ON_POSTINFO = False
 # Display the author in the article's info
 DISPLAY_AUTHOR_ON_POSTINFO = False
 # Display the search form
-DISPLAY_SEARCH_FORM = True 
+DISPLAY_SEARCH_FORM = True
 # Sort pages list by a given attribute
 #  Add the fiel Sortorder to the page MD documentm e.g. Sortorder: 2
 PAGES_SORT_ATTRIBUTE = 'sortorder'
@@ -135,7 +143,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-         ('Home', 'home?' ),
+         ('Home', 'home?'),
          ('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/')
@@ -147,6 +155,6 @@ SOCIAL = (('GitHub', 'https://github.com/rcassani'),
 
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 JINJA_EXTENSIONS = []
