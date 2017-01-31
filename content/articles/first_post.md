@@ -2,8 +2,11 @@ Title: First post
 Date: 2016-10-22 22:00
 Category: Blog
 Tag: cc
-Slug: my-first-post
-Author: Raymundo Cassani
-Summary: 1st test post
+Slug: first-post
+Author: Ray Cassani
 
-This text is probe that everything is working as it should\
+At the moment, this text is a test for:
+
+1. Metadata required in the Post file
+2. Post in more than one language
+3. Post in Español: [http://www.castoriscausa.com/first-post-spa](http://www.castoriscausa.com/first-post-spa)

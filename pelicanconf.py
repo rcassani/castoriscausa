@@ -15,16 +15,8 @@ SITENAME = u'CastorisCausa'
 THEME = "..//themes-castoriscausa//pelican-bootstrap3-castoris"
 # https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
 
-# Other THEMES I like how the look:
-# THEME = "..//pelican-themes//blueidea"
-# THEME = "..//pelican-themes//pelican-simplegrey" OK
-# THEME = "..//pelican-themes//new-bootstrap2"
-# THEME = "..//pelican-themes//pelican-bootstrap3" OK
-
-
 # pelican-bootstrap3 EXTRAS
 # See more here:
-BOOTSTRAP_THEME = ''  # slate, readable, '' for default
 SHOW_ARTICLE_AUTHOR = False
 USE_PAGER = False
 # USER_PAGER
@@ -33,14 +25,14 @@ USE_PAGER = False
 # SITELOGO = 'images/dr_pk.jpg'
 # SITELOGO_SIZE = 50
 HIDE_SITENAME = False
-DISPLAY_BREADCRUMBS = False  # HOME > Something > something
-BOOTSTRAP_NAVBAR_INVERSE = True
+DISPLAY_BREADCRUMBS = True  # HOME > Something > something
+BOOTSTRAP_NAVBAR_INVERSE = True # Not use in Castoris Theme
 # FAVICON = 'images/dr_pk.jpg.png'
-DISPLAY_ARTICLE_INFO_ON_INDEX = False  # Shows Date and Tag in articles summaries
+DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in articles summaries
 # BANNER = 'images/dr_pk.jpg'
 # BANNER_ALL_PAGES = True
 # SIDEBAR_IMAGES_HEADER = 'My Images'
-SIDEBAR_IMAGES = ['../images/dr_pk.jpg']  # This path is accessible to index and for pages/posts
+SIDEBAR_IMAGES = ['../images/square_500.jpg']  # This path is accessible to index and for pages/posts
 
 DISQUSURL = 'http://castoriscausa.com'
 DISQUS_SITENAME = u"castoriscausa"
@@ -73,7 +65,7 @@ PAGE_PATHS = ['pages']
 # Article directories
 ARTICLE_PATHS = ['articles']
 # Ignored files
-IGNORE_FILES = ['drafts']
+IGNORE_FILES = ['drafts', 'main.md', 'software.md']
 # Directories to be copied to OUTPUT
 STATIC_PATHS = ['images', '..//extras']
 # Plugins directory
@@ -130,7 +122,7 @@ SUMMARY_MAX_LENGTH = 50
 # Google Analytics Track-ID
 GOOGLE_ANALYTICS = 'UA-86432394-1'
 # Number of articles per page
-DEFAULT_PAGINATION = 1
+DEFAULT_PAGINATION = 6
 # Order of Articles
 NEWEST_FIRST_ARCHIVES = True
 
@@ -143,15 +135,14 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-         ('Home', 'home?'),
-         ('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/')
-         )
+         ('Home', 'http://www.castoriscausa.com'),
+         ('#', '#')
+        )
 
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/rcassani'),
-          ('Another social link', '#'),)
+          ('#', '#')
+         )
 
 
 # Uncomment following line if you want document-relative URLs when developing

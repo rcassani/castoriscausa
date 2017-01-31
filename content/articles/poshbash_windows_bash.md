@@ -4,13 +4,11 @@ Category: Blog
 Tag: cc
 Slug: poshbash-windows-bash
 Author: Ray Cassani
-Summary: Setup poshbash in Windows bash
 
-
-The [**posh-git-bash**](https://github.com/dahlbyk/posh-git) prompt, for [Git](https://git-scm.com/), is a useful tool that shows information about the current status of a local Git repository respect to local and remote (e.g. [GitHub](https://github.com/)) repositories; in this ways, it's easy to see if the repository is ahead or behind, has uncommitted changes, is up-to-date, etc.
+The [**posh-git-bash**](https://github.com/dahlbyk/posh-git) prompt, for [Git](https://git-scm.com/), is a useful tool that shows information about the current status of a local Git repository respect to local and remote (e.g. [GitHub](https://github.com/)) repositories; in this way, it's easy to see if the repository is ahead or behind, has uncommitted changes, is up-to-date, etc.
 
 <center>
-![Alt](../images/dr_pk.jpg "Title")  
+![Alt](../images/posh_bash_win.png)  
 Git-Posh example
 </center>  
 
@@ -22,51 +20,28 @@ If **Bash on Windows** is not already installed, this is the [installation guide
 ##### **Note**: Enable Copy/Paste in Bash
 1. Right click in the Window Title bar &gt; Properties
 2. Enable Quick Edit Mode
-3. Copy is Ctrl-C and Paste is Right click
+3. Copy is **Ctrl-C** and Paste is **Right-click**
 
 ---
 
 ### **Adding posh-git-bash** prompt to Bash on Windows
 
 1. Run Bash and go to HOME directory in bash
-python
-
-        :::python
-        print(algo)
-        print(something)
-    
-    </br>
 
         :::powershell
         $ cd ~
 
-There are two ways to specify the identifier:
+2. Download the file ```git-prompt.sh``` from [this repository](https://github.com/lyze/posh-git-sh.git), and rename it as ```.git-prompt.sh```  
 
-	print(algo)
-
-    :::python
-    print("The triple-colon syntax will *not* show line numbers.")
-
-To display line numbers, use a path-less shebang instead of colons:
-
-    #!python
-    print("The path-less shebang syntax *will* show line numbers.")
-
-
-2. Get the ```git-prompt.sh``` file from [this repository](https://github.com/lyze/posh-git-sh.git), and rename it as ```.git-prompt.sh```
-
-[code language="bash"]
-~$ wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O .git-prompt.sh
-[/code]
+        :::powershell
+        ~$ wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O .git-prompt.sh
 
 3. Now you need to edit your the file ```~/.bashrc```
-Add the following 3 lines at the beginning of ```~/.bashrc file```, you can use the text editors [nano](https://www.nano-editor.org/) or [vim](http://www.vim.org/) for this.
+Add the following 2 lines at the beginning of ```~/.bashrc file```, you can use the text editors [nano](https://www.nano-editor.org/) or [vim](http://www.vim.org/) for this.
 
-[code language="bash"]
-# Added to see the current branch in your prompt, posh-git style
-source ~/.git-prompt.sh
-PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w" "\\\$ ";'$PROMPT_COMMAND
-[/code]
+        :::powershell
+        source ~/.git-prompt.sh
+        PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w" "\\\$ ";'$PROMPT_COMMAND
 
 4. Restart Bash
 
