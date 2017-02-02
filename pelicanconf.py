@@ -32,7 +32,7 @@ DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in articles summaries
 # BANNER = 'images/dr_pk.jpg'
 # BANNER_ALL_PAGES = True
 # SIDEBAR_IMAGES_HEADER = 'My Images'
-SIDEBAR_IMAGES = ['../images/square_500.jpg']  # This path is accessible to index and for pages/posts
+SIDEBAR_IMAGES = ['../images/side_image_500.jpg']  # This path is accessible to index and for pages/posts
 
 DISQUSURL = 'http://castoriscausa.com'
 DISQUS_SITENAME = u"castoriscausa"
