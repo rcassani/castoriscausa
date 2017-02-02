@@ -1,39 +1,35 @@
-Title: Keeping Synaptics touchpad disabled
+Title: Keeping Synaptics Touchpad disabled
 Date: 2016-12-06 19:00
 Category: Blog
 Tag: Fix
-Slug: touchpad
+Slug: touchpad-disable
 Author: Ray Cassani
 
-Touchpads are not for everyone, one of the first things to do when a I get a new computer is to plug a mouse and disable the touchpad (TP).
+Touchpads in laptops are not for everyone, one of the first things to do when a I get a new computer is to plug a mouse and disable the touchpad (TP).
 
-Few month ago, I noticed a strange behavior in my [laptop]([https://us.msi.com/Laptop/GE62VR-Apache-Pro-6th-Gen-GTX-1060.html#hero-overview), the TP (model) no matte the status of the TP, every time Windows started, the touchpad was enabled, which means I had to disable it every time.
+Few weeks ago, I noticed a strange behavior, in my [laptop]([https://us.msi.com/Laptop/GE62VR-Apache-Pro-6th-Gen-GTX-1060.html#hero-overview), every time I started a session in Windows, the touchpad was **enabled**, that is to say it did not keep its previous status. The touchpad is a **Synaptics SMBus TouchPad**. As this behavior was **annoying**, something needed to be done.
 
-After some research I came across this wonderful solution where the [touchpad is disabled when a mouse detected](http://www.intowindows.com/how-to-turn-off-touchpad-when-mouse-is-connected-in-windows-78-1/). Unfortunately, the [steelseries keyboard]() in my computer is detected as keyboard-mouse combo, enabling the auto disable, would imply permanently disable the touchpad, and who knows it could be useful (someday).
+After some research I came across this wonderful solution where the [touchpad is automatically disabled when a mouse is  detected](http://www.intowindows.com/how-to-turn-off-touchpad-when-mouse-is-connected-in-windows-78-1/). Unfortunately, the **Steelseris Keyboard** in my laptop is detected as **keyboard-mouse combo**, then, the auto-disable, would permanently disable the touchpad, without option to enable it and who knows it could be useful (someday).
 
-After diving in [Regedit](link to somewhere), I noticed two values that control the behavior in the touchpad, these are:
-
-`DisableDeviceUntilSessionEnd` in `HKEY_CURRENT_USER\SOFTWARE\Synaptics\SynTP\TouchPadPS2TM3163`
-and
-`DisableDeviceUntilSessionEnd` in `HKEY_CURRENT_USER\SOFTWARE\Synaptics\SynTP\TouchPadSMB2cTM3163`
-
-Basically, when they are 0 the TP remembers its state and when 1, the TP will be enabled the next login, in my case the present value was 1, and changing the value to 0 was the solution.
-
-This can be done, in two ways,
-
-* changing the values in Regedit (just do it if you know what you're doing)
-
-For this specfic model of TP
+<center>
+![Alt](../images/touchpad_keyboard_ge62vr.jpg)  
+Touchpad and Keyboard in GE62VR
+</center>  
 
 
-* Merging the reg files in your register (download it and execute it)
-In case you miss the auto-enabling behavior, change the values back to 1, or run this reg file:
+Later, after diving in [Windows Register](https://en.wikipedia.org/wiki/Windows_Registry), with Regedit, I noticed a value, in two keys, that controls the touchpad's behavior at the beginning of the Windows session:
 
-The scripts will work only, if you have the same TP model.
+`DisableDeviceUntilSessionEnd`
+in    
+`HKEY_CURRENT_USER\SOFTWARE\Synaptics\SynTP\TouchPadPS2TM3163`  
+`HKEY_CURRENT_USER\SOFTWARE\Synaptics\SynTP\TouchPadSMB2cTM3163`
 
-http://www.intowindows.com/how-to-turn-off-touchpad-when-mouse-is-connected-in-windows-78-1/
-Synaptics Pointing Device
+Basically, when they are ```0``` the touchpad remembers its state at the moment of the last logout, and when ```1```, the touchpad will be enabled every login.
 
-Title
+</br>
+<center>
+#### **Changing the values from ```1``` to  ```0```** was the solution, to keep the touchpad disable.
+</center>
+</br>
 
-Create a reg to write those keys, and to return them to the original value
+In case you're want to the same re-enabling behaviour in the touchpad, edit the above-mentioned values in the Registry. You can learn the basics on editing the Windows Registry here: [Learn How to Use the Windows Registry Editor (Regedit) in One Easy Lesson](http://www.techsupportalert.com/content/learn-how-use-windows-registry-editor-regedit-one-easy-lesson.htm).
