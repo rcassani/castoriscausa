@@ -26,13 +26,14 @@ USE_PAGER = False
 # SITELOGO_SIZE = 50
 HIDE_SITENAME = False
 DISPLAY_BREADCRUMBS = True  # HOME > Something > something
-BOOTSTRAP_NAVBAR_INVERSE = True # Not use in Castoris Theme
+BOOTSTRAP_NAVBAR_INVERSE = True  # Not use in Castoris Theme
 # FAVICON = 'images/dr_pk.jpg.png'
-DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in articles summaries
+DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in summaries
 # BANNER = 'images/dr_pk.jpg'
 # BANNER_ALL_PAGES = True
 # SIDEBAR_IMAGES_HEADER = 'My Images'
-SIDEBAR_IMAGES = ['../images/side_image_500.jpg']  # This path is accessible to index and for pages/posts
+SIDEBAR_IMAGES = ['../images/side_image_500.jpg']
+# This path is accessible to index and for pages/posts
 
 DISQUSURL = 'http://castoriscausa.com'
 DISQUS_SITENAME = u"castoriscausa"
@@ -140,7 +141,8 @@ LINKS = (
         )
 
 # Social widget
-SOCIAL = (('GitHub', 'https://github.com/rcassani'),
+SOCIAL = (
+          ('GitHub', 'https://github.com/rcassani'),
           ('#', '#')
          )
 
