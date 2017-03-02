@@ -5,24 +5,25 @@ Tag: Blog
 Slug: linux-usb-uefi
 Author: Ray Cassani
 
-This post is about creating a UEFI-bootable full Linux installation in a USB Flash Drive or External HDD. For sake of simplicity, I'll refer to a USB(Flash Drive / External HDD) as **USB-disk**. This procedure is performed in a computer running Windows without installing Linux in the HDD, nor modifying (messing with) the Windows EFI partition. Here a nice [explanation on how UEFI boot works](https://www.happyassassin.net/2014/01/25/uefi-boot-how-does-that-actually-work-then/).
+This post is about creating a UEFI-bootable full Linux installation in a USB Flash Drive or External HDD. For sake of simplicity, I'll refer to a **USB Flash Drive** or a **USB External HDD** as **USB-disk**. This procedure is performed in a computer running Windows without installing Linux in the HDD, therefore there is no modification (nor mess) in the Windows EFI partition. Here a nice [explanation on how UEFI boot works](https://www.happyassassin.net/2014/01/25/uefi-boot-how-does-that-actually-work-then/).
 
-First of all, if you're looking for Live-USB with or without Persistence with both Legacy and UEFI boot, a nice option in Windows is [LinuxLive USB Creator](http://www.linuxliveusb.com/en/home). These are the [differences between Live-USB with Persistence and a USB Full Install](https://www.maketecheasier.com/persistent-live-usb-vs-full-install-usb/)
+First of all, if you're looking for **Live-USB** with or without **Persistence** with both **Legacy** and **UEFI** boot, a nice option in Windows is [LinuxLive USB Creator](http://www.linuxliveusb.com/en/home). These are the [differences between Live-USB with Persistence and a USB Full Install](https://www.maketecheasier.com/persistent-live-usb-vs-full-install-usb/).
 
 ### Process Big Picture
-The procedure comprehends three main parts:
+The procedure comprehends three main parts:  
+
 1. Creating UEFI-booting Virtual Machine, without (virtual) HHD
-2. Installing Linux in USB-disk
+2. Installing Linux in the USB-disk
 3. Modifying the EFI partition in the USB-disk
 
 ### Requirements
 * [**VMware**](http://www.vmware.com/products/player/playerpro-evaluation.html) installed  
-  The Workstation Player version is free for non-commercial use
+  The *Workstation Player* version is free for non-commercial use
 * **USB-disk**, USB3 if your computer supports it
   I've tried the procedure with both USB Flash Drive and External HDD
 * **ISO image** of your favorite Linux distribution
 
-For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.com/) **18.1 64-bit** was used, similar instructions should apply for other distributions
+For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.com/) **18.1 64-bit** was used, similar instructions should apply for other distributions.
 
 ### Procedure:
 #### 1. Creating UEFI-booting Virtual Machine, without (virtual) HHD
@@ -57,7 +58,7 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
       <img src="../images/uefi_usb_1_6a.png" style="width: 500px;"/>
       </br>  
       </center>
-	  2. For the **USB Controller**, Select **USB 3.0** (if supported), [X]Automatically ..., [ ]Show all... and [ ]Share Bluetooth...
+	  2. For the **USB Controller**, Select **USB 3.0** (if supported), **[X]Automatically ..., [ ]Show all... and [ ]Share Bluetooth...**
       <center>
       <img src="../images/uefi_usb_1_6b.png" style="width: 500px;"/>
       </br>  
@@ -72,20 +73,19 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
 
 #### 2. Installing Linux in USB-disk
   In the step, the Virtual Machine will boot in UEFI using the Linux ISO image, from there it'll possible to install Linux in the USB-disk.
-  1. In **VMware**, Power ON the Virtual Machine. When booting on UEFI, it should look as below (at least for **Mint 64-bit**)   
+  1. In **VMware**, Power ON the Virtual Machine. When booting on UEFI, it should look as below (at least for **Mint 64-bit**). Select **Start Linux Mint 18 Cinnamon 64-bit**
     <center>
     <img src="../images/uefi_usb_2_1.png" style="width: 700px;"/>
     </br>  
     </center>
-  2. Select **Start Linux ...**  
-  [image]()
-  3. Once the Linux session is started, connect (physically) your USB-disk, and be sure it's connected to the Virtual Machine  
+  2. Once the Linux session is started, connect (physically) your USB-disk, and be sure it's connected to the Virtual Machine  
     <center>
     <img src="../images/uefi_usb_2_3.png" style="width: 700px;"/>
     </br>  
     </center>
-  4. To start the procedure with a blank USB-disk. In the Virtual Machine, Open **GParted** (hopefully is installed). Then select your device at the upper right corner (remember its **sdx**), then go to **Device > Create Partition Table**, select the type **gtp**. Close GParted.  
-  5. Click on the **Install Linux** (Mint) icon on Desktop.
+  3. To start the procedure with a blank USB-disk. In the Virtual Machine, Open **GParted** (hopefully is installed). Then select your device at the upper right corner (remember its **sdx**), then go to **Device > Create Partition Table**, select the type **gtp**. Close GParted.  
+
+  4. Click on the **Install Linux** (Mint) icon on Desktop.
     1. Select your language.
     2. Leave unchecked the option **Install third-party software...**
     3. In **Installation type** select **Erase disk and install Linux Mint**
@@ -93,7 +93,8 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
 
 </br>
 #### 3. Modifying the EFI partition in the USB-disk
-  Still in the Linux session from the previous section, the resting part is to prepare the EFI partition on the USB-disk to make it UEFI-bootable
+  Still in the Linux session (Virtual Machine without HDD booted with Live-CD) from the previous section, the remaining part is to prepare the EFI partition on the USB-disk to make it UEFI-bootable  
+
   1. Create a folder ```/mnt/efi/```
         :::powershell
         $ sudo mkdir /mnt/efi/
@@ -114,7 +115,7 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
         :::powershell
         $ sudo cp /media/cdrom/EFI/BOOT/BOOTx64.EFI ./BOOT/
 
-  5. Shut down the Virtual Machine
+  5. Shut down the Virtual Machine properly.
 
 </br>
 <center>
@@ -122,6 +123,6 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
 </center>
 </br>
 
-The only thing left is to reboot your computer, and select the USB-disk (Partition 1) for UEFI boot.
+Finally, reboot your computer, and select the USB-disk (Partition 1) for UEFI boot.
 
 I've try this method using an [external SSD via USB](https://www.amazon.ca/Kingston-Upgrade-2-5-Inch-SH103S3B-120G/dp/B007R9M6PO/ref=sr_1_5?s=electronics&ie=UTF8&qid=1486057544&sr=1-5&keywords=kingston+hyperx+120) and a [Lexar USB flash drive](https://www.amazon.ca/Lexar-JumpDrive-128GB-Flash-Drive/dp/B012PKV7RC/ref=sr_1_11?s=pc&ie=UTF8&qid=1486057469&sr=1-11) without issues.
