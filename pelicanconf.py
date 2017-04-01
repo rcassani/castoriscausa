@@ -12,8 +12,14 @@ AUTHOR = u'Ray Cassani'
 SITENAME = u'CastorisCausa'
 # SITEURL = 'wwww.castoriscausa.com'
 
+# Cutomized Theme
 THEME = "..//themes-castoriscausa//pelican-bootstrap3-castoris"
+#BOOTSTRAP_THEME = 'slate' #cyborg, simplex, superhero
+# Based on
 # https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
+# THEME = "..//pelican-themes//pelican-bootstrap3"
+# BOOTSTRAP_THEME = 'solar' #cyborg, simplex, superhero
+
 
 # pelican-bootstrap3 EXTRAS
 # See more here:
