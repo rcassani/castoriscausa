@@ -1,7 +1,22 @@
 /*!
 Custom CSS for CastorisCausa
+Raymundo Cassani
+April 2017
  */
 
 h1 {
   color: tomato;
-};
+}
+
+.caps {
+  font-size: inherit;
+}
+
+h2 {
+  color: blue
+}
+
+.navbar-default {
+    background-color: #ff00ff;
+    border-color: #000000;
+}

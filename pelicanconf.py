@@ -12,17 +12,13 @@ AUTHOR = u'Ray Cassani'
 SITENAME = u'CastorisCausa'
 # SITEURL = 'wwww.castoriscausa.com'
 
-# Cutomized Theme
-THEME = "..//themes-castoriscausa//pelican-bootstrap3-castoris"
-#BOOTSTRAP_THEME = 'slate' #cyborg, simplex, superhero
-# Based on
 # https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
-# THEME = "..//pelican-themes//pelican-bootstrap3"
-# BOOTSTRAP_THEME = 'solar' #cyborg, simplex, superhero
-
+THEME = ".//pelican-bootstrap3"
+BOOTSTRAP_THEME = 'sandstone'  # This bootstrap3 theme serves as base
+# Custonized CSS file for CastorisCausa
+CUSTOM_CSS = 'theme//css//castoris.css'
 
 # pelican-bootstrap3 EXTRAS
-# See more here:
 SHOW_ARTICLE_AUTHOR = False
 USE_PAGER = False
 # USER_PAGER
@@ -32,7 +28,7 @@ USE_PAGER = False
 # SITELOGO_SIZE = 50
 HIDE_SITENAME = False
 DISPLAY_BREADCRUMBS = True  # HOME > Something > something
-BOOTSTRAP_NAVBAR_INVERSE = True  # Not use in Castoris Theme
+BOOTSTRAP_NAVBAR_INVERSE = False  # Not use in Castoris Theme
 # FAVICON = 'images/dr_pk.jpg.png'
 DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in summaries
 # BANNER = 'images/dr_pk.jpg'
@@ -73,8 +69,12 @@ PAGE_PATHS = ['pages']
 ARTICLE_PATHS = ['articles']
 # Ignored files
 IGNORE_FILES = ['drafts', 'main.md', 'software.md']
-# Directories to be copied to OUTPUT
-STATIC_PATHS = ['images', '..//extras']
+# Directories to be copied to OUTPUT (paths relative to Content)
+STATIC_PATHS = ['images', 'custom_css']
+# Pelican to change castoris.css path from './custom_css/' to `./themes/css/
+EXTRA_PATH_METADATA = {
+    'custom_css/castoris.css': {'path': './theme/css/castoris.css'}
+}
 # Plugins directory
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['tipue_search']
