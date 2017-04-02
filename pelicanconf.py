@@ -12,55 +12,87 @@ AUTHOR = u'Ray Cassani'
 SITENAME = u'CastorisCausa'
 # SITEURL = 'wwww.castoriscausa.com'
 
+###########################
+# ######## THEME ######## #
+###########################
+
 # https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
 THEME = ".//pelican-bootstrap3"
 BOOTSTRAP_THEME = 'sandstone'  # This bootstrap3 theme serves as base
+
+###########################
+# #### EXTRAS BS3 ####### #
+###########################
+# Author info for each article
+SHOW_ARTICLE_AUTHOR = False
+
+# Category for each article
+SHOW_ARTICLE_CATEGORY = False
+
+# Modified date besides publishing date for each article
+SHOW_DATE_MODIFIED = False
+
 # Custonized CSS file for CastorisCausa
 CUSTOM_CSS = 'theme//css//castoris.css'
 
-# pelican-bootstrap3 EXTRAS
-SHOW_ARTICLE_AUTHOR = False
+# Pygments Style, see: http://pygments.org/demo/6353539/?style=native
+PYGMENTS_STYLE = 'native'
+
+# Pagination
 USE_PAGER = False
-# USER_PAGER
 # TRUE = shows 'Older posts' and 'Newer post' buttons
 # FALSE = shows arrows and numbers of pages <<, 1,2,3 >>
+
+# Sitelogo and size
 # SITELOGO = 'images/dr_pk.jpg'
 # SITELOGO_SIZE = 50
+
 HIDE_SITENAME = False
-DISPLAY_BREADCRUMBS = True  # HOME > Something > something
-BOOTSTRAP_NAVBAR_INVERSE = False  # Not use in Castoris Theme
+
+# Breadcrumbs: HOME > Something > something
+DISPLAY_BREADCRUMBS = True
+
+# Inverse Navigation bar color
+BOOTSTRAP_NAVBAR_INVERSE = False  # Leave as FALSE, and edit in castoris.css
+
 # FAVICON = 'images/dr_pk.jpg.png'
+
 DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in summaries
+
 # BANNER = 'images/dr_pk.jpg'
 # BANNER_ALL_PAGES = True
-# SIDEBAR_IMAGES_HEADER = 'My Images'
-SIDEBAR_IMAGES = ['../images/side_image_500.jpg']
-# This path is accessible to index and for pages/posts
 
+# SIDEBAR_IMAGES_HEADER = 'My Images'
+SIDEBAR_IMAGES = ['../images/side_image_500.jpg']  # Path relative to index.html in output
+
+
+# DISQUS
 DISQUSURL = 'http://castoriscausa.com'
 DISQUS_SITENAME = u"castoriscausa"
 DISQUS_NO_ID = True
 DISQUS_DISPLAY_COUNTS = True
 
+# Tag Cloud
 TAG_CLOUD_MAX_ITEMS = 10
-
 
 # Language and Timezone
 TIMEZONE = 'America/Montreal'
 DEFAULT_LANG = u'en'
 DATE_FORMATS = '%a, %d %b %Y'
 
-
+# Delete Output files everytime SSG runs
 DELETE_OUTPUT_DIRECTORY = True
+# Keep these files from deleting output
 OUTPUT_RETENTION = ['.git', 'CNAME']
 
+# Makes style improvements in fonts
 TYPOGRIFY = True
 CC_LICENSE = "CC-BY-NC-SA"
 
-'''
- CONTENT
-Defines the Paths for different elements of content
-'''
+############################
+# ####### CONTENT ######## #
+# Defines the Paths for different elements of content
+############################
 # Content root directory
 PATH = 'content'
 # Page directories
@@ -80,10 +112,11 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['tipue_search']
 DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'search')
 
-'''
- OUTPUT
-Defines paths and filenames for Output files
-'''
+############################
+# ####### OUTPUT ######### #
+# Defines paths and filenames for Output files
+############################
+# Output directory
 OUTPUT_PATH = 'output/'
 # HTML files for Pages
 PAGE_SAVE_AS = 'pages/{slug}.html'
@@ -92,12 +125,11 @@ ARTICLE_SAVE_AS = 'posts/{slug}.html'
 # HTML files for Articles with translation
 ARTICLE_LANG_SAVE_AS = 'posts/{slug}-{lang}.html'
 
-
-'''
- URLS
-Defines the URL for the elements in the website
-www.site.com/+ ...
-'''
+############################
+# ######## PAGES ######### #
+# Defines the URL for the elements in the website
+# www.site.com/+ ...
+############################
 # Pages
 PAGE_URL = 'pages/{slug}'
 # Articles
@@ -105,10 +137,9 @@ ARTICLE_URL = 'posts/{slug}'
 # Articles with translation
 ARTICLE_LANG_URL = 'posts/{slug}-{lang}'
 
-
-'''
-INDEX HTML LOOK
-'''
+###########################
+# #### INDEX HTML LOOK ####### #
+###########################
 # Display pages list on the top menu
 DISPLAY_PAGES_ON_MENU = True
 # Display categories list on the top menu
@@ -122,7 +153,7 @@ DISPLAY_AUTHOR_ON_POSTINFO = False
 # Display the search form
 DISPLAY_SEARCH_FORM = True
 # Sort pages list by a given attribute
-#  Add the fiel Sortorder to the page MD documentm e.g. Sortorder: 2
+# Add the field Sortorder to the page MD documentm e.g. Sortorder: 2
 PAGES_SORT_ATTRIBUTE = 'sortorder'
 # Measured in Words
 SUMMARY_MAX_LENGTH = 50
