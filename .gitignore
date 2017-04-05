@@ -3,7 +3,7 @@ output/
 cache/
 
 # Pelican-Bootstrap3 folder
-#pelican-bootstrap3/
+pelican-bootstrap3/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
