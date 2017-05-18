@@ -4,19 +4,44 @@ Raymundo Cassani
 April 2017
  */
 
+/*
+This is the Tag for:
+ Automatic title in individual posts and pages
+ # in Markdown files
+*/
 h1 {
   color: tomato;
 }
 
+/*
+This is the Tag for:
+ Post title in HOME
+ ## in Markdown files
+*/
+h2 {
+  color: blue;
+}
+
+/*
+This overrides the .caps in typogrify.css
+  Words comprised by only caps do not change in size
+*/
 .caps {
   font-size: inherit;
 }
 
-h2 {
-  color: blue
+/*
+Color for the Navigation bar
+*/
+.navbar-default {
+  background-color: #ff00ff;
+  border-color: #000000;
+  min-height: 90px;
 }
 
-.navbar-default {
-    background-color: #ff00ff;
-    border-color: #000000;
+
+#tipue_search_input{
+  padding-top: 25px;
+  background-position-y: 28px;
+
 }

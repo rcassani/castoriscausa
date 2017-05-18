@@ -52,7 +52,7 @@ HIDE_SITENAME = False
 # Breadcrumbs: HOME > Something > something
 DISPLAY_BREADCRUMBS = True
 
-# Inverse Navigation bar color
+# Inverse Navigation bar
 BOOTSTRAP_NAVBAR_INVERSE = False  # Leave as FALSE, and edit in castoris.css
 
 # FAVICON = 'images/dr_pk.jpg.png'
