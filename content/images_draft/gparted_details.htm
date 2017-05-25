@@ -1,0 +1,1162 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en-US' lang='en-US'>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<title>GParted Details</title>
+</head>
+<body>
+<p>GParted 0.18.0 --enable-libparted-dmraid --enable-online-resize</p>
+<p>Libparted 2.3</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Shrink /dev/sdb1 from 914.28 GiB to 795.43 GiB</b>&nbsp;&nbsp;00:00:03&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+calibrate /dev/sdb1&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb1<br />start: 2048<br />end: 1917390847<br />size: 1917388800 (914.28 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdb1 for errors and (if possible) fix them&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>ntfsresize -i -f -v /dev/sdb1</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>ntfsresize v2013.1.13AR.1 (libntfs-3g)<br />Device name        : /dev/sdb1<br />NTFS volume version: 3.1<br />Cluster size       : 4096 bytes<br />Current volume size: 981703062016 bytes (981704 MB)<br />Current device size: 981703065600 bytes (981704 MB)<br />Checking for bad sectors ...<br />Checking filesystem consistency ...<br />100.00 percent completed<br />Accounting clusters ...<br />Space in use       : 215 MB (0.0%)<br />Collecting resizing constraints ...<br />Estimating smallest shrunken size supported ...<br />File feature         Last used at      By inode<br />$MFTMirr           :         1 MB             1<br />Sparse             :      3222 MB            41<br />Ordinary           :      3222 MB             0<br />You might resize at 214790144 bytes or 215 MB (freeing 981489 MB).<br />Please make a test run using both the -n and -s options before real resizing!<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+shrink file system&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+run simulation&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>ntfsresize --force --force -s 854081929216 --no-action /dev/sdb1</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>ntfsresize v2013.1.13AR.1 (libntfs-3g)<br />Device name        : /dev/sdb1<br />NTFS volume version: 3.1<br />Cluster size       : 4096 bytes<br />Current volume size: 981703062016 bytes (981704 MB)<br />Current device size: 981703065600 bytes (981704 MB)<br />New volume size    : 854081925632 bytes (854082 MB)<br />Checking filesystem consistency ...<br />100.00 percent completed<br />Accounting clusters ...<br />Space in use       : 215 MB (0.0%)<br />Collecting resizing constraints ...<br />Needed relocations : 0 (0 MB)<br />Schedule chkdsk for NTFS consistency check at Windows boot time ...<br />Resetting $LogFile ... (this might take a while)<br />Updating $BadClust file ...<br />Updating $Bitmap file ...<br />Updating Boot record ...<br />The read-only test run ended successfully.<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+real resize&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>ntfsresize --force --force -s 854081929216 /dev/sdb1</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>ntfsresize v2013.1.13AR.1 (libntfs-3g)<br />Device name        : /dev/sdb1<br />NTFS volume version: 3.1<br />Cluster size       : 4096 bytes<br />Current volume size: 981703062016 bytes (981704 MB)<br />Current device size: 981703065600 bytes (981704 MB)<br />New volume size    : 854081925632 bytes (854082 MB)<br />Checking filesystem consistency ...<br />100.00 percent completed<br />Accounting clusters ...<br />Space in use       : 215 MB (0.0%)<br />Collecting resizing constraints ...<br />Needed relocations : 0 (0 MB)<br />Schedule chkdsk for NTFS consistency check at Windows boot time ...<br />Resetting $LogFile ... (this might take a while)<br />Updating $BadClust file ...<br />Updating $Bitmap file ...<br />Updating Boot record ...<br />Syncing device ...<br />Successfully resized NTFS on device &apos;/dev/sdb1&apos;.<br />You can go on to shrink the device for example with Linux fdisk.<br />IMPORTANT: When recreating the partition, make sure that you<br />  1)  create it at the same disk sector (use sector as the unit!)<br />  2)  create it with the same partition type (usually 7, HPFS/NTFS)<br />  3)  do not make it smaller than the new NTFS filesystem size<br />  4)  set the bootable flag for the partition if it existed before<br />Otherwise you won&apos;t be able to access NTFS or can&apos;t boot from the disk!<br />If you make a mistake and don&apos;t have a partition table backup then you<br />can recover the partition table by TestDisk or Parted&apos;s rescue mode.<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+shrink partition from 914.28 GiB to 795.43 GiB&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>old start: 2048<br />old end: 1917390847<br />old size: 1917388800 (914.28 GiB)</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new start: 2048<br />new end: 1668130815<br />new size: 1668128768 (795.43 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Copy /dev/sdd1 to /dev/sdb (start at 795.43 GiB)</b>&nbsp;&nbsp;00:00:14&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+calibrate /dev/sdd1&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdd1<br />start: 2048<br />end: 1050623<br />size: 1048576 (512.00 MiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdd1 for errors and (if possible) fix them&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>fsck.fat -a -w -v /dev/sdd1</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>fsck.fat 3.0.26 (2014-03-07)<br />fsck.fat 3.0.26 (2014-03-07)<br />Checking we can access the last sector of the filesystem<br />Boot sector contents:<br />System ID &quot;mkfs.fat&quot;<br />Media byte 0xf8 (hard disk)<br />       512 bytes per logical sector<br />      4096 bytes per cluster<br />        32 reserved sectors<br />First FAT starts at byte 16384 (sector 32)<br />         2 FATs, 32 bit entries<br />    523264 bytes per FAT (= 1022 sectors)<br />Root directory start at cluster 2 (arbitrary size)<br />Data area starts at byte 1062912 (sector 2076)<br />    130812 data clusters (535805952 bytes)<br />32 sectors/track, 64 heads<br />      2048 hidden sectors<br />   1048576 sectors total<br />Reclaiming unconnected clusters.<br />Checking free cluster summary.<br />/dev/sdd1: 21 files, 2086/130812 clusters<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create empty partition&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb3<br />start: 1668130816<br />end: 1669179391<br />size: 1048576 (512.00 MiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+set partition type on /dev/sdb3&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new partition type: fat32</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy file system of /dev/sdd1 to /dev/sdb3&nbsp;&nbsp;00:00:13&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+using internal algorithm
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 512.00 MiB
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+finding optimal block size
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 1.00 MiB&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.664547 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 2.00 MiB&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.558914 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 4.00 MiB&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.467328 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 8.00 MiB&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.458819 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 16.00 MiB&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.474337 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+optimal block size is 8.00 MiB
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 432.00 MiB using a block size of 8.00 MiB&nbsp;&nbsp;00:00:11&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>432.00 MiB of 432.00 MiB copied</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+512.00 MiB (536870912 B) copied
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Copy /dev/sdd2 to /dev/sdb (start at 795.93 GiB)</b>&nbsp;&nbsp;00:22:15&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+calibrate /dev/sdd2&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdd2<br />start: 1050624<br />end: 122943487<br />size: 121892864 (58.12 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdd2 for errors and (if possible) fix them&nbsp;&nbsp;00:00:03&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>e2fsck -f -y -v -C 0 /dev/sdd2</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Pass 1: Checking inodes, blocks, and sizes<br />Pass 2: Checking directory structure                                           <br />Pass 3: Checking directory connectivity                                        <br />Pass 4: Checking reference counts<br />Pass 5: Checking group summary information                                     <br />                                                                               <br />      222311 inodes used (5.84%, out of 3809280)<br />         131 non-contiguous files (0.1%)<br />         202 non-contiguous directories (0.1%)<br />             # of inodes with ind/dind/tind blocks: 0/0/0<br />             Extent depth histogram: 175015/5<br />     1387771 blocks used (9.11%, out of 15236608)<br />           0 bad blocks<br />           1 large file<br /><br />      134560 regular files<br />       23343 directories<br />          55 character device files<br />          25 block device files<br />           0 fifos<br />           0 links<br />       64319 symbolic links (47203 fast symbolic links)<br />           0 sockets<br />------------<br />      222302 files<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>e2fsck 1.42.9 (4-Feb-2014)<br /></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create empty partition&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb4<br />start: 1669179392<br />end: 1791072255<br />size: 121892864 (58.12 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+set partition type on /dev/sdb4&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new partition type: ext4</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy file system of /dev/sdd2 to /dev/sdb4&nbsp;&nbsp;00:22:11&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+using internal algorithm
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 58.12 GiB
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+finding optimal block size
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 1.00 MiB&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.808313 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 2.00 MiB&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.604897 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 4.00 MiB&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.547695 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 8.00 MiB&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.502888 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 16.00 MiB using a block size of 16.00 MiB&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>16.00 MiB of 16.00 MiB copied</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>0.495305 seconds</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+optimal block size is 16.00 MiB
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy 58.04 GiB using a block size of 16.00 MiB&nbsp;&nbsp;00:22:08&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>58.04 GiB of 58.04 GiB copied</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+58.12 GiB (62409146368 B) copied
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Copy /dev/sdd3 to /dev/sdb (start at 913.29 GiB)</b>&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+calibrate /dev/sdd3&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdd3<br />start: 122943488<br />end: 125036543<br />size: 2093056 (1022.00 MiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdd3 for errors and (if possible) fix them&nbsp;&nbsp;&nbsp;&nbsp;( N/A )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>checking is not available for this file system</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create empty partition&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb5<br />start: 1915297792<br />end: 1917390847<br />size: 2093056 (1022.00 MiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+set partition type on /dev/sdb5&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new partition type: linux-swap(v1)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+copy file system of /dev/sdd3 to /dev/sdb5&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Partition copy action skipped because linux-swap file system does not contain data</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdb5 for errors and (if possible) fix them&nbsp;&nbsp;&nbsp;&nbsp;( N/A )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>checking is not available for this file system</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+grow file system to fill the partition&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create new linux-swap file system&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>mkswap -L &quot;&quot;  -U &quot;466b60db-18e2-4475-8c60-b3ea809d2583&quot; /dev/sdb5</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Setting up swapspace version 1, size = 1046524 KiB<br />LABEL=, UUID=466b60db-18e2-4475-8c60-b3ea809d2583<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Grow copy of /dev/sdd2 from 58.12 GiB to 117.36 GiB</b>&nbsp;&nbsp;00:00:16&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+calibrate copy of /dev/sdd2&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb4<br />start: 1669179392<br />end: 1791072255<br />size: 121892864 (58.12 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdb4 for errors and (if possible) fix them&nbsp;&nbsp;00:00:07&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>e2fsck -f -y -v -C 0 /dev/sdb4</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Pass 1: Checking inodes, blocks, and sizes<br />Pass 2: Checking directory structure                                           <br />Pass 3: Checking directory connectivity                                        <br />Pass 4: Checking reference counts<br />Pass 5: Checking group summary information                                     <br />                                                                               <br />      222311 inodes used (5.84%, out of 3809280)<br />         131 non-contiguous files (0.1%)<br />         202 non-contiguous directories (0.1%)<br />             # of inodes with ind/dind/tind blocks: 0/0/0<br />             Extent depth histogram: 175015/5<br />     1387771 blocks used (9.11%, out of 15236608)<br />           0 bad blocks<br />           1 large file<br /><br />      134560 regular files<br />       23343 directories<br />          55 character device files<br />          25 block device files<br />           0 fifos<br />           0 links<br />       64319 symbolic links (47203 fast symbolic links)<br />           0 sockets<br />------------<br />      222302 files<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>e2fsck 1.42.9 (4-Feb-2014)<br /></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+grow partition from 58.12 GiB to 117.36 GiB&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>old start: 1669179392<br />old end: 1791072255<br />old size: 121892864 (58.12 GiB)</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new start: 1669179392<br />new end: 1915297791<br />new size: 246118400 (117.36 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdb4 for errors and (if possible) fix them&nbsp;&nbsp;00:00:06&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>e2fsck -f -y -v -C 0 /dev/sdb4</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Pass 1: Checking inodes, blocks, and sizes<br />Pass 2: Checking directory structure                                           <br />Pass 3: Checking directory connectivity                                        <br />Pass 4: Checking reference counts<br />Pass 5: Checking group summary information<br />                                                                               <br />      222311 inodes used (5.84%, out of 3809280)<br />         131 non-contiguous files (0.1%)<br />         202 non-contiguous directories (0.1%)<br />             # of inodes with ind/dind/tind blocks: 0/0/0<br />             Extent depth histogram: 175015/5<br />     1387771 blocks used (9.11%, out of 15236608)<br />           0 bad blocks<br />           1 large file<br /><br />      134560 regular files<br />       23343 directories<br />          55 character device files<br />          25 block device files<br />           0 fifos<br />           0 links<br />       64319 symbolic links (47203 fast symbolic links)<br />           0 sockets<br />------------<br />      222302 files<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>e2fsck 1.42.9 (4-Feb-2014)<br /></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+grow file system to fill the partition&nbsp;&nbsp;00:00:02&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>resize2fs -p /dev/sdb4</i></b>
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Resizing the filesystem on /dev/sdb4 to 30764800 (4k) blocks.<br />The filesystem on /dev/sdb4 is now 30764800 blocks long.<br /><br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>resize2fs 1.42.9 (4-Feb-2014)<br /></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+</body>
+</html>

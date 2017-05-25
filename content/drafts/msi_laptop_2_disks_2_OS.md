@@ -1,9 +1,51 @@
-Title: Full Linux installation in USB, supporting UEFI-boot
+Title: asdasd
 Date: 2017-01-31
 Category: Blog
 Tag: Blog
-Slug: linux-usb-uefi
+Slug: slug-slug
 Author: Ray Cassani
+
+If you computer has two Disk Drives, and you want to try two operative systems, one option will be install them in the same disk, alternatively, it's possible to install each one in it's own Drive, with this there is no need of boot managers as Grub or Grub2. By having OS in differnt Drives
+change either in BIOS or some mother boards allows to change the boot order on-the-flight
+
+There are easy ways to do this, for example:
+
+* Disconnect physically one Drive, and install Linux in the desired Drive
+* If the BIOS allows, it disable one Drive, then proceed to install Linux in the desired Drive
+
+However, if you don't want to open the laptop to disconnect physically the disk, as this voids warranty, and The BIOS does not allows to disable one Disk
+You can follow the process presented in this post
+
+## Overview of the Process
+1. Make a full installation of your desired Linux distro in a USB, make sure it boots in UEFI, a (4 - 16GB) will be perfect
+2. Create some space for Linux in the target disk
+3. Copy the partions from the USB to the Disk
+4. Resize the Linux partitions in the Target Disk to take advantage of all the available space.
+
+## Requirements
+* USB 1 (For full linux)
+* USB 2 (For live linux)
+* HDD 1 (Where Windows 10 lives)
+* HDD 2 (Usually for data, but here we'll install linux)
+
+## Process
+
+### 1. Full intallation of Linux in USB
+You can do this following the instructions provided in this post:
+[http://post.com]
+
+### 2. Create space for Linux and Copy partitions
+1. Create a live linux USB
+with LinuxLive Creator
+Ask Joao M about his Ubuntu
+2. Boot with the live USB, resize the current partitions in DD desired
+3. Plug in the USB1
+4. Copy the partitions EFI, xx and Swap in the empty space
+5. Resize the xx partition
+6. Apply changes
+
+
+
 
 This post is about creating a UEFI-bootable full Linux installation in a USB Flash Drive or External HDD. For sake of simplicity, I'll refer to a **USB Flash Drive** or a **USB External HDD** as **USB-disk**. This procedure is performed in a computer running Windows without installing Linux in the HDD, therefore there is no modification (nor mess) in the Windows EFI partition. Here a nice [explanation on how UEFI boot works](https://www.happyassassin.net/2014/01/25/uefi-boot-how-does-that-actually-work-then/).
 
@@ -42,7 +84,7 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
     <img src="../images/uefi_usb_1_3.png" style="width: 500px;"/>
     </br>  
     </center>
-  4. Assign a **Virtual machine name** and **Location** to the Virtual Machine. Remember these fields, and they'll used later. Click on **Next**  
+  4. Assign a name and location to the Virtual Machine. Click on **Next**  
     <center>
     <img src="../images/uefi_usb_1_4.png" style="width: 500px;"/>
     </br>  
@@ -64,7 +106,7 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
       </br>  
       </center>
   7. Before completing the wizard, identify the **Location** of the Virtual Machine. Click on **Finish**. Do not power ON the Virtual Machine yet.
-  8. Go to the Virtual Machine **Location**, and with help of a text editor (e.g. Notepad), open the file **```VMname.vmx```** (where the ``VMname`` is the **Virtual machine name** assigned in step 4). And add the line **```firmware = "efi"```** at the end of the file
+  8. Go to the Virtual Machine **Location**, and with help of a text editor (e.g. Notepad), open the file **```VMname.vmx```** and add the line **```firmware = "efi"```** at the end of the file
   9. In **VMware**, open the **settings** of your brand new Virtual Machine and **remove the HDD**
     <center>
     <img src="../images/uefi_usb_1_9.png" style="width: 500px;"/>
@@ -72,9 +114,8 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
     </center>  
 
 #### 2. Installing Linux in USB-disk
-  In the step, the Virtual Machine will boot in UEFI using the Linux ISO image, from there it'll possible to install Linux in the USB-disk.  
-
-  1. In **VMware**, Power ON the Virtual Machine. When booting on UEFI, it should look as below (at least for **Mint 64-bit**). Select **Start Linux Mint 18 Cinnamon 64-bit** (or **Try Ubuntu without installing**)
+  In the step, the Virtual Machine will boot in UEFI using the Linux ISO image, from there it'll possible to install Linux in the USB-disk.
+  1. In **VMware**, Power ON the Virtual Machine. When booting on UEFI, it should look as below (at least for **Mint 64-bit**). Select **Start Linux Mint 18 Cinnamon 64-bit**
     <center>
     <img src="../images/uefi_usb_2_1.png" style="width: 700px;"/>
     </br>  
