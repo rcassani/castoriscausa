@@ -5,6 +5,15 @@ Tag: Blog
 Slug: slug-slug
 Author: Ray Cassani
 
+Install Linux (Ubuntu) without modifying Windows boot
+
+Assumes EFI booting, then in order to boot in Linux you need to either modify
+https://askubuntu.com/questions/561254/install-ubuntu-14-04-1-lts-without-losing-windows-7-bootloader
+
+The method can be used to have 2 OS, in 2 HDD
+
+Advantages:
+
 If you computer has two Disk Drives, and you want to try two operative systems, one option will be install them in the same disk, alternatively, it's possible to install each one in it's own Drive, with this there is no need of boot managers as Grub or Grub2. By having OS in differnt Drives
 change either in BIOS or some mother boards allows to change the boot order on-the-flight
 
