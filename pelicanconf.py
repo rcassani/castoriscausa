@@ -33,7 +33,7 @@ SHOW_ARTICLE_CATEGORY = False
 SHOW_DATE_MODIFIED = False
 
 # Custonized CSS file for CastorisCausa
-CUSTOM_CSS = 'theme//css//castoris.css'
+CUSTOM_CSS = 'custom_css/castoris.css'
 
 # Pygments Style, see: http://pygments.org/demo/6353539/?style=native
 PYGMENTS_STYLE = 'native'
@@ -104,8 +104,9 @@ IGNORE_FILES = ['drafts', 'main.md', 'software.md']
 # Directories to be copied to OUTPUT (paths relative to Content)
 STATIC_PATHS = ['images', 'custom_css']
 # Pelican to change castoris.css path from './custom_css/' to `./themes/css/
+# Path relative to content
 EXTRA_PATH_METADATA = {
-    'custom_css/castoris.css': {'path': './theme/css/castoris.css'}
+     './custom_css/castoris.css': {'path': 'castoris.css'}
 }
 # Plugins directory
 PLUGIN_PATHS = ['plugins']
@@ -187,4 +188,4 @@ SOCIAL = (
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-JINJA_EXTENSIONS = []
+#JINJA_EXTENSIONS = []
