@@ -32,11 +32,11 @@ SHOW_ARTICLE_CATEGORY = False
 # Modified date besides publishing date for each article
 SHOW_DATE_MODIFIED = False
 
-# Custonized CSS file for CastorisCausa
+# Customized CSS file for CastorisCausa
 CUSTOM_CSS = 'custom_css/castoris.css'
 
 # Pygments Style, see: http://pygments.org/demo/6353539/?style=native
-PYGMENTS_STYLE = 'native'
+PYGMENTS_STYLE = 'native'  # native, fruity, paraiso-dark
 
 # Pagination
 USE_PAGER = False
@@ -64,7 +64,6 @@ DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in summaries
 
 # SIDEBAR_IMAGES_HEADER = 'My Images'
 SIDEBAR_IMAGES = ['../images/side_image_500.jpg']  # Path relative to index.html in output
-
 
 # DISQUS
 DISQUSURL = 'http://castoriscausa.com'
@@ -188,4 +187,4 @@ SOCIAL = (
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-#JINJA_EXTENSIONS = []
+# JINJA_EXTENSIONS = []

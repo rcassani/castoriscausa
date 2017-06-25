@@ -1,9 +1,24 @@
 /*!
 Custom CSS for CastorisCausa
 This customs CSS is aimed to work with the pelican-boostrap3 theme
+Using the boostrap3 them "sandstone"
+http://bootswatch.com/sandstone/
+
+
 Raymundo Cassani
 April 2017
  */
+
+/*Sandstone colors:
+Defaul:  #3e3f3a  Green-Brown
+Primary: #325d88  Dark blue
+Success  #93c54b  Green
+Info:    #29abe0  Light blue
+Warning: #f47c3c  Orange
+Danger:  #d9534f  Red
+
+#3e3f3a; Gree-Brown from Sandstone theme*/
+
 
 /*
 This is the Tag for:
@@ -20,8 +35,36 @@ This is the Tag for:
  ## in Markdown files
 */
 h2 {
-  color: blue;
+  color: black;
+  font-family: "Raleway","Arial", sans-serif;
 }
+
+/*
+Text in:
+  Summary
+  Post body
+*/
+p {
+  color: black;
+  font-size: 16px;
+  font-family: "Raleway","Arial";
+}
+
+/*
+In Markdown as `something`
+*/
+code {
+  font-size: 90%;
+  color: #c7254e;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-weight: bold;
+}
+
+a {
+  color: #93c54b;
+  /*font-weight: bold;*/
+}
+
 
 /*
 This overrides the .caps in typogrify.css
@@ -34,15 +77,16 @@ This overrides the .caps in typogrify.css
 /*
 Color for the Navigation bar
 */
-.navbar-default {
-  background-color: #ff00ff;
+/*.navbar-default {
+  background-color: #93c54b; Green
   border-color: #000000;
   min-height: 90px;
-}
+}*/
 
-
+/*
+Size of the box for search
+*/
 #tipue_search_input{
   padding-top: 25px;
   background-position-y: 28px;
-
 }

@@ -38,11 +38,17 @@ So far the solution that worked for me, is to change to **Nouveau** drivers, pur
 		$ sudo apt-get upgrade
 
 * Unplug the **DigitalDisplay** adapter
+
 * Open the **Driver Manager** select the recommended **NVIDIA binary driver**  (nvidia-367 at 08/feb/2017)
+
 * Restart your system
+
 * The system should boot using the laptop's monitor as normally
+
 * Connect the external monitor with the **DigitalDisplay** adapter
+
 * Open **Display** to configure the position and behaviour of the monitors
+
 * Open **NVDIA X Server Settings** to configure the external monitor
 
 <!---
@@ -147,7 +153,9 @@ $ sudo ldconfig
 		$ sudo apt-get install freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libgl1-mesa-glx libglu1-mesa libglu1-mesa-dev
 
 </br>
-**Building the samples.** Several of the samples require **GL libraries**, to find the correct path for those libraries, the file `fingllib.mk` is used. As **Linux Mint** is not an officially supported distribution a slight change is necessary in the `fingllib.mk` file. To avoid editing all instances of this file, its multiple copies will be replaced with a symbolic link.
+**Building the samples**
+
+ Several of the samples require **GL libraries**, to find the correct path for those libraries, the file `fingllib.mk` is used. As **Linux Mint** is not an officially supported distribution a slight change is necessary in the `fingllib.mk` file. To avoid editing all instances of this file, its multiple copies will be replaced with a symbolic link.
 
 * Go to `/common` folder in the samples path
 
@@ -203,7 +211,7 @@ $ sudo ldconfig
 	</br>  
 	</center>
 
-####References
+###References
 
 [http://blog.csdn.net/kernlen/article/details/53882490](http://blog.csdn.net/kernlen/article/details/53882490)
 
@@ -224,3 +232,8 @@ $ sudo ldconfig
 [http://developer.download.nvidia.com/compute/cuda/6_5/rel/docs/CUDA_Getting_Started_Linux.pdf](http://developer.download.nvidia.com/compute/cuda/6_5/rel/docs/CUDA_Getting_Started_Linux.pdf)
 
 [https://forums.linuxmint.com/viewtopic.php?t=226145](https://forums.linuxmint.com/viewtopic.php?t=226145)
+
+<!--
+Code for button
+<a class="btn btn-primary" href="#">Booton</a>
+-->
