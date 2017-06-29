@@ -66,6 +66,7 @@ DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in summaries
 SIDEBAR_IMAGES = ['../images/side_image_500.jpg']  # Path relative to index.html in output
 
 # DISQUS
+# See this link: https://github.com/DandyDev/pelican-bootstrap3/issues/219
 DISQUSURL = 'http://castoriscausa.com'
 DISQUS_SITENAME = u"castoriscausa"
 DISQUS_NO_ID = True
@@ -102,7 +103,6 @@ ARTICLE_PATHS = ['articles']
 IGNORE_FILES = ['drafts', 'main.md', 'software.md']
 # Directories to be copied to OUTPUT (paths relative to Content)
 STATIC_PATHS = ['images', 'custom_css']
-# Pelican to change castoris.css path from './custom_css/' to `./themes/css/
 # Path relative to content
 EXTRA_PATH_METADATA = {
      './custom_css/castoris.css': {'path': 'castoris.css'}
