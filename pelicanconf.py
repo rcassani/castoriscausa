@@ -63,7 +63,8 @@ DISPLAY_ARTICLE_INFO_ON_INDEX = True  # Shows Date and Tag in summaries
 # BANNER_ALL_PAGES = True
 
 # SIDEBAR_IMAGES_HEADER = 'My Images'
-SIDEBAR_IMAGES = ['../images/side_image_500.jpg']  # Path relative to index.html in output
+SIDEBAR_IMAGES = ['../images/side_image_500.jpg']
+# Path relative to index.html in output
 
 # DISQUS
 # See this link: https://github.com/DandyDev/pelican-bootstrap3/issues/219

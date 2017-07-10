@@ -4,11 +4,22 @@ Category: Blog
 Tag: cc
 Slug: first-post
 Translation: true
-Author: Ray Cassani
 Lang: spa
+Author: Ray Cassani
 
-Por el moment, este texto es una prueba de:
+Este post es un ejemplo de como escribir posts en diferentes idiomas.
 
-1. Metadata necesaria para en archivo del post
-2. Publicar un post con más de un idioma
-3. Post en English: [http://www.castoriscausa.com/first-post](http://www.castoriscausa.com/first-post)
+**Metadata de este post escrito en Markdown:**
+
+```
+Title: Primer post
+Date: 2016-10-22 22:00
+Category: Blog
+Slug: first-post
+Translation: true
+Lang: spa
+Author: Ray Cassani
+```
+
+Este post es la versión en español de:  
+[http://www.castoriscausa.com/posts/first-post](http://www.castoriscausa.com/posts/first-post)
