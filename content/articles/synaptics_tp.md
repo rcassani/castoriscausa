@@ -3,7 +3,7 @@ Date: 2016-12-06 19:00
 Category: Blog
 Tag: Fix
 Slug: touchpad-disable
-Author: Ray Cassani
+Author: Raymundo Cassani
 
 Touchpads in laptops are not for everyone, one of the first things to do when a I get a new computer is to plug a mouse and disable the touchpad (TP).
 

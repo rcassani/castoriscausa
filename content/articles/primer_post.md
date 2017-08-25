@@ -5,7 +5,7 @@ Tag: cc
 Slug: first-post
 Translation: true
 Lang: spa
-Author: Ray Cassani
+Author: Raymundo Cassani
 
 Este post es un ejemplo de como escribir posts en diferentes idiomas.
 

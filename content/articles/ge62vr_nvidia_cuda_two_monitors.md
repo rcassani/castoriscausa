@@ -3,7 +3,7 @@ Date: 2017-02-21 19:00
 Category: Blog
 Tag: linux, gpu, nvidia, cuda
 Slug: ge62vr-mint-gtx1060
-Author: Ray Cassani
+Author: Raymundo Cassani
 
 There are several posts with instructions for properly installing **NVIDIA drivers in Linux**. Unfortunately, sometimes they're outdated, moreover it's not possible to cover the immensity of system configurations. After searching and reading some of that information, I came down to this guide for my system (**Mint18** in **MSI-GE62VR**)`*`. The guide consists of two parts:
 
