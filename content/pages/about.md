@@ -10,12 +10,11 @@ Sortorder: 3
 </center>
 
 
-My name is **Raymundo Cassani**, (Ray works perfectly for me). Currently, I'm a PhD candidate in Montréal, Canada. While my academic background is in electrical engineering, specifically telecommunications and electronics. I'm a person who finds enjoyment in repairing and / or modifying stuff. I love to learn a bit of everything, my bet is that a bit of everything more better that everything of a bit. Some of my interests are data visualization, maps, beavers, videogames, science fiction, karate, etc.
+My name is **Raymundo Cassani**, currently, I'm a PhD candidate at [MuSAE Lab](http://musaelab.ca/) in the [INRS-EMT](http://www.inrs.ca/english/homepage) in Montréal. Where I work in topics such biomedical signal processing, specifically in EEG-based AD assessment, multimodal human machine interaction, among others. With a background in electrical engineering, specifically telecommunications and electronics, I'm a person who finds enjoyment in repairing and / or modifying stuff. I love to learn a bit of everything, my bet is that a bit of everything more better that everything of a bit. Some of my beside-research interests are data visualization, maps, beavers, videogames, science fiction, etc.
 
 The principal goal of this blog, is:
 
 * Share some of my work and experiences, walkthroughs, dilemmas or solutions to problems (with software, hardware, methods, etc.) I've encountered and expended a significant amount of time on them; hopefully this may serve as timesaver and inspiration to others (including a future-me).
-
 
 Hope you enjoy it as much as I enjoy to write on it.
 </br>
