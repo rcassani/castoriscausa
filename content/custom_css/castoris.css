@@ -7,6 +7,9 @@ http://bootswatch.com/sandstone/
 
 Raymundo Cassani
 April 2017
+
+Edited by Ana TM
+August 2017
  */
 
 /*Sandstone colors:
@@ -36,7 +39,7 @@ This is the Tag for:
 */
 h2 {
   color: black;
-  font-family: "Raleway","Arial", sans-serif;
+  font-family: "Open Sans","Arial", sans-serif;
 }
 
 /*
@@ -47,7 +50,7 @@ Text in:
 p {
   color: black;
   font-size: 16px;
-  font-family: "Raleway","Arial";
+  font-family: "Open Sans","Arial";
 }
 
 /*
@@ -60,8 +63,11 @@ code {
   font-weight: bold;
 }
 
+/*
+Hyperlinks
+*/
 a {
-  color: #93c54b;
+  color: #066ea3;
   /*font-weight: bold;*/
 }
 
