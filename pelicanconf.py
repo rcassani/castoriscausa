@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 # 3. Open http://localhost:8000/index.html in browser
 
 # Site general information
-AUTHOR = u'Ray Cassani'
+AUTHOR = u'Raymundo Cassani'
 SITENAME = u'CastorisCausa'
 # SITEURL = 'wwww.castoriscausa.com'
 
