@@ -28,46 +28,50 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
 ### Procedure:
 #### 1. Creating UEFI-booting Virtual Machine, without (virtual) HHD
   1. Open **VMware** and **Create a New Virtual Machine**
+
     <center>
-    <img src="../images/uefi_usb_1_1.png" style="width: 500px;"/>
+    [<img src="../images/uefi_usb_1_1.png" style="width: 500px;"/>](../images/uefi_usb_1_1.png)
     </br>  
     </center>
+
   2. Select the **I will install the operative system later** option. Click on **Next**
     <center>
-    <img src="../images/uefi_usb_1_2.png" style="width: 500px;"/>
+    [<img src="../images/uefi_usb_1_2.png" style="width: 500px;"/>](../images/uefi_usb_1_2.png)
     </br>  
     </center>
+
   3. Set **Guest Operating System** to Linux, select your version or the closest one, in my case the closest to **Mint 64-bit** is **Ubuntu 64-bit**. Click on **Next**
     <center>
-    <img src="../images/uefi_usb_1_3.png" style="width: 500px;"/>
+    [<img src="../images/uefi_usb_1_3.png" style="width: 500px;"/>](../images/uefi_usb_1_3.png)
     </br>  
     </center>
+
   4. Assign a **Virtual machine name** and **Location** to the Virtual Machine. Remember these fields, and they'll used later. Click on **Next**  
     <center>
-    <img src="../images/uefi_usb_1_4.png" style="width: 500px;"/>
+    [<img src="../images/uefi_usb_1_4.png" style="width: 500px;"/>](../images/uefi_usb_1_4.png)
     </br>  
     </center>
   5. **Disk Capacity**, default parameters (this HDD will not be used). Click **Next**
     <center>
-    <img src="../images/uefi_usb_1_5.png" style="width: 500px;"/>
+    [<img src="../images/uefi_usb_1_5.png" style="width: 500px;"/>](../images/uefi_usb_1_5.png)
     </br>  
     </center>
   6. Click on **Customize Hardware**
     1. For the **New CD/DVD (SATA)**, Select **Use ISO image file** and browe for your Linux ISO image
       <center>
-      <img src="../images/uefi_usb_1_6a.png" style="width: 500px;"/>
+      [<img src="../images/uefi_usb_1_6a.png" style="width: 500px;"/>](../images/uefi_usb_1_6a.png)
       </br>  
       </center>
 	  2. For the **USB Controller**, Select **USB 3.0** (if supported), **[X]Automatically ..., [ ]Show all... and [ ]Share Bluetooth...**
       <center>
-      <img src="../images/uefi_usb_1_6b.png" style="width: 500px;"/>
+      [<img src="../images/uefi_usb_1_6b.png" style="width: 500px;"/>](../images/uefi_usb_1_6b.png)
       </br>  
       </center>
   7. Before completing the wizard, identify the **Location** of the Virtual Machine. Click on **Finish**. Do not power ON the Virtual Machine yet.
   8. Go to the Virtual Machine **Location**, and with help of a text editor (e.g. Notepad), open the file **```VMname.vmx```** (where the ``VMname`` is the **Virtual machine name** assigned in step 4). And add the line **```firmware = "efi"```** at the end of the file
   9. In **VMware**, open the **settings** of your brand new Virtual Machine and **remove the HDD**
     <center>
-    <img src="../images/uefi_usb_1_9.png" style="width: 500px;"/>
+    [<img src="../images/uefi_usb_1_9.png" style="width: 500px;"/>](../images/uefi_usb_1_9.png)
     </br>  
     </center>  
 
@@ -76,12 +80,12 @@ For the following steps an ISO image of [**Linux Mint**](https://www.linuxmint.c
 
   1. In **VMware**, Power ON the Virtual Machine. When booting on UEFI, it should look as below (at least for **Mint 64-bit**). Select **Start Linux Mint 18 Cinnamon 64-bit** (or **Try Ubuntu without installing**)
     <center>
-    <img src="../images/uefi_usb_2_1.png" style="width: 700px;"/>
+    [<img src="../images/uefi_usb_2_1.png" style="width: 700px;"/>](../images/uefi_usb_2_1.png)
     </br>  
     </center>
   2. Once the Linux session is started, connect (physically) your USB-disk, and be sure it's connected to the Virtual Machine  
     <center>
-    <img src="../images/uefi_usb_2_3.png" style="width: 700px;"/>
+    [<img src="../images/uefi_usb_2_3.png" style="width: 700px;"/>](../images/uefi_usb_2_3.png)
     </br>  
     </center>
   3. To start the procedure with a blank USB-disk. In the Virtual Machine, Open **GParted** (hopefully is installed). Then select your device at the upper right corner (remember its **sdx**), then go to **Device > Create Partition Table**, select the type **gtp**. Close GParted.  

@@ -61,7 +61,7 @@ Once the **NVIDIA driver** are properly installed, it's time to install the **CU
 * Download the [**CUDA driver**](https://developer.nvidia.com/cuda-downloads)
 
 <center>
-<img src="../images/cuda_driver_mint_download.png" style="width: 800px;"/>
+[<img src="../images/cuda_driver_mint_download.png" style="width: 800px;"/>](../images/cuda_driver_mint_download.png)
 </br>  
 </center>
 
@@ -207,7 +207,7 @@ $ sudo ldconfig
 		$ ./fluidsGL
 
 	<center>
-	<img src="../images/fluidsGL.gif" style="width: 500px;"/>
+	[<img src="../images/fluidsGL.gif" style="width: 500px;"/>](../images/fluidsGL.gif)
 	</br>  
 	</center>
 

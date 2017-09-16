@@ -12,7 +12,7 @@ Few weeks ago, I noticed a strange behavior, in my [laptop]([https://us.msi.com/
 After some research I came across this wonderful solution where the [touchpad is automatically disabled when a mouse is  detected](http://www.intowindows.com/how-to-turn-off-touchpad-when-mouse-is-connected-in-windows-78-1/). Unfortunately, the **Steelseris Keyboard** in my laptop is detected as **keyboard-mouse combo**, then, the auto-disable, would permanently disable the touchpad, without option to enable it and who knows it could be useful (someday).
 
 <center>
-![Alt](../images/touchpad_keyboard_ge62vr.jpg)  
+[![Alt](../images/touchpad_keyboard_ge62vr.jpg)](../images/touchpad_keyboard_ge62vr.jpg)  
 Touchpad and Keyboard in GE62VR
 </center>  
 
