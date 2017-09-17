@@ -175,13 +175,14 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (
          ('Home', 'http://www.castoriscausa.com'),
-         ('#', '#')
+         ('MuSAE Lab', 'http://musaelab.ca/')
         )
 
 # Social widget
 SOCIAL = (
           ('GitHub', 'https://github.com/rcassani'),
-          ('#', '#')
+          ('Twitter', 'https://twitter.com/r_cassani'),
+          ('LinkedIn', 'https://www.linkedin.com/in/rcassani/')
          )
 
 
