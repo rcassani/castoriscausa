@@ -5,6 +5,8 @@ Tag: linux, gpu, nvidia, cuda
 Slug: ge62vr-mint-gtx1060
 Author: Raymundo Cassani
 
+\[Updated:\] Updated to Mint 19 (based in Ubuntu 18.0), NVIDIA driver xxx and CUDA driver xxxx
+
 There are several posts with instructions for properly installing **NVIDIA drivers in Linux**. Unfortunately, sometimes they're outdated, moreover it's not possible to cover the immensity of system configurations. After searching and reading some of that information, I came down to this guide for my system (**Mint18** in **MSI-GE62VR**)`*`. The guide consists of two parts:
 
 1. Install NVIDIA drivers
@@ -39,6 +41,11 @@ So far the solution that worked for me, is to change to **Nouveau** drivers, pur
 
 * Unplug the **DigitalDisplay** adapter
 
+* **Updated**: Add thefollowing repository to find the most recent drivers
+
+		:::bash
+        $ sudo add-apt-repository ppa:graphics-drivers/ppa
+
 * Open the **Driver Manager** select the recommended **NVIDIA binary driver**  (nvidia-367 at 08/feb/2017)
 
 * Restart your system
@@ -51,9 +58,38 @@ So far the solution that worked for me, is to change to **Nouveau** drivers, pur
 
 * Open **NVDIA X Server Settings** to configure the external monitor
 
-<!---
-A problem I've found is that, booting the system with external monitor connectedn , makes it primary and it's not possible that configuration from 'Screens'
--->
+* **Updated** It works fine but prime-select cannot turn off the NVIDIA GPU, thus changing to the iGPU does not save power
+* **Updated** Solution:
+
+After installing, disable the “nvidia-fallback” service:
+
+        :::bash        
+        $ sudo systemctl disable nvidia-fallback.service
+
+
+Blacklist nouveau driver using GRUB config. In /etc/default/grub look for a line `GRUB_CMDLINE_LINUX` . Add `nouveau.blacklist=1` into that parameter. If the line is not present add this line `GRUB_CMDLINE_LINUX="nouveau.blacklist=1"`
+
+The third optional step is bbswitch (only for laptop users interested for power savings, if your system supports it.) Install “bbswitch-dkms”
+
+`sudo apt install bbswitch-dkms`
+
+Configure the system to load it by appending `bbswitch` in `/etc/modules`
+
+To switch to Intel graphics run
+
+`sudo prime-select intel`
+
+To use NVIDIA (for external display etc)
+
+`sudo prime-select nvidia`
+
+
+
+
+
+
+
+
 
 ## 2 Install and Test CUDA driver
 Once the **NVIDIA driver** are properly installed, it's time to install the **CUDA driver**. If you're not sure what's the CUDA driver check this [link](http://www.nvidia.com/object/cuda_home_new.html)
@@ -233,6 +269,7 @@ $ sudo ldconfig
 
 [https://forums.linuxmint.com/viewtopic.php?t=226145](https://forums.linuxmint.com/viewtopic.php?t=226145)
 
+[https://medium.com/@agathver/nvidia-gpu-optimus-prime-and-ubuntu-18-04-woes-f52e7f850f3d](https://medium.com/@agathver/nvidia-gpu-optimus-prime-and-ubuntu-18-04-woes-f52e7f850f3d)
 <!--
 Code for button
 <a class="btn btn-primary" href="#">Booton</a>
