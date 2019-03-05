@@ -63,8 +63,8 @@ So far the solution that worked for me, is to change to **Nouveau** drivers, pur
 
 After installing, disable the “nvidia-fallback” service:
 
-        :::bash        
-        $ sudo systemctl disable nvidia-fallback.service
+	:::bash        
+	$ sudo systemctl disable nvidia-fallback.service
 
 
 Blacklist nouveau driver using GRUB config. In /etc/default/grub look for a line `GRUB_CMDLINE_LINUX` . Add `nouveau.blacklist=1` into that parameter. If the line is not present add this line `GRUB_CMDLINE_LINUX="nouveau.blacklist=1"`
