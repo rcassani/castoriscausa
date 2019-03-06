@@ -1,13 +1,13 @@
-Title: LinuxMint-18 + GE62VR + GTX1060 + CUDA
-Date: 2017-02-21 19:00
+Title: LinuxMint-19 + GTX1060 + CUDA 10.0
+Date: 2019-01-31 19:00
 Category: Blog
 Tag: linux, gpu, nvidia, cuda
 Slug: ge62vr-mint-gtx1060
 Author: Raymundo Cassani
 
-\[Updated:\] Updated to Mint 19 (based in Ubuntu 18.0), NVIDIA driver xxx and CUDA driver xxxx
+**Updated** This article was updated to Mint 19 (based in Ubuntu 18.04), NVIDIA-driver 410 and CUDA driver 10.0
 
-There are several posts with instructions for properly installing **NVIDIA drivers in Linux**. Unfortunately, sometimes they're outdated, moreover it's not possible to cover the immensity of system configurations. After searching and reading some of that information, I came down to this guide for my system (**Mint18** in **MSI-GE62VR**)`*`. The guide consists of two parts:
+There are several posts with instructions for properly installing **NVIDIA drivers in Linux**. Unfortunately, sometimes they're outdated, moreover it's not possible to cover the immensity of system configurations. After searching and reading some of that information, I came down to this guide for my system (**Mint19** in **MSI-GE62VR**)`*`. The guide consists of two parts:
 
 1. Install NVIDIA drivers
 2. Install and test CUDA drivers.
@@ -16,7 +16,7 @@ There are several posts with instructions for properly installing **NVIDIA drive
 
 ## System: [MSI GE62VR](https://www.msi.com/Laptop/GE62VR-6RF-Apache-Pro.html)
 #### Operative System
-* [Linux Mint 18](https://www.linuxmint.com/) 64-bit (Cinnamon)
+* [Linux Mint 19](https://www.linuxmint.com/) 64-bit (Cinnamon)
 
 #### Hardware
 * [NVIDIA GTX 1060](https://www.nvidia.com/en-us/geforce/products/10series/laptops/#specs)
@@ -36,17 +36,19 @@ So far the solution that worked for me, is to change to **Nouveau** drivers, pur
 
 		:::bash
 		$ sudo apt-get purge nvidia*
-		$ sudo apt-get update
-		$ sudo apt-get upgrade
+
 
 * Unplug the **DigitalDisplay** adapter
 
-* **Updated**: Add thefollowing repository to find the most recent drivers
+* Add the following repository to find the most recent drivers
 
 		:::bash
-        $ sudo add-apt-repository ppa:graphics-drivers/ppa
+		$ sudo add-apt-repository ppa:graphics-drivers/ppa
+		$ sudo apt-get update
+		$ sudo apt-get upgrade
 
-* Open the **Driver Manager** select the recommended **NVIDIA binary driver**  (nvidia-367 at 08/feb/2017)
+
+* Open the **Driver Manager** select the recommended **NVIDIA binary driver**  (nvidia-410 at January-2019)
 
 * Restart your system
 
@@ -58,37 +60,32 @@ So far the solution that worked for me, is to change to **Nouveau** drivers, pur
 
 * Open **NVDIA X Server Settings** to configure the external monitor
 
-* **Updated** It works fine but prime-select cannot turn off the NVIDIA GPU, thus changing to the iGPU does not save power
-* **Updated** Solution:
+## 1A Problems at turning off NVIDA GPU with `prime-select` command
+If while using the NVIDIA drivers, the screen works fine but the `prime-select` command cannot turn off the NVIDIA GPU, thus changing to the intel GPU does not save power. Try the following.
 
-After installing, disable the “nvidia-fallback” service:
+* After installing, disable the `nvidia-fallback` service:
 
-	:::bash        
-	$ sudo systemctl disable nvidia-fallback.service
+		:::bash        
+		$ sudo systemctl disable nvidia-fallback.service
 
+* Blacklist nouveau driver using GRUB config. In /etc/default/grub look for a line `GRUB_CMDLINE_LINUX` . Add `nouveau.blacklist=1` into that parameter. If the line is not present add this line `GRUB_CMDLINE_LINUX="nouveau.blacklist=1"`
 
-Blacklist nouveau driver using GRUB config. In /etc/default/grub look for a line `GRUB_CMDLINE_LINUX` . Add `nouveau.blacklist=1` into that parameter. If the line is not present add this line `GRUB_CMDLINE_LINUX="nouveau.blacklist=1"`
+* If you are interested for power savings (for laptops with dual GPU and your system supports it): install `bbswitch-dkms`
 
-The third optional step is bbswitch (only for laptop users interested for power savings, if your system supports it.) Install “bbswitch-dkms”
+		:::bash
+		$ sudo apt install bbswitch-dkms
 
-`sudo apt install bbswitch-dkms`
+* Configure the system to load it by appending `bbswitch` in `/etc/modules`
 
-Configure the system to load it by appending `bbswitch` in `/etc/modules`
+* Now, to switch to Intel graphics run
 
-To switch to Intel graphics run
+		:::bash
+		$ sudo prime-select intel
 
-`sudo prime-select intel`
+* To use NVIDIA (for external display etc)
 
-To use NVIDIA (for external display etc)
-
-`sudo prime-select nvidia`
-
-
-
-
-
-
-
+		:::bash
+		$ sudo prime-select nvidia
 
 
 ## 2 Install and Test CUDA driver
@@ -104,8 +101,8 @@ Once the **NVIDIA driver** are properly installed, it's time to install the **CU
 * Change the downloaded file to executable and execute it
 
 		:::bash
-		$ chmod +x cuda_8.0.61_375.26_linux.run
-		$ sudo sh cuda_8.0.61_375.26_linux.run --override
+		$ chmod +x cuda_10.1.105_418.39_linux.run
+		$ sudo sh cuda_10.1.105_418.39_linux.run --override
 
 
 * Installation parameters. Select **NO** when the CUDA installer ask to install **NVIDIA Accelerated Graphics Driver for Linux** as the NVIDIA driver is already installed.
