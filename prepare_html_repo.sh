@@ -6,7 +6,7 @@
 
 # Build
 kill $(lsof -i:8000 | awk 'NR==2{print$2}')
-fab build
+invoke build
 
 # HTML repo in ../castoris-html
 # Delete old files in HTML repo
