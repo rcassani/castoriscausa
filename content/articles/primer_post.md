@@ -2,9 +2,9 @@ Title: Primer post
 Date: 2016-10-22 22:00
 Category: Blog
 Tag: cc
-Slug: first-post
+Slug: first-post-spa
+status: hidden
 Translation: true
-Lang: spa
 Author: Raymundo Cassani
 
 Este post es un ejemplo de como escribir posts en diferentes idiomas.

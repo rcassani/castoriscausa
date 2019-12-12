@@ -1,7 +1,7 @@
 Title: First post
 Date: 2016-10-22 22:00
 Category: Blog
-Tag: cc
+Tags: cc
 Slug: first-post
 Author: Raymundo Cassani
 

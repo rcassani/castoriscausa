@@ -17,7 +17,7 @@ SITENAME = u'CastorisCausa'
 ###########################
 
 # https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
-THEME = ".//pelican-bootstrap3"
+THEME = ".//theme//pelican-bootstrap3"
 BOOTSTRAP_THEME = 'sandstone'  # This bootstrap3 theme serves as base
 
 ###########################
@@ -109,9 +109,15 @@ EXTRA_PATH_METADATA = {
      './custom_css/castoris.css': {'path': 'castoris.css'}
 }
 # Plugins directory
-PLUGIN_PATHS = ['plugins']
-PLUGINS = ['tipue_search']
-DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'search')
+PLUGIN_PATHS = ['plugins/']
+PLUGINS = ['tipue_search', 'i18n_subsites']
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+#DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'search')
+DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives')
+
+
 
 ############################
 # ####### OUTPUT ######### #
@@ -153,6 +159,7 @@ DISPLAY_CATEGORIES_ON_POSTINFO = False
 DISPLAY_AUTHOR_ON_POSTINFO = False
 # Display the search form
 DISPLAY_SEARCH_FORM = True
+
 # Sort pages list by a given attribute
 # Add the field Sortorder to the page MD documentm e.g. Sortorder: 2
 PAGES_SORT_ATTRIBUTE = 'sortorder'
