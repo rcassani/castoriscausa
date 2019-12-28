@@ -3,5 +3,6 @@
 # Run this file with Ctr-Shift-b
 
 kill $(lsof -i:8000 | awk 'NR==2{print$2}')
+invoke clean
 invoke build
 invoke serve

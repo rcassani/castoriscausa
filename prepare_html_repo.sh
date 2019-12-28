@@ -6,11 +6,12 @@
 
 # Build
 kill $(lsof -i:8000 | awk 'NR==2{print$2}')
+invoke clean
 invoke build
 
 # HTML repo in ../castoris-html
 # Delete old files in HTML repo
-ls ../castoris-html | grep -v '.git\|CNAME' | xargs rm -rf
+ls ../castoris-html | grep -v '.git\' | xargs rm -rf
 # https://unix.stackexchange.com/questions/153862/remove-all-files-directories-except-for-one-fileco
 
 # Copy new files to repo
