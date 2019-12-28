@@ -1,16 +1,46 @@
 /*!
 Custom CSS for CastorisCausa
-This customs CSS is aimed to work with the pelican-boostrap3 theme
-Using the boostrap3 them "sandstone"
-http://bootswatch.com/sandstone/
-
+This customs CSS is aimed to work with the pelican-kis theme
 
 Raymundo Cassani
-April 2017
+December 2019
 
-Edited by Ana TM
-August 2017
- */
+/* Place disc indicators for ul tag in Page and Article content*/
+section.page ul, div.entry-content ul {margin-left: 17px; list-style: disc}
+
+/* Makes that strong inherits size in Page and Article content*/
+section.page strong, div.entry-content strong {font-size: inherit; font-weight: bold}
+
+/* Padding for <pre> tag, used for code to have a space around the code*/
+pre {padding-left: 5px}
+
+/* Inherits attributes for #tipue_search_input */
+
+#tipue_search_input {
+  float:inherit;
+  font:inherit;
+  color: #B1B1B1;
+  background: #E9EBEE;
+  padding: inherit;
+  height: inherit;
+  box-sizing: inherit;
+  outline: inherit;
+  margin: inherit;
+}
+
+#tipue_search_input:focus {
+  background: #AFB7BE;
+  color: #FFFFFF;
+}
+
+/* Adjust the color for Published and Modified dates in article info*/
+.entry .entry-meta ul {
+  color: #888888;
+}
+
+.entry .tags {
+  margin-top: 5px;
+}
 
 /*Sandstone colors:
 Defaul:  #3e3f3a  Green-Brown
@@ -27,58 +57,57 @@ Danger:  #d9534f  Red
 This is the Tag for:
  Automatic title in individual posts and pages
  # in Markdown files
-*/
+
 h1 {
   color: tomato;
 }
+*/
 
 /*
 This is the Tag for:
  Post title in HOME
  ## in Markdown files
-*/
 h2 {
   color: black;
   font-family: "Open Sans","Arial", sans-serif;
 }
+*/
 
 /*
 Text in:
   Summary
   Post body
-*/
 p {
   color: black;
   font-size: 16px;
   font-family: "Open Sans","Arial";
 }
+*/
 
 /*
 In Markdown as `something`
-*/
 code {
   font-size: 90%;
   color: #c7254e;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   font-weight: bold;
 }
+*/
 
 /*
 Hyperlinks
-*/
 a {
   color: #066ea3;
-  /*font-weight: bold;*/
 }
-
+*/
 
 /*
 This overrides the .caps in typogrify.css
   Words comprised by only caps do not change in size
-*/
 .caps {
   font-size: inherit;
 }
+*/
 
 /*
 Color for the Navigation bar
@@ -91,8 +120,8 @@ Color for the Navigation bar
 
 /*
 Size of the box for search
-*/
 #tipue_search_input{
   padding-top: 25px;
   background-position-y: 28px;
 }
+*/
