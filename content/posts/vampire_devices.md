@@ -1,10 +1,11 @@
 Title: Vampire (electronic) devices
 Date: 2019-03-06 15:00
-Category: Blog
+Modified: 2019-03-06 15:01
+Category: Random
 Tag: Template
 Slug: energy-vampire-devices
 Author: Ray Cassani
-Lang: spa
+Image: final_box.jpg
 
 
 An energy vampire device is the one that consumes electric energy anytime is plugged, even when it is not in use, one of the most common examples nowadays are chargers. Let's first define electric energy consumption.

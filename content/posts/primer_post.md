@@ -1,10 +1,10 @@
 Title: Primer post
 Date: 2016-10-22 22:00
-Category: Blog
+Category: Random
 Tag: cc
-Slug: first-post-spa
-status: hidden
+Slug: first-post
 Translation: true
+Lang: es
 Author: Raymundo Cassani
 
 Este post es un ejemplo de como escribir posts en diferentes idiomas.

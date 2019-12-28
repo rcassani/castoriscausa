@@ -25,4 +25,4 @@ To make the post available in more than one language, edit the metadata of the t
 * Change the title to the other language
 
 **Example, this same post in Spanish:**  
-[http://www.castoriscausa.com/first-post-spa](http://www.castoriscausa.com/first-post-spa)
+[http://www.castoriscausa.com/posts/first-post-es](http://www.castoriscausa.com/posts/first-post-es)
