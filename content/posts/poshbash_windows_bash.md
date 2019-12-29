@@ -1,14 +1,14 @@
 Title: poshbash in Windows bash
 Date: 2016-10-26 22:00
 Category: Blog
-Tag: windows, git
+Tags: windows, git
 Slug: poshbash-windows-bash
 Author: Raymundo Cassani
 
 The [**posh-git-bash**](https://github.com/dahlbyk/posh-git) prompt, for [Git](https://git-scm.com/), is a useful tool that shows information about the current status of a local Git repository respect to local and remote (e.g. [GitHub](https://github.com/)) repositories; in this way, it's easy to see if the repository is ahead or behind, has uncommitted changes, is up-to-date, etc.
 
 <center>
-![Alt](../images/posh_bash_win.png)  
+![Alt](/images/posh_bash_win.png)  
 Git-Posh example
 </center>  
 
@@ -28,18 +28,18 @@ If **Bash on Windows** is not already installed, this is the [installation guide
 
 1. Run Bash and go to HOME directory in bash
 
-        :::powershell
+        :::bash
         $ cd ~
 
 2. Download the file ```git-prompt.sh``` from [this repository](https://github.com/lyze/posh-git-sh.git), and rename it as ```.git-prompt.sh```  
 
-        :::powershell
+        :::bash
         ~$ wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O .git-prompt.sh
 
 3. Now you need to edit your the file ```~/.bashrc```
 Add the following 2 lines at the beginning of ```~/.bashrc file```, you can use the text editors [nano](https://www.nano-editor.org/) or [vim](http://www.vim.org/) for this.
 
-        :::powershell
+        :::bash
         source ~/.git-prompt.sh
         PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w" "\\\$ ";'$PROMPT_COMMAND
 

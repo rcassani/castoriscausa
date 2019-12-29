@@ -1,7 +1,7 @@
 Title: Universal Shortcut
 Date: 2017-07-25 19:00
-Category: Blog
-Tag: linux, windows
+Category: Code
+Tags: linux, windows
 Slug: universal-shortcuts
 Author: Raymundo Cassani
 
@@ -26,7 +26,7 @@ The universal shortcut is created by a Python 3 script that can be found in this
 
 ### Usage
 
-    :::powershell
+    :::bash
     $ python3 mk_unishortcut.py <targetpath>
 
 the `<targetpath>` can be absolute or relative, and can be a file or directory

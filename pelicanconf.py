@@ -22,7 +22,6 @@ DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 # Site general information
 AUTHOR = u'Raymundo Cassani'
 SITENAME = u'CastorisCausa'
-SITEURL = 'http://www.castoriscausa.com'
 
 # Delete Output files everytime Pelican runs
 DELETE_OUTPUT_DIRECTORY = True
@@ -31,7 +30,7 @@ OUTPUT_RETENTION = ['.git']
 
 # True if you want document-relative URLs when developing
 # False to deploy online
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 ###########################
 # KIS theme
@@ -131,13 +130,13 @@ OUTPUT_PATH = 'output/'     # Output root directory
 
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'  # article URL
 PAGE_URL = 'pages/{slug}'                            # page URL
-ARTICLE_LANG_URL = 'posts/{slug}-{lang}'             # article lang URL
+ARTICLE_LANG_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/{lang}/' # article lang URL
 CATEGORY_URL = 'category/{slug}/'                    # category index URL
 TAG_URL = 'tags/{slug}/'                             # tag index URL
 
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'         # article filename
 PAGE_SAVE_AS = PAGE_URL + '.html'                    # page filename
-ARTICLE_LANG_SAVE_AS = ARTICLE_URL + '-{lang}.html'  # article lang filename
+ARTICLE_LANG_SAVE_AS = ARTICLE_LANG_URL + 'index.html' # article lang filename
 CATEGORY_SAVE_AS = CATEGORY_URL + 'index.html'       # category index filename
 TAG_SAVE_AS = TAG_URL + 'index.html'                 # tag index filename
 

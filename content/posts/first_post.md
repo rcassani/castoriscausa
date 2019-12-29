@@ -1,9 +1,9 @@
 Title: First post
 Date: 2016-10-22 22:00
 Category: Blog
-Tags: cc
 Slug: first-post
 Author: Raymundo Cassani
+Image: default
 
 This post is an example of a post in multiple languages.
 
@@ -14,7 +14,8 @@ Title: First post
 Date: 2016-10-22 22:00
 Category: Blog
 Slug: first-post
-Author: Ray Cassani
+Author: Raymundo Cassani
+Image: default
 ```
 
 To make the post available in more than one language, edit the metadata of the translated post as follows:
@@ -25,4 +26,4 @@ To make the post available in more than one language, edit the metadata of the t
 * Change the title to the other language
 
 **Example, this same post in Spanish:**  
-[http://www.castoriscausa.com/posts/first-post-es](http://www.castoriscausa.com/posts/first-post-es)
+[http://www.castoriscausa.com/posts/2016/10/22/first-post/spa/](http://www.castoriscausa.com/posts/2016/10/22/first-post/spa/)

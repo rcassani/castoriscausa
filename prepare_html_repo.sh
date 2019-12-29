@@ -5,9 +5,8 @@
 # dir wit the HTML repo
 
 # Build
-kill $(lsof -i:8000 | awk 'NR==2{print$2}')
 invoke clean
-invoke build
+invoke preview
 
 # HTML repo in ../castoris-html
 # Delete old files in HTML repo

@@ -1,19 +1,16 @@
 Title: Vampire (electronic) devices
 Date: 2019-03-06 15:00
-Modified: 2019-03-06 15:01
-Category: Random
-Tag: Template
+Category: Blog
+Tags: power, energy
 Slug: energy-vampire-devices
-Author: Ray Cassani
-Image: final_box.jpg
-
+Author: Raymundo Cassani
 
 An energy vampire device is the one that consumes electric energy anytime is plugged, even when it is not in use, one of the most common examples nowadays are chargers. Let's first define electric energy consumption.
 
-## Electric eneryg consumption
-Electric energy consumption is measured as a number in kiloWatt hour (kWh), and it's obtained by adding the product of device power, given in Watts (W), by utilization time in hours (h). For example, using one 100 W light bulb during 1 hour results in a consumption of 0.1 kWh, if the same bulb is used during 10 hours, the consumption is 1 kWh. On the other hand, in the case of a 'powerful' appliance as a standard microwave, with a typical power of 1500 kW, the energy consumption may not be as high as it used only in short periods.
+## Electric energy consumption
+Electric energy consumption is measured as a number in kilowatt hour (kWh), and it's obtained by adding the product of device power, given in Watts (W), by utilization time in hours (h). For example, using one 100 W light bulb during 1 hour results in a consumption of 0.1 kWh, if the same bulb is used during 10 hours, the consumption is 1 kWh. On the other hand, in the case of a 'powerful' appliance as a standard microwave, with a typical power of 1500 kW, the energy consumption may not be as high as it used only in short periods.
 
-The unit kWh describes the quantity of work performed, thus it has an equivalent in work (or energy) units, which are Joules [J]. The equivalence is the following: 1 kWh is 1000 W times 3600 seconds. Thus, 1 [kWh](https://en.wikipedia.org/wiki/Kilowatt_hour) = 3.6 megaJoules. Indeed, kWh is the unit that appears in the electricity receipt.
+The unit kWh describes the quantity of work performed, thus it has an equivalent in work (or energy) units, which are Joules [J]. The equivalence is the following: 1 kWh is 1000 W times 3600 seconds. Thus, 1 [kWh](https://en.wikipedia.org/wiki/Kilowatt_hour) = 3.6 megajoules. Indeed, kWh is the unit that appears in the electricity receipt.
 
 Watts are always defined as Joules per second (J/s), no matter how they are calculated; in the case of electric power, it is calculated as the product of voltage times electric current, this is to say:  *P = E·I*. Voltage (*E*) is given in Volts (V), which are defined as work per unit charge, this is: [Volt] =  [Joules / Coulomb]. On the other hand, electric current (*I*), is measured in Amperes, and indicates the quantity of charge per second, thus [amp] = [Coulomb / second]. Therefore power (*P*) is [Watts] = E[Volts] x I[Amps] = E[Joule/Coulomb] x I[Coulomb/second] = P[Joules/second]. After this brief [dimensional analysis](https://en.wikipedia.org/wiki/Dimensional_analysis), let's go back to the vampire devices.
 

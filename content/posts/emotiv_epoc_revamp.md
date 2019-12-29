@@ -1,7 +1,7 @@
 Title: Revamping Emotiv Epoc
 Date: 2017-09-16 19:00
-Category: Blog
-Tag: cc
+Category: Projects
+Tags: EEG, hack
 Slug: emotive-epoc-hack
 Author: Raymundo Cassani
 

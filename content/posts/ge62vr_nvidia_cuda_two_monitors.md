@@ -1,7 +1,7 @@
 Title: LinuxMint-19 + GTX1060 + CUDA 10.0
 Date: 2019-01-31 19:00
 Category: Blog
-Tag: linux, gpu, nvidia, cuda
+Tags: linux, gpu, nvidia, cuda
 Slug: ge62vr-mint-gtx1060
 Author: Raymundo Cassani
 
@@ -94,7 +94,7 @@ Once the **NVIDIA driver** are properly installed, it's time to install the **CU
 * Download the [**CUDA driver**](https://developer.nvidia.com/cuda-downloads)
 
 <center>
-[<img src="../images/cuda_driver_mint_download.png" style="width: 800px;"/>](../images/cuda_driver_mint_download.png)
+[<img src="/images/cuda_driver_mint_download.png" style="width: 800px;"/>](/images/cuda_driver_mint_download.png)
 </br>  
 </center>
 
@@ -240,7 +240,7 @@ $ sudo ldconfig
 		$ ./fluidsGL
 
 	<center>
-	[<img src="../images/fluidsGL.gif" style="width: 500px;"/>](../images/fluidsGL.gif)
+	[<img src="/images/fluidsGL.gif" style="width: 500px;"/>](/images/fluidsGL.gif)
 	</br>  
 	</center>
 
