@@ -4,7 +4,7 @@ Category: Blog
 Tags: book, space
 Slug: comm-tssohttlars
 Author: Raymundo Cassani
-Image: 
+Image: book_rocket_science.jpg
 
 **The Seven Secrets of How to Think Like a Rocket Scientist** by [Jim Longuski](https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=1319), is one of the books that have enjoyed the most.
 
