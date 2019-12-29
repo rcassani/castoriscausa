@@ -43,20 +43,14 @@ SHOW_PAGES_ON_MENU = True
 SHOW_CATEGORIES_ON_MENU = True
 
 # Subtitle string
-#TODO add check to print it
-SITESUBTITLE = u'Catchy phrase'
+# SITESUBTITLE = u'Catchy phrase'
 
 # Show elements in Side bar
-#TODO  This should be tied to the presence of tipue_search
-SHOW_SEARCH_ON_SIDEBAR = True
-SHOW_CATEGORIES_ON_SIDEBAR = True
-SHOW_TEXT_ON_SIDEBAR = True
+SIDEBAR_ELEMENTS = ['tipuesearch_input', 'links', 'categories', 'tags']
 SIDEBAR_TITLE_TEXT = u'Hello'
 SIDEBAR_TEXT = u'A brief text that will appear in de siderbar, this can be anything'
-SHOW_TAGS_ON_SIDEBAR = True
 
 # Blogroll
-# TODO Add this links in Sidebar
 LINKS = (
          ('Home', 'http://www.castoriscausa.com'),
          ('MuSAE Lab', 'http://musaelab.ca/')
