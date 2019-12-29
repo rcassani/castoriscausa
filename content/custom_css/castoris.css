@@ -37,10 +37,12 @@ pre {padding-left: 5px}
 .entry .entry-meta ul {
   color: #888888;
 }
-
 .entry .tags {
   margin-top: 5px;
 }
+
+/* Centers header image posts */
+.post-thumb img{display: block; margin-left: auto; margin-right: auto;}
 
 /*Sandstone colors:
 Defaul:  #3e3f3a  Green-Brown
