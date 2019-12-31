@@ -36,14 +36,14 @@ RELATIVE_URLS = True
 # KIS theme
 ###########################
 THEME = ".//theme//pelican-kis"
-
-# Show elements in Menu bar
-MENUITEMS = [('HOME', '/')] # Menu items before Pages
-SHOW_PAGES_ON_MENU = True
-SHOW_CATEGORIES_ON_MENU = True
-
 # Subtitle string
 # SITESUBTITLE = u'Catchy phrase'
+
+# Show elements in Menu bar
+MENU_ELEMENTS = ['menulinks', 'pages', 'categories']
+MENU_LINKS= (
+                ('HOME', '/')
+            ) # Menu items before Pages
 
 # Show elements in Side bar
 SIDEBAR_ELEMENTS = ['tipuesearch_input', 'links', 'categories', 'tags']
