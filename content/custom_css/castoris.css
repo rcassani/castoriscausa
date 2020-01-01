@@ -4,9 +4,13 @@ This customs CSS is aimed to work with the pelican-kis theme
 
 Raymundo Cassani
 December 2019
-
 /* Width of the row, original 1008px */
-.row {max-width: 1200px; width: 100%;}
+.row {max-width: 1320px; width: 100%;}
+
+/* Change the format of the website from 8+4 to 9+3*/
+.eight, .row .eight    { width: 75%; }
+.four, .row .four      { width: 25%; }
+
 
 /* Total hedaer height, original 288 */
 header, header .header-content{height: 256px;}
