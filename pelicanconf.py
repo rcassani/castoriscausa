@@ -40,9 +40,9 @@ THEME = ".//theme//pelican-kis"
 # SITESUBTITLE = u'Catchy phrase'
 
 # Show elements in Menu bar
-MENU_ELEMENTS = ['menulinks', 'pages', 'categories']
+MENU_ELEMENTS = ['menu_links', 'pages', 'categories']
 MENU_LINKS= (
-                ('HOME', '/')
+                ('Home', '/'),
             ) # Menu items before Pages
 
 # Show elements in Side bar
@@ -52,7 +52,7 @@ SIDEBAR_TEXT = u'A brief text that will appear in de siderbar, this can be anyth
 
 # Blogroll
 LINKS = (
-         ('Home', 'http://www.castoriscausa.com'),
+         ('Home', '/'),
          ('MuSAE Lab', 'http://musaelab.ca/')
         )
 
