@@ -4,9 +4,7 @@ Category: MyCat
 Tag: me, cc
 Slug: swarro
 Author: Ray Cassani
-Summary: 
+Summary:
 Sortorder: 2
 
-# About SW
-
-What a moment to be alive!
+# Under construction
