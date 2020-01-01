@@ -8,10 +8,15 @@
 invoke clean
 invoke preview
 
+# Current directory
+WD=`pwd`
+
 # HTML repo in ../castoris-html
 # Delete old files in HTML repo
-ls ../castoris-html | grep -v '.git\' | xargs rm -rf
+cd ../castoris-html
+ls | grep -v '.git' | xargs rm -rf
 # https://unix.stackexchange.com/questions/153862/remove-all-files-directories-except-for-one-fileco
 
 # Copy new files to repo
+cd $WD
 cp -a ./output/. ../castoris-html
