@@ -69,10 +69,13 @@ CUSTOM_CSS = 'castoris.css'
 # Others
 ###########################
 # Social icons
+# https://fontawesome.com/icons?d=gallery&m=free
 SOCIAL = (
           ('GitHub', 'https://github.com/rcassani'),
           ('Twitter', 'https://twitter.com/r_cassani'),
-          ('LinkedIn', 'https://www.linkedin.com/in/rcassani/')
+          ('LinkedIn', 'https://www.linkedin.com/in/rcassani/'),
+          ('user-graduate', 'https://scholar.google.com/citations?hl=en&user=3A9_Ww8AAAAJ'),
+          ('envelope', 'mailto:raymundo.cassani@gmail.com'),
          )
 
 # DISQUS
