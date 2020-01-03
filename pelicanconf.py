@@ -22,6 +22,7 @@ DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 # Site general information
 AUTHOR = u'Raymundo Cassani'
 SITENAME = u'CastorisCausa'
+SITEURL = u'http://www.castoriscausa.com'
 
 # Delete Output files everytime Pelican runs
 DELETE_OUTPUT_DIRECTORY = True
@@ -42,7 +43,7 @@ THEME = ".//theme//pelican-kis"
 # Show elements in Menu bar
 MENU_ELEMENTS = ['menu_links', 'pages', 'categories']
 MENU_LINKS= (
-                ('Home', '/'),
+                ('Home', SITEURL),
             ) # Menu items before Pages
 
 # Show elements in Side bar
@@ -52,7 +53,7 @@ SIDEBAR_TEXT = u'A brief text that will appear in de siderbar, this can be anyth
 
 # Blogroll
 LINKS = (
-         ('Home', '/'),
+         ('Home', SITEURL),
          ('MuSAE Lab', 'http://musaelab.ca/')
         )
 
