@@ -1,7 +1,7 @@
 Title: Keeping Synaptics Touchpad disabled
 Date: 2016-12-06 19:00
 Category: Blog
-Tags: windows, touchpad
+Tags: Windows, touchpad
 Slug: touchpad-disable
 Author: Raymundo Cassani
 

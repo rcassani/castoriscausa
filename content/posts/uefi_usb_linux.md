@@ -1,7 +1,7 @@
 Title: Full Linux installation in USB, supporting UEFI-boot
 Date: 2017-01-31
 Category: Blog
-Tags: linux
+Tags: Linux
 Slug: linux-usb-uefi
 Author: Raymundo Cassani
 
