@@ -11,6 +11,33 @@ December 2019
 .eight, .row .eight    { width: 75%; }
 .four, .row .four      { width: 25%; }
 
+
+/* Colors */
+/* Remove the @media line and its } to enable these colors */
+@media COLORS {
+  /* Top bar def: 159, 204, 127*/
+  body {border-top-color: rgb(0, 204, 127);}
+  #nav-wrap {border-top-color: rgb(0, 204, 127);}
+  /* logo-text def: #93b876*/
+  header h1#logo-text a {color: #00b876;}
+  /* Links def #93B876, and #34393A*/
+  a, a:visited {color: #00B876;}
+  a:hover, a:focus  {color: #00393A;}
+  /* Links in footer and #6C934D and #34393A*/
+  footer a, footer a:visited {color: #00934D;}
+  footer a:hover, footer a:focus {color: #00393A;}
+  /* Social icons in footer #6C934D and #34393A*/
+  footer ul li a, footer ul li a:visited { color: #00393A; }
+  footer ul li a:hover, footer ul li a:focus { color: #00934D; }
+  /* Pagination current #93B876 */
+  .pagination .current, .pagination .current:hover {background-color: #00B876;}
+  /* 233,235,238 and 147, 184, 118*/
+  #sidebar .tagcloud a {background-color: rgb(0, 235, 238);}
+  #sidebar .tagcloud a:hover {background-color: rgb(0, 184, 118);}
+  /* + sign in #9FCC7F */
+  ul#nav li.has-children > a::after { color: #00CC7F;}
+}
+
 /* Allow lowercase in Sidebar Tags */
 #sidebar .tagcloud a {text-transform: none;}
 
@@ -34,7 +61,6 @@ footer .social-links{margin-bottom: 30px}
 ul#nav li.has-children > a::after {
  content: "+";
  padding-left: 5px;
- color: #9FCC7F;
  font-weight: bold;
 }
 
