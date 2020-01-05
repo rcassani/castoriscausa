@@ -11,6 +11,9 @@ December 2019
 .eight, .row .eight    { width: 75%; }
 .four, .row .four      { width: 25%; }
 
+/* Allow lowercase in Sidebar Tags */
+#sidebar .tagcloud a {text-transform: none;}
+
 
 /* Total hedaer height, original 288 */
 header, header .header-content{height: 256px;}

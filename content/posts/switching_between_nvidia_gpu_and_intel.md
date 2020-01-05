@@ -1,7 +1,7 @@
 Title: Linux freezes when changing GPU with prime-select [Solved]
 Date: 2017-08-29 12:00
 Category: Blog
-Tags: linux, gpu, nvidia
+Tags: Linux, GPU, NVIDIA
 Slug: freezes-linux-gpu-acpi
 Author: Raymundo Cassani
 

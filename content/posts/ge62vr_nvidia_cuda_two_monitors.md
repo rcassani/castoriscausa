@@ -1,7 +1,7 @@
 Title: LinuxMint-19 + GTX1060 + CUDA 10.0
 Date: 2019-01-31 19:00
 Category: Blog
-Tags: linux, gpu, nvidia, cuda
+Tags: Linux, GPU, NVIDIA, CUDA
 Slug: ge62vr-mint-gtx1060
 Author: Raymundo Cassani
 

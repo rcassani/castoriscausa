@@ -1,7 +1,7 @@
 Title: poshbash in Windows bash
 Date: 2016-10-26 22:00
 Category: Blog
-Tags: windows, git
+Tags: Windows, Git
 Slug: poshbash-windows-bash
 Author: Raymundo Cassani
 
