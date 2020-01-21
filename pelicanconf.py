@@ -41,7 +41,7 @@ THEME = ".//theme//pelican-kis"
 # SITESUBTITLE = u'Catchy phrase'
 
 # Show elements in Menu bar
-MENU_ELEMENTS = ['menu_links', 'pages', 'categories']
+MENU_ELEMENTS = ['menu_links', 'categories', 'pages']
 MENU_LINKS= (
                 ('Home', SITEURL),
             ) # Menu items before Pages
