@@ -1,7 +1,7 @@
 Title: Universal Shortcut
 Date: 2017-07-25 19:00
-Category: Code
-Tags: Linux, Windows
+Category: Programming
+Tags: Linux, Windows, Bash, Batch
 Slug: universal-shortcuts
 Author: Raymundo Cassani
 
