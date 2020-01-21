@@ -4,45 +4,43 @@ This customs CSS is aimed to work with the pelican-kis theme
 
 Raymundo Cassani
 December 2019
-/* Width of the row, original 1008px */
+/* Width of the row, original 1008px 94%*/
 .row {max-width: 1320px; width: 100%;}
 
 /* Change the format of the website from 8+4 to 9+3*/
 .eight, .row .eight    { width: 75%; }
 .four, .row .four      { width: 25%; }
 
-
 /* Colors */
 /* Remove the @media line and its } to enable these colors */
-@media COLORS {
-  /* Top bar def: 159, 204, 127*/
-  body {border-top-color: rgb(0, 204, 127);}
-  #nav-wrap {border-top-color: rgb(0, 204, 127);}
-  /* logo-text def: #93b876*/
-  header h1#logo-text a {color: #00b876;}
+/* @media COLORS { */
+  /* Top bar def: 159, 204, 127 OR #9FCC7F*/
+  body {border-top-color: #9FCC7F;}
+  #nav-wrap {border-top-color: #9FCC7F;}
+  /* logo-text def: #93B876*/
+  header h1#logo-text a {color: #93B876;}
   /* Links def #93B876, and #34393A*/
-  a, a:visited {color: #00B876;}
-  a:hover, a:focus  {color: #00393A;}
+  a, a:visited {color: #93B876;}
+  a:hover, a:focus  {color: #34393A;}
   /* Links in footer and #6C934D and #34393A*/
-  footer a, footer a:visited {color: #00934D;}
-  footer a:hover, footer a:focus {color: #00393A;}
-  /* Social icons in footer #6C934D and #34393A*/
-  footer ul li a, footer ul li a:visited { color: #00393A; }
-  footer ul li a:hover, footer ul li a:focus { color: #00934D; }
+  footer a, footer a:visited {color: #6C934D;}
+  footer a:hover, footer a:focus {color: #34393A;}
+  /* Social icons in footer and #34393A and 6C934D */
+  footer ul li a, footer ul li a:visited { color: #34393A; }
+  footer ul li a:hover, footer ul li a:focus { color: #6C934D; }
   /* Pagination current #93B876 */
-  .pagination .current, .pagination .current:hover {background-color: #00B876;}
-  /* 233,235,238 and 147, 184, 118*/
-  #sidebar .tagcloud a {background-color: rgb(0, 235, 238);}
-  #sidebar .tagcloud a:hover {background-color: rgb(0, 184, 118);}
+  .pagination .current, .pagination .current:hover {background-color: #93B876;}
+  /* 233,235,238 (#e9ebee) and 147, 184, 118 (93B876)*/
+  #sidebar .tagcloud a {background-color: #E9EBEE;}
+  #sidebar .tagcloud a:hover {background-color: #93B876;}
   /* + sign in #9FCC7F */
-  ul#nav li.has-children > a::after { color: #00CC7F;}
-}
+  ul#nav li.has-children > a::after { color: #9FCC7F;}
+/* } */
 
 /* Allow lowercase in Sidebar Tags */
 #sidebar .tagcloud a {text-transform: none;}
 
-
-/* Total hedaer height, original 288 */
+/* Total header height, original 288 */
 header, header .header-content{height: 256px;}
 
 /* Letter spacing, original -5px */
@@ -54,7 +52,6 @@ header h1#logo-text a {letter-spacing: 0px;}
 /* Padding for footer */
 footer {padding-top: 15px; margin-bottom: 20px}
 footer .social-links{margin-bottom: 30px}
-
 .entry {padding-bottom: 5px; margin-bottom: 5px}
 
 /* Shows a + sign for a Menu item with child */
@@ -80,7 +77,6 @@ section.page strong, div.entry-content strong {font-size: inherit; font-weight: 
 pre {padding-left: 5px}
 
 /* Inherits attributes for #tipue_search_input */
-
 #tipue_search_input {
   float:inherit;
   font:inherit;
@@ -108,87 +104,3 @@ pre {padding-left: 5px}
 
 /* Centers header image posts */
 .post-thumb img{display: block; margin-left: auto; margin-right: auto;}
-
-/*Sandstone colors:
-Defaul:  #3e3f3a  Green-Brown
-Primary: #325d88  Dark blue
-Success  #93c54b  Green
-Info:    #29abe0  Light blue
-Warning: #f47c3c  Orange
-Danger:  #d9534f  Red
-
-#3e3f3a; Gree-Brown from Sandstone theme*/
-
-
-/*
-This is the Tag for:
- Automatic title in individual posts and pages
- # in Markdown files
-
-h1 {
-  color: tomato;
-}
-*/
-
-/*
-This is the Tag for:
- Post title in HOME
- ## in Markdown files
-h2 {
-  color: black;
-  font-family: "Open Sans","Arial", sans-serif;
-}
-*/
-
-/*
-Text in:
-  Summary
-  Post body
-p {
-  color: black;
-  font-size: 16px;
-  font-family: "Open Sans","Arial";
-}
-*/
-
-/*
-In Markdown as `something`
-code {
-  font-size: 90%;
-  color: #c7254e;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-  font-weight: bold;
-}
-*/
-
-/*
-Hyperlinks
-a {
-  color: #066ea3;
-}
-*/
-
-/*
-This overrides the .caps in typogrify.css
-  Words comprised by only caps do not change in size
-.caps {
-  font-size: inherit;
-}
-*/
-
-/*
-Color for the Navigation bar
-*/
-/*.navbar-default {
-  background-color: #93c54b; Green
-  border-color: #000000;
-  min-height: 90px;
-}*/
-
-/*
-Size of the box for search
-#tipue_search_input{
-  padding-top: 25px;
-  background-position-y: 28px;
-}
-*/
