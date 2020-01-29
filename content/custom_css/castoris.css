@@ -70,6 +70,35 @@ p.tags{margin-bottom: 20px}
 /* Place disc indicators for ul tag in Page and Article content*/
 section.page ul, div.entry-content ul {margin-left: 17px; list-style: disc}
 
+/* Makes the hyperlinks in article content are shown in different color*/
+ /* a, div.entry-content h1 a {margin-left: 17px; list-style: disc}*/
+div.entry-content h1 a, div.entry-content h1 a:visited,
+div.entry-content h2 a, div.entry-content h2 a:visited,
+div.entry-content h3 a, div.entry-content h3 a:visited,
+div.entry-content h4 a, div.entry-content h4 a:visited,
+div.entry-content h5 a, div.entry-content h5 a:visited,
+div.entry-content h6 a, div.entry-content h6 a:visited
+ {
+   text-decoration: none;
+   outline: 0;
+   color: #93B876;
+
+   -webkit-transition: color .3s ease-in-out;
+   -moz-transition: color .3s ease-in-out;
+   -o-transition: color .3s ease-in-out;
+   transition: color .3s ease-in-out;
+}
+div.entry-content h1 a:hover, div.entry-content h1 a:focus,
+div.entry-content h2 a:hover, div.entry-content h2 a:focus,
+div.entry-content h3 a:hover, div.entry-content h3 a:focus,
+div.entry-content h4 a:hover, div.entry-content h4 a:focus,
+div.entry-content h5 a:hover, div.entry-content h5 a:focus,
+div.entry-content h6 a:hover, div.entry-content h6 a:focus
+{ color: #34393A; }
+
+/* p a, p a:visited { line-height: inherit; } */
+
+
 /* Makes that strong inherits size in Page and Article content*/
 section.page strong, div.entry-content strong {font-size: inherit; font-weight: bold}
 
