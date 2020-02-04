@@ -12,30 +12,28 @@ December 2019
 .four, .row .four      { width: 25%; }
 
 /* Colors */
-/* Remove the @media line and its } to enable these colors */
-/* @media COLORS { */
-  /* Top bar def: 159, 204, 127 OR #9FCC7F*/
-  body {border-top-color: #9FCC7F;}
-  #nav-wrap {border-top-color: #9FCC7F;}
-  /* logo-text def: #93B876*/
-  header h1#logo-text a {color: #93B876;}
-  /* Links def #93B876, and #34393A*/
-  a, a:visited {color: #93B876;}
-  a:hover, a:focus  {color: #34393A;}
-  /* Links in footer and #6C934D and #34393A*/
-  footer a, footer a:visited {color: #6C934D;}
-  footer a:hover, footer a:focus {color: #34393A;}
-  /* Social icons in footer and #34393A and 6C934D */
-  footer ul li a, footer ul li a:visited { color: #34393A; }
-  footer ul li a:hover, footer ul li a:focus { color: #6C934D; }
-  /* Pagination current #93B876 */
-  .pagination .current, .pagination .current:hover {background-color: #93B876;}
-  /* 233,235,238 (#e9ebee) and 147, 184, 118 (93B876)*/
-  #sidebar .tagcloud a {background-color: #E9EBEE;}
-  #sidebar .tagcloud a:hover {background-color: #93B876;}
-  /* + sign in #9FCC7F */
-  ul#nav li.has-children > a::after { color: #9FCC7F;}
-/* } */
+/* Top bar def: 159, 204, 127 OR #9FCC7F */
+body {border-top-color: #9FCC7F;}
+#nav-wrap {border-top-color: #9FCC7F;}
+/* logo-text def: #93B876 */
+header h1#logo-text a {color: #93B876;}
+/* Links def #93B876, and #34393A */
+a, a:visited {color: #93B876;}
+a:hover, a:focus  {color: #34393A;}
+/* Links in footer and #6C934D and #34393A */
+footer a, footer a:visited {color: #6C934D;}
+footer a:hover, footer a:focus {color: #34393A;}
+/* Social icons in footer and #34393A and #6C934D */
+footer ul li a, footer ul li a:visited { color: #34393A; }
+footer ul li a:hover, footer ul li a:focus { color: #6C934D; }
+/* Pagination current #93B876 */
+.pagination .current, .pagination .current:hover {background-color: #93B876;}
+/* 233,235,238 (#E9EBEE) and 147, 184, 118 (#93B876) */
+#sidebar .tagcloud a {background-color: #E9EBEE;}
+#sidebar .tagcloud a:hover {background-color: #93B876;}
+/* + sign in Cathegories #9FCC7F */
+ul#nav li.has-children > a::after { color: #9FCC7F;}
+
 
 /* Allow lowercase in Sidebar Tags */
 #sidebar .tagcloud a {text-transform: none;}
