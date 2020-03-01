@@ -35,6 +35,14 @@ footer ul li a:hover, footer ul li a:focus { color: #6C934D; }
 ul#nav li.has-children > a::after { color: #9FCC7F;}
 
 
+div.entry-content abbr {
+   font-family: 'opensans-bold', sans-serif;
+   font-variant: inherit;
+   text-transform: inherit;
+   letter-spacing: .5px;
+   color: #93B876;
+}
+
 /* Allow lowercase in Sidebar Tags */
 #sidebar .tagcloud a {text-transform: none;}
 
