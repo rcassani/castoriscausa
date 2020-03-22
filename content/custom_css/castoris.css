@@ -159,3 +159,7 @@ header h1#logo-text a {font-family: 'opensans-semibold'}
   line-height: 30px;
   margin-bottom: 12px;
 }
+
+/* series margins */
+.series p {margin-bottom: 6px;}
+div.entry-content .series ol, div.entry-content .series ul {margin-left: 35px; margin-top: 6px}
