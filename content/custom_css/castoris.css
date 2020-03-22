@@ -148,3 +148,14 @@ p, .entry-content {text-align: justify;}
 
 /* Font main header */
 header h1#logo-text a {font-family: 'opensans-semibold'}
+
+/* Font for ToC title */
+.toctitle {
+  color: #444;
+  font-family: 'opensans-semibold', sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
