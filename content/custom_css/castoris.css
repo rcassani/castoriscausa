@@ -71,7 +71,7 @@ ul#nav li.has-children > a::after {
 ul#nav li.has-children:hover > a:after { content: "-"; }
 
 /* Space after tags in index and article */
-p.tags{margin-bottom: 20px}
+p.tags{margin-bottom: 15px}
 
 /* Place disc indicators for ul tag in Page and Article content*/
 section.page ul, div.entry-content ul {margin-left: 17px; list-style: disc}
@@ -132,6 +132,7 @@ pre {padding-left: 5px}
 /* Adjust the color for Published and Modified dates in article info*/
 .entry .entry-meta ul {
   color: #888888;
+  margin-bottom: 15px;
 }
 .entry .tags {
   margin-top: 5px;
