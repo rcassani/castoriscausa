@@ -171,3 +171,34 @@ header h1#logo-text a {font-family: 'opensans-semibold'}
 /* series margins */
 .series p {margin-bottom: 6px;}
 div.entry-content .series ol, div.entry-content .series ul {margin-left: 35px; margin-top: 6px}
+
+/* improve code block display, one line with scroll */
+pre {
+ display:block;
+ padding:5px;
+ margin:0 0 10px;
+ line-height:1.5;
+ word-break:break-all;
+ word-wrap:break-word;
+ border:1px solid #ccc;
+ border-radius:4px;
+ overflow: auto;
+ white-space: pre;
+}
+
+/* set table size to 100% of current div */
+table.highlighttable{
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* set column with for the line numbers */
+td.linenos {
+  width:40px;
+  text-align: right;
+}
+
+/* adjust the default color for code blocks */
+.highlight pre{
+  color: #ffffff;
+}
