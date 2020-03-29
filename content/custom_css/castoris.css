@@ -46,6 +46,13 @@ div.entry-content abbr {
 /* Allow lowercase in Sidebar Tags */
 #sidebar .tagcloud a {text-transform: none;}
 
+/* Allow lowercase in Sidebar Tags */
+code {
+  font-size: 1.05em;
+  background-color: #DBECD0;
+  font-weight: bold;
+}
+
 /* Total header height, original 288 */
 header, header .header-content{height: 256px;}
 
