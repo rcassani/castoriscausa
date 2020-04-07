@@ -19,7 +19,7 @@ The real size is 3 mm by 1.5 mm
 |Low zoom|    |High zoom|
 <br>  
 
-### The 1-mm mark in a caliper
+### The 1-mm mark in a vernier caliper
 For the low-zoom pic, there are 154 pixels between the center of the marks, a rough resolution of 6.5 &mu;m per pixel. And for the high-zoom pic, there are 570 pixels, thus around 1.8 &mu;m per pixel.
 
 | [<img src="/images/1mm_1.png" style="width: 450px;"/>](/images/1mm_1.png)| <img src="/images/square_500_clear.png" style="width: 32px;"/> |[<img src="/images/1mm_2.png" style="width: 450px;"/>](/images/1mm_2.png)   |
