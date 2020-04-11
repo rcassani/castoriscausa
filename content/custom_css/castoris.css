@@ -46,7 +46,7 @@ div.entry-content abbr {
 /* Allow lowercase in Sidebar Tags */
 #sidebar .tagcloud a {text-transform: none;}
 
-/* Allow lowercase in Sidebar Tags */
+/* Improve display for code tag `xxx`  */
 code {
   font-size: 1.05em;
   background-color: #DBECD0;
@@ -60,7 +60,7 @@ header, header .header-content{height: 256px;}
 header h1#logo-text a {letter-spacing: 0px;}
 
 /* Padding for content-wrap*/
-#content-wrap {padding: 20px 0 0 0;}
+#content-wrap {padding: 30px 0 0 0;}
 
 /* Padding for footer */
 footer {padding-top: 15px; margin-bottom: 20px}
