@@ -151,6 +151,10 @@ pre {padding-left: 5px}
 /* Justify psot body and summary in index */
 p, .entry-content {text-align: justify;}
 
+/* Top margin for summary in index */
+div.entry-content{
+  margin-top: 10px;
+}
 
 /* Font and size for links in Link and Categorie sidebar*/
 .widget_categories a {font-family: 'opensans-semibold', sans-serif; font-size: 20px;}
