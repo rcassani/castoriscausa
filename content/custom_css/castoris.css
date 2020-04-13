@@ -232,3 +232,7 @@ td.linenos {
   display: block;
   border: 1px solid black;
 }
+
+body {
+  line-height: 25px;
+}
