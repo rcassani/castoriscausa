@@ -151,6 +151,7 @@ pre {padding-left: 5px}
 /* Justify psot body and summary in index */
 p, .entry-content {text-align: justify;}
 
+
 /* Font and size for links in Link and Categorie sidebar*/
 .widget_categories a {font-family: 'opensans-semibold', sans-serif; font-size: 20px;}
 
@@ -201,4 +202,29 @@ td.linenos {
 /* adjust the default color for code blocks */
 .highlight pre{
   color: #ffffff;
+}
+
+.entry .row{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.entry-thumb.four.columns{
+  flex-grow: 1;
+  width: 33%
+}
+
+.entry-header.eight.columns{
+  flex-grow: 1;
+  width: 66%
+}
+
+.entry-thumb img{
+  max-width:90%;
+  max-height:150px;
+  height: auto;
+  width:auto;
+  display: block;
+  border: 1px solid black;
 }
