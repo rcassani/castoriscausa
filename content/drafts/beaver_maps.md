@@ -20,3 +20,10 @@ Beavers according the
 Mention somethin on the mythic creatures in maps,
 
 Development of NA, due to the fur trade, almost extinted, now recovering it's place, Maps that related to the health
+
+Paolo Petrini Italian map maker 1700s
+https://www.pressreader.com/canada/vancouver-sun/20101018/281706906042402
+
+La mesure d'un continent : Atlas historique de l'Amérique du nord, 1492-1814
+Author: 	Raymonde Litalien; Jean-François Palomino; Denis Vaugeois
+Publisher: 	Paris : Presses de l'université Paris-Sorbonne ; Sillery : Septentrion, 2007.
