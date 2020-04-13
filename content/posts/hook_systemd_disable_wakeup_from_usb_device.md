@@ -59,11 +59,13 @@ These are the instructions for the 2nd way:
 
 
 4. Change the permissions of the service file
+
 		:::bash
 		# chmod 664 /etc/systemd/system/suspend-mouse-fix.service
 
 5. Enable the service:
-		bash
+
+		:::bash
 		systemctl enable suspend-mouse-fix.service
 
 6. If there any update in the service file, run ```$ systemctl daemon-reload``` after modifying it
