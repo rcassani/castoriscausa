@@ -239,3 +239,8 @@ td.linenos {
 body {
   line-height: 25px;
 }
+
+table.highlighttable{
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
