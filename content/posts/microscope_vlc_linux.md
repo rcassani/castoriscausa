@@ -4,6 +4,7 @@ Category: Projects
 Tags: Linux, photos
 Author: Raymundo Cassani
 Slug: microscope-vlc-linux
+Thumbnail: fish_1.png
 
 This post is to show the type of images that can be obtained with an affordable USB microscope, similar to [this one](https://www.amazon.ca/axGear-50-500X-Microscope-Endoscope-Magnifier/dp/B01996WOEU). The output image is 640 x 480 pixels, and the optical zoom is supposed to go from 50x to 500x. As the microscope has not adjustment for focus, for most of the samples I was able to focus them in unknown magnification settings, let's call them low- and high-zoom.
 

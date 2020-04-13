@@ -4,6 +4,7 @@ Category: Blog
 Tags: Windows, Git
 Slug: poshbash-windows-bash
 Author: Raymundo Cassani
+Thumbnail: posh_bash_win.png
 
 The [**posh-git-bash**](https://github.com/dahlbyk/posh-git) prompt, for [Git](https://git-scm.com/), is a useful tool that shows information about the current status of a local Git repository respect to local and remote (e.g. [GitHub](https://github.com/)) repositories; in this way, it's easy to see if the repository is ahead or behind, has uncommitted changes, is up-to-date, etc.
 

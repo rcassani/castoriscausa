@@ -4,6 +4,7 @@ Category: Projects
 Tags: EEG, DIY, hack
 Slug: emotive-epoc-hack
 Author: Raymundo Cassani
+Thumbnail: final_box.jpg
 
 The [**Emotiv Epoc**](https://www.emotiv.com/epoc/) is a 14-channel EEG headset that brought the concept of affordable wireless EEG to the general public, paving the road for later portable EEG systems. It has been used for in [several studies](https://www.emotiv.com/category/independent-studies/).
 

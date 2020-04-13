@@ -4,6 +4,7 @@ Category: Blog
 Tags: Windows, touchpad
 Slug: touchpad-disable
 Author: Raymundo Cassani
+Thumbnail: touchpad_keyboard_ge62vr.jpg
 
 Touchpads in laptops are not for everyone, one of the first things to do when a I get a new computer is to plug a mouse and disable the touchpad (TP).
 

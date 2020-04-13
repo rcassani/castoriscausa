@@ -4,6 +4,7 @@ Category: Blog
 Tags: Linux, GPU, NVIDIA, CUDA, DeepLearning
 Slug: ge62vr-mint-gtx1060
 Author: Raymundo Cassani
+Thumbnail: fluidsGL.gif
 
 **Updated** This article was updated to Mint 19 (based in Ubuntu 18.04), NVIDIA-driver 410 and CUDA driver 10.0
 

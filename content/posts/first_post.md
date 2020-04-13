@@ -4,7 +4,7 @@ Tags: Español
 Category: Blog
 Slug: first-post
 Author: Raymundo Cassani
-Image: default
+Thumbnail: square_500_clear.png
 
 This post is an example of a post in multiple languages.
 

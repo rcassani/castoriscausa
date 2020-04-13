@@ -4,6 +4,7 @@ Category: Blog
 Tags: EEG, AD, PhD
 Author: Raymundo Cassani
 Slug: phd-thesis-summary
+Thumbnail: eeg_ad_diagnose.png
 
 In November 2018, I performed my PhD defense, this is a summary of it.
 The title is "Towards an Automated Portable EEG-based System for Alzheimer’s Disease Diagnosis", and it can be found in its integrity [here](http://espace.inrs.ca/8005/1/Cassani%20Gonzalez%2C%20Raymundo.pdf). The defense slides are available [here](https://www.dropbox.com/s/0cwt4mskm63u6bs/thesis_slides.pdf?dl=0)

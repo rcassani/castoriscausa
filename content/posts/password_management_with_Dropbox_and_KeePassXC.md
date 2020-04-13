@@ -5,6 +5,7 @@ Tags: DIY
 Author: Raymundo Cassani
 Slug: password-management-with-Dropbox-and-KeePassXC
 Summary: Nowadays we have to handle an enormous quantity of passwords. As it is not desirable to reuse passwords, nor to write down, it is necessary to have a way manage them. After research and thinking in advantages and drawbacks among the different methods, I came to the solution of using KeePassXC alongside with Dropbox.
+Thumbnail: keys.jpg
 
 <center>
 [<img src="/images/keys.jpg" style="width: 600px;">](/images/keys.jpg)  
