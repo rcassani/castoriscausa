@@ -4,7 +4,7 @@ Category: Programming
 Tags: Linux, Windows, Bash, Batch
 Slug: universal-shortcuts
 Author: Raymundo Cassani
-
+Thumbnail: shortcut.png
 
 This project started from the "need" of having a compatible way to point to files indifferently if on Windows or Linux. While both operative systems can handle symbolic links, when the target file is an executable, certain scripts and programs present [problems when executed through a symbolic link](https://askubuntu.com/questions/541317/link-to-exe-doesnt-launch-wine), as the working directory is expected to be the directory containing the executable  and not the directory with the symbolic link.
 

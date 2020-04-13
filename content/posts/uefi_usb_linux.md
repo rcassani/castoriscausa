@@ -4,6 +4,7 @@ Category: Blog
 Tags: Linux
 Slug: linux-usb-uefi
 Author: Raymundo Cassani
+Thumbnail: usb_uefi.png
 
 This post is about creating a UEFI-bootable full Linux installation in a USB Flash Drive or External HDD. For sake of simplicity, I'll refer to a **USB Flash Drive** or a **USB External HDD** as **USB-disk**. This procedure is performed in a computer running Windows without installing Linux in the HDD, therefore there is no modification (nor mess) in the Windows EFI partition. Here a nice [explanation on how UEFI boot works](https://www.happyassassin.net/2014/01/25/uefi-boot-how-does-that-actually-work-then/).
 

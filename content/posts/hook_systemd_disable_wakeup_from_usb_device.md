@@ -1,12 +1,16 @@
 Title: Hook with systemd to disable wake-up from USB device
 Date: 2020-03-09 17:32
 Category:Programming
-Tags: Linux, systemd
+Tags: Arch, Linux, systemd
 Author: Raymundo Cassani
 Slug: hook-systemd-disable-wakeup-from-usb-device
+Thumbnail: systemd_cat.jpg
 
+**Situation:** When my laptop is in suspension with the lid open, any update (movement or clicks) with the wireless mouse wakes-up the laptop. This post is about creating a `systemd` unit, and hook it to the start of the sleep unit, and disable the mouse as wake-up device. This approach should work for any Linux distribution using `systemd`, this post was written in a [Arch Linux](https://www.archlinux.org/) system.
 
-**Situation:** When my laptop is in suspension with the lid open, any update (movement or clicks) with the wireless mouse wakes-up the laptop. This post is about creating a `systemd` unit, and hook it to the start of the sleep unit, and disable the mouse as wake-up device. This approach should work for any Linux distribution using `systemd`.
+<center>
+![Alt](/images/systemd_cat.jpg)  
+</center>  
 
 First, the list of devices that can wake-up the computer can be find with:
 

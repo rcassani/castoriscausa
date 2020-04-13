@@ -4,6 +4,7 @@ Category: Blog
 Tags: Linux, GPU, NVIDIA
 Slug: freezes-linux-gpu-acpi
 Author: Raymundo Cassani
+Thumbnail: kernel_panic.png
 
 A frequent problem in dual-GPU systems is that the PC freezes ([kernel panic]()) when you try to logout, restart or shutdown after changing back from the **Intel** (integrated) to the **NVIDIA** (discrete) GPU in Linux. All of this when you're using the **NVIDIA drivers** (proprietary drivers).
 
