@@ -18,7 +18,12 @@ This is the embedded `Jupyter Notebook`. To use the widgets, click first on `Sho
 
 The original one can be found as a [Gist](https://gist.github.com/rcassani/a472b922fc4accb3e9551f3f16dedb76), and in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gist/rcassani/a472b922fc4accb3e9551f3f16dedb76/master)  
 
-<iframe src="/htmls/interactive_test.html" style="height:1150px;" scrolling="no" frameborder="0" id="iframe"></iframe>
+<iframe src="/htmls/interactive_test.html" frameborder="0" id="iframe" onload='javascript:resizeIframe(this);'></iframe>
+<script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+  obj.style.height = 350 + obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
 
 
 ## Notes
