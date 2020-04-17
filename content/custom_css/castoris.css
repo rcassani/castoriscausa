@@ -244,3 +244,7 @@ table.highlighttable{
   margin-top: -15px;
   margin-bottom: 10px;
 }
+
+iframe {
+  width: 100%
+}
