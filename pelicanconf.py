@@ -121,7 +121,7 @@ PAGE_PATHS = ['pages']      # Page directories
 IGNORE_FILES = ['drafts']   # Ignored files
 
 # Directories to be copied to Output (paths relative to Content)
-STATIC_PATHS = ['images', 'custom_css', 'extra/CNAME', 'extra/robots.txt']
+STATIC_PATHS = ['images', 'custom_css', 'extra/CNAME', 'extra/robots.txt', 'htmls']
 # Paths rel to Content : {'path' : Path in Output}
 EXTRA_PATH_METADATA = {
      'custom_css/castoris.css': {'path': 'castoris.css'},
