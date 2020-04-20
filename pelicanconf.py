@@ -22,7 +22,7 @@ DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 # Site general information
 AUTHOR = u'Raymundo Cassani'
 SITENAME = u'CastorisCausa'
-SITEURL = u'http://www.castoriscausa.com'
+SITEURL = u'https://www.castoriscausa.com'
 
 # Delete Output files everytime Pelican runs
 DELETE_OUTPUT_DIRECTORY = True
