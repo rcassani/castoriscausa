@@ -23,6 +23,9 @@ a:hover, a:focus  {color: #34393A;}
 /* Links in footer and #6C934D and #34393A */
 footer a, footer a:visited {color: #6C934D;}
 footer a:hover, footer a:focus {color: #34393A;}
+/* FA Icons in posts and pages */
+a.link-icon, a.link-icon:visited {color: #34393A;}
+a.link-icon:hover, a.link-icon:focus { color: #6C934D; }
 /* Social icons in footer and #34393A and #6C934D */
 footer ul li a, footer ul li a:visited { color: #34393A; }
 footer ul li a:hover, footer ul li a:focus { color: #6C934D; }
@@ -151,8 +154,8 @@ pre {padding-left: 5px}
 /* Centers header image posts */
 .post-thumb img{display: block; margin-left: auto; margin-right: auto;}
 
-/* Justify psot body and summary in index */
-p, .entry-content {text-align: justify;}
+/* Justify post body and summary in index */
+p, .entry-content, table {text-align: justify;}
 
 /* Top margin for summary in index */
 div.entry-content{
