@@ -1,8 +1,7 @@
 Title: Software
 Date: 2016-10-22
 Slug: software
-Author: Ray Cassani
-Summary:
+Author: Raymundo Cassani
 Sortorder: 2
 
 This is list of some of the projects I have contributed. Most of the code is already available in my [GitHub account](https://github.com/rcassani), or it is available under request.
