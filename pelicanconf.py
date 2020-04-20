@@ -80,7 +80,7 @@ SOCIAL = (
          )
 
 # DISQUS
-DISQUSURL = 'http://castoriscausa.com'
+DISQUSURL = 'https://castoriscausa.com'
 DISQUS_SITENAME = u"castoriscausa"
 DISQUS_NO_ID = True
 DISQUS_DISPLAY_COUNTS = True
