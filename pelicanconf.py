@@ -38,7 +38,7 @@ RELATIVE_URLS = True
 ###########################
 THEME = ".//theme//pelican-kis"
 # Subtitle string
-# SITESUBTITLE = u'Catchy phrase'
+SITESUBTITLE = u'Personal blog and hacks by <a href="../pages/about-me">Raymundo Cassani</a>'
 
 # Show elements in Menu bar
 MENU_ELEMENTS = ['menu_links', 'categories', 'pages']
@@ -66,6 +66,9 @@ SHOW_ARTICLE_DATEMODIFIED = True
 # Customized CSS file for CastorisCausa
 CUSTOM_CSS = 'castoris.css'
 
+# Customized JS file for CastorisCausa
+CUSTOM_JS = 'castoris.js'
+
 ###########################
 # Others
 ###########################
@@ -76,7 +79,7 @@ SOCIAL = (
           ('Twitter', 'https://twitter.com/r_cassani'),
           ('LinkedIn', 'https://www.linkedin.com/in/rcassani/'),
           ('user-graduate', 'https://scholar.google.com/citations?hl=en&user=3A9_Ww8AAAAJ'),
-          ('envelope', 'mailto:raymundo.cassani@gmail.com'),
+          ('envelope', '#'),
          )
 
 # DISQUS
@@ -121,10 +124,11 @@ PAGE_PATHS = ['pages']      # Page directories
 IGNORE_FILES = ['drafts']   # Ignored files
 
 # Directories to be copied to Output (paths relative to Content)
-STATIC_PATHS = ['images', 'custom_css', 'extra/CNAME', 'extra/robots.txt', 'htmls']
+STATIC_PATHS = ['images', 'custom_css', 'custom_js', 'extra/CNAME', 'extra/robots.txt', 'htmls']
 # Paths rel to Content : {'path' : Path in Output}
 EXTRA_PATH_METADATA = {
      'custom_css/castoris.css': {'path': 'castoris.css'},
+     'custom_js/castoris.js': {'path': 'castoris.js'},
      'extra/CNAME': {'path': 'CNAME'},
      'extra/robots.txt': {'path': 'robots.txt'},
 }
