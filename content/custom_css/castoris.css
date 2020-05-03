@@ -72,13 +72,19 @@ footer .social-links{margin-bottom: 30px}
 
 /* Shows a + sign for a Menu item with child */
 ul#nav li.has-children > a::after {
- content: "+";
+ content: "\f078";
  padding-left: 5px;
  font-weight: bold;
+ font-family: "Font Awesome 5 Free"
 }
 
 /* Shows a - sign for a Menu item with child when Hover */
-ul#nav li.has-children:hover > a:after { content: "-"; }
+ul#nav li.has-children:hover > a:after {
+  content: "\f077";
+  padding-left: 5px;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free"
+}
 
 /* Space after tags in index and article */
 p.tags{margin-bottom: 15px}
