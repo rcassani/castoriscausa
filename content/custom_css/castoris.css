@@ -136,8 +136,8 @@ pre {padding-left: 5px}
   font:inherit;
   color: #B1B1B1;
   background: #E9EBEE;
-  padding: inherit;
-  height: inherit;
+  /* padding: inherit; */
+  height: 40px;
   box-sizing: inherit;
   outline: inherit;
   margin: inherit;
