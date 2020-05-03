@@ -62,6 +62,15 @@ header, header .header-content{height: 256px;}
 /* Letter spacing, original -5px */
 header h1#logo-text a {letter-spacing: 0px;}
 
+/* Subtitle format */
+header p#intro {
+  width: inherit;
+  color: inherit;
+  font-size: 22px;
+  font-family: "opensans", sans-serif;
+}
+
+
 /* Padding for content-wrap*/
 #content-wrap {padding: 30px 0 0 0;}
 
