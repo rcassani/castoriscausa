@@ -68,6 +68,9 @@ header p#intro {
   color: inherit;
   font-size: 22px;
   font-family: "opensans", sans-serif;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 
