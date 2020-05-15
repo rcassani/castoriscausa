@@ -1,5 +1,6 @@
-Title: LinuxMint-19 + GTX1060 + CUDA 10.0
+Title: LinuxMint-19 + GTX1060 + CUDA 10.2
 Date: 2019-01-31 19:00
+Modified: 2020-05-15
 Category: Blog
 Tags: Linux, GPU, NVIDIA, CUDA, DeepLearning
 Slug: ge62vr-mint-gtx1060
@@ -92,56 +93,38 @@ If while using the NVIDIA drivers, the screen works fine but the `prime-select` 
 ## 2 Install and Test CUDA driver
 Once the **NVIDIA driver** are properly installed, it's time to install the **CUDA driver**. If you're not sure what's the CUDA driver check this [link](http://www.nvidia.com/object/cuda_home_new.html)
 
-* Download the [**CUDA driver**](https://developer.nvidia.com/cuda-downloads)
+* Download the [**CUDA driver**](https://developer.nvidia.com/cuda-toolkit)
 
 <center>
 [<img src="/images/cuda_driver_mint_download.png" style="width: 800px;"/>](/images/cuda_driver_mint_download.png)
 </br>  
 </center>
 
-* Change the downloaded file to executable and execute it
-
-		:::bash
-		$ chmod +x cuda_10.1.105_418.39_linux.run
-		$ sudo sh cuda_10.1.105_418.39_linux.run --override
-
+* Follow the instructions to download and install the CUDA driver
 
 * Installation parameters. Select **NO** when the CUDA installer ask to install **NVIDIA Accelerated Graphics Driver for Linux** as the NVIDIA driver is already installed.
 
 		:::bash
-		Do you accept the previously read EULA?
-		accept/decline/quit: accept     
+		===========
+		= Summary =
+		===========
 
-		You are attempting to install on an unsupported configuration. Do you wish to continue?
-		(y)es/(n)o [ default is no ]: y
+		Driver:   Not Selected
+		Toolkit:  Installed in /usr/local/cuda-10.2/
+		Samples:  Installed in /home/cassani/
 
-		Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 375.26?
-		(y)es/(n)o/(q)uit: n
+		Please make sure that
+		 -   PATH includes /usr/local/cuda-10.2/bin
+		 -   LD_LIBRARY_PATH includes /usr/local/cuda-10.2/lib64, or, add /usr/local/cuda-10.2/lib64 to /etc/ld.so.conf and run ldconfig as root
 
-		Install the CUDA 8.0 Toolkit?
-		(y)es/(n)o/(q)uit: y
+		To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-10.2/bin
 
-		Enter Toolkit Location
- 		[ default is /usr/local/cuda-8.0 ]:
+		Please see CUDA_Installation_Guide_Linux.pdf in /usr/local/cuda-10.2/doc/pdf for detailed information on setting up CUDA.
+		***WARNING: Incomplete installation! This installation did not install the CUDA Driver. A driver of version at least 440.00 is required for CUDA 10.2 functionality to work.
+		To install the driver using this installer, run the following command, replacing <CudaInstaller> with the name of this run file:
+		    sudo <CudaInstaller>.run --silent --driver***
 
-		Do you want to install a symbolic link at /usr/local/cuda?
-		(y)es/(n)o/(q)uit: y
 
-		Install the CUDA 8.0 Samples?
-		(y)es/(n)o/(q)uit: y
-
-		Enter CUDA Samples Location
- 		[ default is /home/cassani ]: /usr/local/cuda-8.0
-
-		Installing the CUDA Toolkit in /usr/local/cuda-8.0 ...
-		Missing recommended library: libGLU.so
-		Missing recommended library: libX11.so
-		Missing recommended library: libXi.so
-		Missing recommended library: libXmu.so
-
-		Installing the CUDA Samples in /usr/local/cuda-8.0 ...
-		Copying samples to /usr/local/cuda-8.0/NVIDIA_CUDA-8.0_Samples now...
-		Finished copying samples.
 
 * Prepare the CUDA environment by adding the following 3 lines to your `.bashrc` file
 
@@ -170,9 +153,9 @@ $ sudo ldconfig
 		$ nvcc --version
 
 		nvcc: NVIDIA (R) Cuda compiler driver
-		Copyright (c) 2005-2016 NVIDIA Corporation
-		Built on Tue_Jan_10_13:22:03_CST_2017
-		Cuda compilation tools, release 8.0, V8.0.61
+		Copyright (c) 2005-2019 NVIDIA Corporation
+		Built on Wed_Oct_23_19:24:38_PDT_2019
+		Cuda compilation tools, release 10.2, V10.2.89
 
 * Install g++ (If you haven't)
 
