@@ -1,7 +1,7 @@
 Title: Identifying typewriter and how to use it
 Date: 2020-05-10 16:57
 Category:
-Tags:
+Tags: DIY
 Author: Raymundo Cassani
 Slug: identifying-typewriter
 Series: Cleaning Typewriter
