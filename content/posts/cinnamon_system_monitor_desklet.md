@@ -1,77 +1,107 @@
-Title: [Tutorial]: Making a Desklet for Cinnamon
-Date: 2020-05-12 09:22
+Title: Developing a Desklet for Cinnamon
+Date: 2020-06-09 13:00
 Category: Programming
-Tags: tutorial
+Tags:
 Author: Raymundo Cassani
-Slug: cinnamon-desklet-development
-Thumbnail: first_desklet.png
+Slug: system-monitor-graph-desklet
+Thumbnail: sys_monitor_graph_thumb.gif
 
-A good day I was going through the available [Desklets for Cinnamon](https://cinnamon-spices.linuxmint.com/desklets), looking for an desklet to display graphs about the current state of the system (CPU, RAM, disks, etc.), although I found the nice desklets such as [Simple monitor system](https://cinnamon-spices.linuxmint.com/desklets/view/29), [CPU Load](https://cinnamon-spices.linuxmint.com/desklets/view/44) and [Disk Space](https://cinnamon-spices.linuxmint.com/desklets/view/39), none of them quite do what I need. Thus I resolved to develop the desklet. Because the information to develop a desklet is outdated[<sup>1</sup>](https://www.erikedrosa.com/2014/12/31/hello-world-desklet-tutorial.html), I decided to document the process, this is the first part of that process. How to create a simple desklet. At the moment of writing, Cinnamon 4.4.8 on Arch Linux was used.
-
-### 1. What is a desklet?
-"Desklets are little programs which you can place on your desktop, on top of your desktop background"[<sup>2</sup>](https://cinnamon-spices.linuxmint.com/). Moreover, desklets as well as other graphical elements in Cinnamon are written in JavaScript[<sup>3</sup>](https://linuxmint-developer-guide.readthedocs.io/en/latest/technology.html#javascript), and use the Cinnamon's JavaScript interpreter (CJS)[<sup>4</sup>](https://linuxmint-developer-guide.readthedocs.io/en/latest/cinnamon.html?highlight=desklet#cjs). More information about desklets can be find in the official repository [https://github.com/linuxmint/cinnamon-spices-desklets](https://github.com/linuxmint/cinnamon-spices-desklets).
-
-### 2. Creating a simple desklet
-Ok, with the previous information in mind, here a simple desklet is created and explained. When finished, it should look like the image below. The files described in this section can be downloaded from [here](https://gist.github.com/rcassani/63bbc282efa9328302b589d3a3e06f75).
+In a [previous post](/posts/2020/05/12/cinnamon-desklet-development/), the minimum code for a functional Cinnamon Desklet was provided. Based on that, I started to develop the [System monitor graph](https://cinnamon-spices.linuxmint.com/desklets/view/56) which shows graphs for the level of activity in various system variables including: CPU, memory, and disks. This post describes some of the elements that I found important during the development of such a Desklet.
 
 <center>
-![Alt](/images/first_desklet.png)  
-First desklet, it prints "Hello Desktop" and can have multiple instances
+![Alt](/images/sys_monitor_graph.gif)<br>
+System monitor graph Desklet.
 </center>  
 
-First of all, the desklets are located at `~/.local/share/cinnamon/desklets`, where each desklet has its own directory.
-
-1. Then, create a directory with the name `PROJECT@AUTHOR`, this is the UUID of the desklet. For example `first-desklet@rcassani`
-
-2. A desklet requires at least two files:
-  * `metadata.json`: As it names indicates, this has the metadata for the desklet and [additional options](https://github.com/linuxmint/Cinnamon/wiki/Applet,-Desklet-and-Extension-Settings-Reference#additional-options-in-metadatajson) such as `max-instances` to allow multiple instances of the desklet.
-
-		:::json
-		{
-		"max-instances": "10",
-		"uuid": "first-desklet@rcassani",
-		"name": "First Desklet",
-		"description": "This is my first desklet",
-		"version": "0.1",
-		"prevent-decorations": false
-		}
-
-  * `desklet.js`: Here is where the JavaScript code for the desklet is. Below there is a simple functional desklet that adds a button on the desktop.
+### Setting tools
+* As with many coding projects, the use of [git]() or any other version control software is desirable to track and revert changes.
+* The [Developer's Tools](https://cinnamon-spices.linuxmint.com/desklets/view/17) Desklet was very helpful as it allows to restart Cinnamon with one click, display the Cinnamon console, among other actions.
+* Printing in the Cinnamon console is often very useful  
 
 		:::javascript
-		const Desklet = imports.ui.desklet;
-		const St = imports.gi.St;
+		global.log('Some text or variable goes here');
 
-		function MyDesklet(metadata, desklet_id) {
-		    this._init(metadata, desklet_id);
-		}
+### Adding Settings
+The ability to configure a Deskelet is very important. This is reached by creating the `settings-schema.json` file besides the `desklet.js` file. The `settings-schema.json` contains the elements in the GUI that the user can modify, these include: text labels, switches, text boxes, color choosers. More info can be found [here](https://projects.linuxmint.com/reference/git/cinnamon-tutorials/xlet-settings.html) and [here](https://projects.linuxmint.com/reference/git/cinnamon-tutorials/xlet-settings-ref.html). To connect the Settings with your Desklet:
 
-		MyDesklet.prototype = {
-		    __proto__: Desklet.Desklet.prototype,
+1. Add `Settings` to the `imports`:
 
-		    _init: function(metadata, desklet_id) {
-		        Desklet.Desklet.prototype._init.call(this, metadata, desklet_id);
-		        this.setupUI();
-		    },
+		:::javascript
+		const Settings = imports.ui.settings;
 
-		    setupUI(){
-		      // creates container for one child
-		      this.window = new St.Bin();
-		      // creates a label with test
-		      this.text = new St.Label({text: "Hello Desktop"});
-		      // adds label to container
-		      this.window.add_actor(this.text);
-		      // Sets the container as content actor of the desklet
-		      this.setContent(this.window);
-		    },
-		};
+2. Get the Setting values in the `_init` function of the Desklet,
 
-		function main(metadata, desklet_id) {
-		    return new MyDesklet(metadata, desklet_id);
-		}
-  <!-- __ -->
+		:::javascript
+		this.settings = new Settings.DeskletSettings(this, this.metadata["uuid"], desklet_id);
+		this.settings.bindProperty(Settings.BindingDirection.IN, "background-color", "background_color", this.on_setting_changed);
 
-  Constants are declared with [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const), and cannot be re-declared nor changed. First, the `Desklet` class is imported from [`.ui.desklet`](https://github.com/linuxmint/cinnamon/blob/master/js/ui/desklet.js). The Shell Toolkit is imported at `imports.gi.St;`, and it is used to add elements to the desklet, St documentation can be found [here](https://gjs-docs.gnome.org/st10~1.0_api/). The `function MyDesklet` is the constructor for our desklet, it takes `metadata` (dictionary) with the metadata of the desklet, and `desklet_id` (int) which is the instance id of the desklet. Using `MyDesklet.prototype` allows us to add new methods to the object constructors. The method `setupUI()` contains the behaviour of the desklet, see comments in the code above. Note that it is called inside `_init`. Finally, the function `main` returns an instance of `MyDesklet`
+The arguments for `bindProperty` are: `BindingDirection.IN` changes in the settings go into the Desklet, `background-color` the element name in the `settings-schema.json`, and `background_color` name of the property to be created in the Desklet, it can be accesed as `this.background_color`.
 
-### Next steps
-By this point there is a working desklet. The behaviour of the desklet still needs to be coded to have all the desired features, will be documented in a future post.
+### Adding refreshing
+Most Desklets need to be updated on a fix schedule, this action can be performed by adding a timer.
+
+1. Add `Mainloop` to the `imports`:
+
+		:::javascript
+		const Mainloop = imports.mainloop;
+
+2. A way to use this timer is to split the `update` function of the Desklet in two:
+
+		:::javascript
+		update: function() {
+				// updates the visuals in Desklet
+				this.update_draw();
+				// calls this.update() in refresh_interval seconds
+				this.timeout = Mainloop.timeout_add_seconds(this.refresh_interval, Lang.bind(this, this.update));
+		},
+
+3. Additionally, if a update is required before the next interval, it can be forced. For example below removes the `mainloop` and intermediately calls `this.update()` when the `Settings` have been updated. Note that the timer is set again inside `this.update()`.
+
+		:::javascript
+		on_setting_changed: function() {
+		Mainloop.source_remove(this.timeout);
+		this.update();
+		},
+
+### Interacting with files and commands
+Often a Desklet needs to read a file or execute a command. For the first, the function `get_file_contents_utf8_sync` does the trick. `Cinnamon` has to be added to the `imports`.
+
+	:::javascript
+	let mem_out = Cinnamon.get_file_contents_utf8_sync("/proc/meminfo");
+
+To execute a program `Subprocess` can be used.
+
+1. Add `Gio` to the `imports`:
+
+		:::javascript
+		const Gio = imports.gi.Gio;
+
+2. Indicate the command and its arguments, and retrieve the stdout to a variable:
+
+		:::javascript
+		let subprocess = new Gio.Subprocess({
+			argv: ['/bin/df', '/'],
+			flags: Gio.SubprocessFlags.STDOUT_PIPE,
+		});
+		subprocess.init(null);
+		let [, out] = subprocess.communicate_utf8(null, null);
+
+3. If pipes are needed, it is possible call a bash shell and pass as the argument the commands with pipes, for example:
+
+		:::javascript
+		let subprocess = new Gio.Subprocess({
+			argv: ['/bin/sh', '-c', '/bin/df ' + '/' + ' | grep Filesystem -w -A1'],
+			flags: Gio.SubprocessFlags.STDOUT_PIPE,
+		});
+		subprocess.init(null);
+		let [, out] = subprocess.communicate_utf8(null, null);
+
+### Drawing
+[Cairo]() was used to draw all the visuals in my Desklet. The general idea is to create a canvas with Clutter, and use this canvas to add all the visual elements for the Desklet. For a working example, see the section **// draws graph** of the `update_draw()` function in the [`desklet.js`](https://github.com/linuxmint/cinnamon-spices-desklets/blob/master/system-monitor-graph%40rcassani/files/system-monitor-graph%40rcassani/desklet.js) for my Desklet.
+
+### Wrap-up
+This was an entertaining project, and my first time using JavaScript. Some final tips that I learned from this were:
+* Once more, source control
+* Test any small change
+* Check the Errors printed in the Cinnamon console
+* Learn from other people's code, the source code for all the [Deskets in Cinnamon](https://cinnamon-spices.linuxmint.com/desklets) spices is [here](https://github.com/linuxmint/cinnamon-spices-desklets).
