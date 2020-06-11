@@ -100,7 +100,7 @@ CC_LICENSE = "CC-BY-NC-SA"
 
 # Plugins directory
 PLUGIN_PATHS = ['plugins/']
-PLUGINS = ['tipue_search', 'sitemap','series']
+PLUGINS = ['tipue_search', 'sitemap', 'series', 'render_math']
 
 SITEMAP = {'format': 'xml'}
 
