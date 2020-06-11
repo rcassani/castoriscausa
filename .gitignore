@@ -2,7 +2,6 @@
 output/
 cache/
 theme/
-plugins/
 
 # Pelican-Bootstrap3 folder
 pelican-bootstrap3/
