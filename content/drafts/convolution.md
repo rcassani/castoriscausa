@@ -7,3 +7,4 @@ Slug: convolution
 Series: Visual DSP fundamentals
 
 This is supposed to the about convolution
+With discrete signals, it's easy it's a moving dot product
