@@ -1,6 +1,5 @@
 Title: Hook with systemd to disable wake-up from USB device
 Date: 2020-03-09 17:32
-Category:Programming
 Tags: Arch, Linux, systemd
 Author: Raymundo Cassani
 Slug: hook-systemd-disable-wakeup-from-usb-device

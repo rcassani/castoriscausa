@@ -1,7 +1,6 @@
 Title: USB microscope and VLC
 Date: 2020-04-06 20:37
-Category: Projects
-Tags: Linux, photos
+Tags: Linux, photo
 Author: Raymundo Cassani
 Slug: microscope-vlc-linux
 Thumbnail: fish_1.png

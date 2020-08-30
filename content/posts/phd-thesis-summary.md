@@ -1,6 +1,5 @@
 Title: PhD Thesis Summary
 Date: 2020-02-28 12:00
-Category: Blog
 Tags: EEG, AD, PhD
 Author: Raymundo Cassani
 Slug: phd-thesis-summary

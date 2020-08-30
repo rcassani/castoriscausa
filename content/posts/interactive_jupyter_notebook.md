@@ -1,7 +1,6 @@
 Title: Interactive Jupyter Notebook in static websites [Test]
 Date: 2020-04-15 18:00
-Category: Blog
-Tags: Projects
+Tags: Jupyter, WebDevelopment
 Author: Raymundo Cassani
 Slug: interactive-jupyter-notebook
 Thumbnail: interact.gif

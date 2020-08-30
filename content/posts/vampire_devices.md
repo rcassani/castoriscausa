@@ -1,6 +1,5 @@
 Title: Vampire (electronic) devices
 Date: 2019-03-06 15:00
-Category: Blog
 Tags: power, energy
 Slug: energy-vampire-devices
 Author: Raymundo Cassani

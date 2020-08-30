@@ -1,7 +1,6 @@
 Title: Developing a Desklet for Cinnamon
 Date: 2020-06-09 13:00
-Category: Programming
-Tags:
+Tags: Linux
 Author: Raymundo Cassani
 Slug: system-monitor-graph-desklet
 Thumbnail: sys_monitor_graph_thumb.gif

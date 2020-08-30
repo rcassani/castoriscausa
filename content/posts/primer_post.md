@@ -1,6 +1,5 @@
 Title: Primer post
 Date: 2016-10-22 22:00
-Category: Blog
 Slug: first-post
 Translation: true
 Lang: spa

@@ -1,7 +1,6 @@
 Title: Password management with Dropbox and KeePassXC
 Date: 2020-01-28 20:20
-Category: Blog
-Tags: DIY
+Tags: DIY, lifehack
 Author: Raymundo Cassani
 Slug: password-management-with-Dropbox-and-KeePassXC
 Summary: Nowadays we have to handle an enormous quantity of passwords. As it is not desirable to reuse passwords, nor to write down, it is necessary to have a way manage them. After research and thinking in advantages and drawbacks among the different methods, I came to the solution of using KeePassXC alongside with Dropbox.

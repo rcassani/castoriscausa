@@ -1,7 +1,6 @@
 Title: [Tutorial]: Making a Desklet for Cinnamon
 Date: 2020-05-12 09:22
-Category: Programming
-Tags: tutorial
+Tags: tutorial, Linux
 Author: Raymundo Cassani
 Slug: cinnamon-desklet-development
 Thumbnail: first_desklet.png

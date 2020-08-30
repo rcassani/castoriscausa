@@ -1,6 +1,5 @@
 Title: [Review]: The Seven Secrets of How to Think Like a Rocket Scientist
 Date: 2019-04-21 19:00
-Category: Blog
 Tags: book, space
 Slug: comm-tssohttlars
 Author: Raymundo Cassani

@@ -1,7 +1,6 @@
 Title: LinuxMint-19 + GTX1060 + CUDA 10.2
 Date: 2019-01-31 19:00
 Modified: 2020-05-15
-Category: Blog
 Tags: Linux, GPU, NVIDIA, CUDA, DeepLearning
 Slug: ge62vr-mint-gtx1060
 Author: Raymundo Cassani
