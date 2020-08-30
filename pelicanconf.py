@@ -41,13 +41,13 @@ THEME = ".//theme//pelican-kis"
 SITESUBTITLE = u'Personal blog and hacks by <a href="../pages/about-me">Raymundo Cassani</a>'
 
 # Show elements in Menu bar
-MENU_ELEMENTS = ['menu_links', 'categories', 'pages']
+MENU_ELEMENTS = ['menu_links', 'pages']
 MENU_LINKS= (
                 ('Home', SITEURL),
             ) # Menu items before Pages
 
 # Show elements in Side bar
-SIDEBAR_ELEMENTS = ['tipuesearch_input', 'links', 'categories', 'tags']
+SIDEBAR_ELEMENTS = ['tipuesearch_input', 'links', 'tags']
 SIDEBAR_TITLE_TEXT = u'Hello'
 SIDEBAR_TEXT = u'A brief text that will appear in de siderbar, this can be anything'
 
@@ -60,7 +60,7 @@ LINKS = (
 # Show Metadata in Indexes and Articles
 SHOW_ARTICLE_TAGS = True
 SHOW_ARTICLE_AUTHOR = False
-SHOW_ARTICLE_CATEGORY = True
+SHOW_ARTICLE_CATEGORY = False
 SHOW_ARTICLE_DATEMODIFIED = True
 
 # Customized CSS file for CastorisCausa
