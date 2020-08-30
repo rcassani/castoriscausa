@@ -1,4 +1,4 @@
-Title: Multiple comparisons problem, visual approach
+Title: Multiple comparisons problem: a visual approach
 Date: 2020-06-19 12:00
 Category: Blog
 Tags: statistics, methods
