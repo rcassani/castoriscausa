@@ -14,7 +14,7 @@ Game Boy Pocket with backlight.<br>
 
 Last weekend, I revisited my modded Game Boy and realized that I haven't used it as much as I expected.
 
-**The culprit?**, the backlight itself, the intensity is good during daytime, but it's too bright to play at night in a dim room. To fix this, I decided to install a [potentiometer](https://en.wikipedia.org/wiki/Potentiometer) and make it easily accessible to change the backlight intensity accordingly. This modification was a success and I am very satisfied with the [result]. Below I describe the procedure for modding the Game Boy Pocket.
+**The culprit?**, the backlight itself, the intensity is good during daytime, but it's too bright to play at night in a dim room. To fix this, I decided to install a [potentiometer](https://en.wikipedia.org/wiki/Potentiometer) and make it easily accessible to change the backlight intensity accordingly. This modification was a success and I am very satisfied with the [result](#result). Below I describe the procedure for modding the Game Boy Pocket.
 
 ## Procedure
 ### Materials
