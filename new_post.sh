@@ -11,8 +11,8 @@ touch ${article_file}
 
 echo "Title: " > ${article_file}
 echo "Date: $(date +"%Y-%m-%d %H:%M")" >> ${article_file}
-echo "Category:" >> ${article_file}
 echo "Tags:" >> ${article_file}
 echo "Author: Raymundo Cassani" >> ${article_file}
 echo "Slug: ${article_slug}" >> ${article_file}
+echo "Thumbnail: default.png" >> ${article_file}
 echo "Created content/drafts/${article_file}"
