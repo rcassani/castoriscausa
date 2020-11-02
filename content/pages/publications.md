@@ -13,7 +13,7 @@ Sortorder: 3
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 **2020** | &emsp; | I. Albuquerque, A. Tiwari, M. Parent, **R. Cassani**, J. Gagnon, D. Lafond, S. Tremblay, and T. H. Falk, **"WAUC: A Multi-Modal Database for Mental Workload Assessment under Physical Activity"** in *Frontiers in Neuroscience*, in press, 2020.| &emsp; | &emsp;
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
-**2020** | &emsp; | **R. Cassani**, M.-A. Moinnereau, L. Ivanescu, O. Rosanne, and T. H. Falk, **"Combining a Body/Brain-Machine Interface with an Off-the-Shelf Virtual Reality Headset for Next-Generation Immersive Applications"** in *IEEE Systems, Man, and Cybernetics Magazine*, vol. 6, no. 3, pp. 20-28, July 2020.| &emsp; | <a class="link-icon" href="https://doi.org/10.1109/MSMC.2019.2953627"> <i class="fa fa-link"></i> </a>
+**2020** | &emsp; | **R. Cassani**, M.-A. Moinnereau, L. Ivanescu, O. Rosanne, and T. H. Falk, **"Neural interface instrumented virtual reality headsets: Toward next-generation immersive applications"** in *IEEE Systems, Man, and Cybernetics Magazine*, vol. 6, no. 3, pp. 20-28, July 2020.| &emsp; | <a class="link-icon" href="https://doi.org/10.1109/MSMC.2019.2953627"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 **2020** | &nbsp; | E. M. dos Santos, **R. Cassani**, T. H. Falk, and F. J. Fraga, **“Improved Motor Imagery Brain-computer Interface Performance via Adaptive Modulation Filtering and two-stage Classification,”** *Biomedical Signal Processing and Control*, vol. 57, p. 101812, Mar. 2020.| &emsp; |<a class="link-icon" href="https://doi.org/10.1016/j.bspc.2019.101812"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
