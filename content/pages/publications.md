@@ -6,10 +6,14 @@ Sortorder: 3
 
 [//]: <> ()<a class="link-icon" href=""> <i class="fa fa-link"></i> </a>)
 
-## Articles Published or Accepted in Refereed Journals
+## Articles in Refereed Journals
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 --|--|--|--|--
-**2020** | &emsp; | **R. Cassani**, M.-A. Moinnereau, L. Ivanescu, O. Rosanne, and T. H. Falk, **"Combining a Body/Brain-Machine Interface with an Off-the-Shelf Virtual Reality Headset for Next-Generation Immersive Applications"** in *IEEE Systems, Man, and Cybernetics Magazine*, in press. | &emsp; | &emsp;
+**2020** | &emsp; | **R. Cassani**, G. Novak, T. H. Falk, and A. de Oliveira, **"Virtual reality and non-invasive brain stimulation for rehabilitation applications: a systematic review"** in *Journal of NeuroEngineering and Rehabilitation*, vol. 17, article number 147, 2020.| &emsp; | <a class="link-icon" href="https://doi.org/10.1186/s12984-020-00780-5"> <i class="fa fa-link"></i> </a>
+&nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
+**2020** | &emsp; | I. Albuquerque, A. Tiwari, M. Parent, **R. Cassani**, J. Gagnon, D. Lafond, S. Tremblay, and T. H. Falk, **"WAUC: A Multi-Modal Database for Mental Workload Assessment under Physical Activity"** in *Frontiers in Neuroscience*, in press, 2020.| &emsp; | &emsp;
+&nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
+**2020** | &emsp; | **R. Cassani**, M.-A. Moinnereau, L. Ivanescu, O. Rosanne, and T. H. Falk, **"Combining a Body/Brain-Machine Interface with an Off-the-Shelf Virtual Reality Headset for Next-Generation Immersive Applications"** in *IEEE Systems, Man, and Cybernetics Magazine*, vol. 6, no. 3, pp. 20-28, July 2020.| &emsp; | <a class="link-icon" href="https://doi.org/10.1109/MSMC.2019.2953627"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 **2020** | &nbsp; | E. M. dos Santos, **R. Cassani**, T. H. Falk, and F. J. Fraga, **“Improved Motor Imagery Brain-computer Interface Performance via Adaptive Modulation Filtering and two-stage Classification,”** *Biomedical Signal Processing and Control*, vol. 57, p. 101812, Mar. 2020.| &emsp; |<a class="link-icon" href="https://doi.org/10.1016/j.bspc.2019.101812"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
@@ -30,10 +34,18 @@ Sortorder: 3
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 
 
-## Conference Proceedings and Abstracts
+## Articles in Conference Proceedings and Abstracts
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 --|--|--|--|--
-**2020** | &nbsp; | B Jesus, **R. Cassani**, M. Cecchi, K. Fadem,  W. McGeown, and T. H. Falk, **“Exploring predictive models of Alzheimer’s disease severity based on resting state EEG and MRI features,”** in *Poster Presentations at the 10th Canadian Conference on Dementia (CCD)* Québec City, October 3, 2019.| &emsp; |<a class="link-icon" href="https://dx.doi.org/10.5770%2Fcgj.23.411"> <i class="fa fa-link"></i> </a>
+**2020** | &nbsp; | **R. Cassani**, A. Tiwari, I. Posner, B. Afonso, and T. H. Falk, **“Initial Investigation into Neurophysiological Correlates of Argentine Tango Flow States: a Case Study,”** in *2020 IEEE International Conference on Systems, Man, and Cybernetics (SMC)*, in press 2020.| &emsp; |&emsp;
+&nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
+**2020** | &nbsp; | **R. Cassani**, A. Tiwari, and T. H. Falk, **“Optimal filter characterization for photoplethysmography-based pulse rate and pulse power spectrum estimation,”** in *2020 42nd annual international conference of the IEEE engineering in medicine biology society (EMBC)*, Montreal, QC, Canada, Jul. 2020, pp. 914–917, 2020.| &emsp; | <a class="link-icon" href="https://doi.org/10.1109/EMBC44109.2020.9175396"> <i class="fa fa-link"></i> </a>
+&nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
+**2020** | &nbsp; | L. R. Trambaiolli, **R. Cassani**, and T. H. Falk, **“EEG spectro-temporal amplitude modulation as a measurement of cortical hemodynamics: an EEG-fNIRS study,”** in *2020 42nd annual international conference of the IEEE engineering in medicine biology society (EMBC)*, Montreal, QC, Canada, Jul. 2020, pp. 3481–3484, 2020.| &emsp; | <a class="link-icon" href="https://doi.org/10.1109/EMBC44109.2020.9175409"> <i class="fa fa-link"></i> </a>
+&nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
+**2020** | &nbsp; | A. Tiwari, **R. Cassani**, J.-F. Gagnon, D. Lafond, S. Tremblay, and T. H. Falk, **“Prediction of stress and mental workload during police academy training using ultra-short-term heart rate variability and breathing analysis,”** in *2020 42nd annual international conference of the IEEE engineering in medicine biology society (EMBC)*, Montreal, QC, Canada, Jul. 2020, pp. 4530–4533}, 2020.| &emsp; | <a class="link-icon" href="https://doi.org/10.1109/EMBC44109.2020.9175414"> <i class="fa fa-link"></i> </a>
+&nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
+**2019** | &nbsp; | B Jesus, **R. Cassani**, M. Cecchi, K. Fadem,  W. McGeown, and T. H. Falk, **“Exploring predictive models of Alzheimer’s disease severity based on resting state EEG and MRI features,”** in *Poster Presentations at the 10th Canadian Conference on Dementia (CCD)* Québec City, October 3, 2019.| &emsp; |<a class="link-icon" href="https://dx.doi.org/10.5770%2Fcgj.23.411"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 **2019** | &nbsp; |**R. Cassani**, I. Albuquerque, J. Monteiro, and T. H. Falk, **“AMA: An Open-source Amplitude Modulation Analysis Toolkit for Signal Processing Applications,”** in *2019 IEEE global conference on signal and information processing (GlobalSIP)*, Nov. 2019, pp. 1–4, 2019.| &emsp; |<a class="link-icon" href="https://doi.org/10.1109/GlobalSIP45357.2019.8969210"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
@@ -55,7 +67,7 @@ Sortorder: 3
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 **2015** | &nbsp; | **R. Cassani** and T. H. Falk, **“Automated Alzheimer’s Disease Diagnosis Using a Portable 7-Channel Electroencephalography Device,”** Abstract in *IUPESM World Congress*, (Toronto), 2015.| &emsp; | &emsp;
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
-**2015** | &nbsp; | **R. Cassani**, H. Banville, and T. H. Falk, **“MuLES: An Open Source EEG Acquisition andStreaming Server for Quick and Simple Prototyping and Recording,”** in *Proceedings of the 20th International Conference on Intelligent User Interfaces Companion, IUI Companion ’15*, (New York, NY, USA), pp. 9–12, ACM, 2015| &emsp; |<a class="link-icon" href="https://doi.org/10.1145/2732158.2732193"> <i class="fa fa-link"></i> </a>
+**2015** | &nbsp; | **R. Cassani**, H. Banville, and T. H. Falk, **“MuLES: An Open Source EEG Acquisition andStreaming Server for Quick and Simple Prototyping and Recording,”** in *Proceedings of the 20th International Conference on Intelligent User Interfaces Companion, IUI Companion ’15*, (New York, NY, USA), pp. 9–12, ACM, 2015.| &emsp; |<a class="link-icon" href="https://doi.org/10.1145/2732158.2732193"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
 **2014** | &nbsp; | **R. Cassani** and T. H. Falk, **“Gaze and BCIs as Gaming Inputs: Opportunities and Open Challenges,”** in EyePlay Workshop, *CHI-PLAY2014*, p. 4, 2014.| &emsp; |<a class="link-icon" href="http://musaelab.ca/pdfs/C80.pdf"> <i class="fa fa-link"></i> </a>
 &nbsp; | &emsp; | &nbsp; | &nbsp; | &nbsp;
