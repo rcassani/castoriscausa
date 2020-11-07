@@ -38,7 +38,7 @@ RELATIVE_URLS = True
 ###########################
 THEME = ".//theme//pelican-kis"
 # Subtitle string
-SITESUBTITLE = u'Personal blog and hacks by <a href="../pages/about-me">Raymundo Cassani</a>'
+SITESUBTITLE = u'Personal blog and hacks by <a href="../pages/about-me">Raymundo&nbspCassani</a>'
 
 # Show elements in Menu bar
 MENU_ELEMENTS = ['menu_links', 'pages']
