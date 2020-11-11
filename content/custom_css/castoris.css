@@ -33,7 +33,7 @@ footer ul li a:hover, footer ul li a:focus { color: #6C934D; }
 .pagination .current, .pagination .current:hover {background-color: #93B876;}
 /* 233,235,238 (#E9EBEE) and 147, 184, 118 (#93B876) */
 #sidebar .tagcloud a {background-color: #E9EBEE;}
-#sidebar .tagcloud a:hover {background-color: #93B876;}
+#sidebar .tagcloud a:hover, #sidebar .tagcloud a:focus {background-color: #93B876; color: #FFFFFF;}
 /* sign in Cathegories #9FCC7F */
 ul#nav li.has-children > a::after { color: #9FCC7F;}
 
@@ -186,7 +186,7 @@ header h1#logo-text a {font-family: 'opensans-semibold'}
 
 /* Font for ToC title */
 .toctitle {
-  color: #444;
+  color: #444444;
   font-family: 'opensans-semibold', sans-serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -207,7 +207,7 @@ pre {
  line-height:1.5;
  word-break:break-all;
  word-wrap:break-word;
- border:1px solid #ccc;
+ border:1px solid #CCCCCC;
  border-radius:4px;
  overflow: auto;
  white-space: pre;
@@ -227,7 +227,7 @@ td.linenos {
 
 /* adjust the default color for code blocks */
 .highlight pre{
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .entry .row{
