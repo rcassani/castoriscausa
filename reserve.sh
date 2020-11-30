@@ -6,3 +6,6 @@ kill $(lsof -i:8000 | awk 'NR==2{print$2}')
 invoke clean
 invoke build
 invoke serve
+
+sleep 5
+firefox -private-window http://localhost:8000/
