@@ -12,48 +12,225 @@ December 2019
 .four, .row .four      { width: 25%; }
 
 /* Colors */
-/* Top bar def: 159, 204, 127 OR #9FCC7F */
-body {border-top-color: #9FCC7F;}
-#nav-wrap {border-top-color: #9FCC7F;}
+:root{
+  --color-01: #9FCC7F; /* Border top */
+  --color-02: #93B876; /* TitleText, Link, CurrentPageButtonBg, TagBgHover, Abb, LinkInHeader */
+  --color-03: #34393A; /* LinkHov, FooterLinkHov, FaLink, FaFooter */
+  --color-04: #6C934D; /* FooterLink, FaLinkHov, FaFooterHov */
+  --color-05: #E9EBEE; /* TagBg, TipuBg*/
+  --color-06: #DBECD0; /* CodeBg*/
+  --color-07: #B1B1B1; /* TipuTextDefault*/
+  --color-08: #AFB7BE; /* TipuBgSelected*/
+  --color-09: #FFFFFF; /* TipuTextSelected, TagTextHov, CodeNormalText*/
+  --color-10: #888888; /* Metadata */
+  --color-11: #444444; /* TocTitle*/
+  --color-12: #CCCCCC; /* Numbers in code block*/
+  --color-13: #4A5153; /* BodyText*/
+  --color-14: #7BA857; /* GoTopBgHov*/
+  --color-15: #494949; /* GoTopBg*/
+  --color-16: #F5F4F3; /* NavBg*/
+  --color-17: #778888; /* TagText*/
+  --color-18: #F6F5F5; /* BodyBg Layout (Footer) */
+  --color-19: #838A91; /* Pagination hover */
+  --color-20: #E6E8EB; /* Pagination inactive text*/
+  --color-21: #A9ADB2; /* Pagination inactive text*/
+}
+
+
+/* Colors */
+/* Top bar. Default: #9FCC7F */
+body {border-top-color: var(--color-01);}
+#nav-wrap {border-top-color: var(--color-01);}
+
+/* Navigation bar background. Default: #F5F4F3 */
+#nav-wrap {background: var(--color-16);}
+
+/* Navigation bar Links. Defaul #666666 and #222222*/
+ul#nav li a {color: var(--color-10);}
+ul#nav li a:hover, ul#nav li a:focus  {color: var(--color-11);}
+
+/* top header background */
+#top {background-color: var(--color-09);}
+
 /* logo-text def: #93B876 */
-header h1#logo-text a {color: #93B876;}
-/* Links def #93B876, and #34393A */
-a, a:visited {color: #93B876;}
-a:hover, a:focus  {color: #34393A; text-decoration: underline;}
-/* Links in footer and #6C934D and #34393A */
-footer a, footer a:visited {color: #6C934D;}
-footer a:hover, footer a:focus {color: #34393A;}
+header h1#logo-text a {color: var(--color-03);}
+
+/* Other Links in top  */
+#top a, #top a.visited {color: var(--color-03);}
+
+/* Botton border of Header*/
+header .header-content {border-bottom-color: var(--color-16);}
+
+/* Post Titles*/
+.page h2, .entry h2, .entry h2 a{color:var(--color-11);}
+
+/* Makes the hyperlinks in article content are shown in different color*/
+/* Keeps font properties but color*/
+div.entry-content h1 a, div.entry-content h1 a:visited,
+div.entry-content h2 a, div.entry-content h2 a:visited,
+div.entry-content h3 a, div.entry-content h3 a:visited,
+div.entry-content h4 a, div.entry-content h4 a:visited,
+div.entry-content h5 a, div.entry-content h5 a:visited,
+div.entry-content h6 a, div.entry-content h6 a:visited
+{
+  font: inherit;
+  color: var(--color-02);
+}
+
+div.entry-content h1 a:hover, div.entry-content h1 a:focus,
+div.entry-content h2 a:hover, div.entry-content h2 a:focus,
+div.entry-content h3 a:hover, div.entry-content h3 a:focus,
+div.entry-content h4 a:hover, div.entry-content h4 a:focus,
+div.entry-content h5 a:hover, div.entry-content h5 a:focus,
+div.entry-content h6 a:hover, div.entry-content h6 a:focus
+{color: var(--color-03);}
+
+/* metadata */
+.entry .entry-meta ul {color: var(--color-10);}
+
+/* entry header (Title and metadata)*/
+.entry-header{background-color: var(--color-09);}
+
+/* content background */
+#content-wrap {background-color: var(--color-09);}
+
+
+
+/* Text */
+body {color: var(--color-13);}
+
+/* Horizontal lines */
+hr {border-color: var(--color-16);}
+
+/* Tipue default search bar, Text and Background */
+#tipue_search_input
+{
+  color: var(--color-07);
+  background: var(--color-05);
+}
+
+/* Tipue Hover&Focus search bar, Text and Background */
+#tipue_search_input:focus, #tipue_search_input:focus
+{
+  background: var(--color-08);
+  color: var(--color-09);
+}
+
+/* Tagcloud default, Background and Text */
+#sidebar .tagcloud a
+{
+  background-color: var(--color-05);
+  color: var(--color-17)
+}
+
+/* Tagcloud Hover&Focus, Background and Text */
+#sidebar .tagcloud a:hover, #sidebar .tagcloud a:focus
+{
+  background-color: var(--color-02);
+  color: var(--color-09);
+}
+
+/* Links Default and Hover&Focus */
+a, a:visited {color: var(--color-02);}
+a:hover, a:focus  {color: var(--color-03)}
+
+/* TOC title */
+.toctitle {
+  color: var(--color-11);
+}
+
+/* Pagination default */
+.pagination .page-numbers
+{
+  color: var(--color-19);
+  background-color: var(--color-18);
+}
+/* Pagination Hover&Selcted */
+.pagination .page-numbers:hover
+{
+  color: var(--color-09);
+  background-color: var(--color-19);
+}
+/* Pagination innactive */
+.pagination .inactive, .pagination .inactive:hover
+{
+  color: var(--color-21);
+  background-color: var(--color-18);
+}
+/* Pagination current */
+.pagination .current, .pagination .current:hover
+{
+  color: var(--color-09);
+  background-color: var(--color-02);
+}
+
+/* Footer background */
+body {background-color: var(--color-16);}
+
+/* FA in footer */
+footer ul li a, footer ul li a:visited { color: var(--color-03); }
+footer ul li a:hover, footer ul li a:focus { color: var(--color-04); }
+
+/* Links in footer */
+footer a, footer a:visited {color: var(--color-04);}
+footer a:hover, footer a:focus {color: var(--color-03);}
+
 /* FA Icons in posts and pages */
-a.link-icon, a.link-icon:visited {color: #34393A;}
-a.link-icon:hover, a.link-icon:focus { color: #6C934D; }
-/* Social icons in footer and #34393A and #6C934D */
-footer ul li a, footer ul li a:visited { color: #34393A; }
-footer ul li a:hover, footer ul li a:focus { color: #6C934D; }
-/* Pagination current #93B876 */
-.pagination .current, .pagination .current:hover {background-color: #93B876;}
-/* 233,235,238 (#E9EBEE) and 147, 184, 118 (#93B876) */
-#sidebar .tagcloud a {background-color: #E9EBEE;}
-#sidebar .tagcloud a:hover, #sidebar .tagcloud a:focus {background-color: #93B876; color: #FFFFFF;}
+a.link-icon, a.link-icon:visited {color: var(--color-03);}
+a.link-icon:hover, a.link-icon:focus { color: var(--color-04); }
+
+/* Abbreviations */
+div.entry-content abbr { color: var(--color-02); }
+
+/* Footer text */
+footer {color: var(--color-13);}
+
 /* sign in Cathegories #9FCC7F */
-ul#nav li.has-children > a::after { color: #9FCC7F;}
+ul#nav li.has-children > a::after { color: var(--color-01);}
 
-ul#nav li a:hover, ul#nav li a:focus {text-decoration: underline;}
+/* Go-top button */
+#go-top a, #go-top a:visited {background-color: var(--color-03); }
+#go-top a:hover, #go-top a:focus {background-color: var(--color-04); }
 
+/* Improve display for code tag i.e, `xxx` in Markdown  */
+code { background-color: var(--color-06); }
+
+/* Boder for line number and code for Code blocks*/
+/* improve code block display, one line with scroll */
+pre { border-color: var(--color-12); }
+
+/* adjust the default color for code blocks */
+.highlight pre{ color: var(--color-09); }
+
+/*/////////////////////////////*/
+/*/////////////////////////////*/
+/*/////////////////////////////*/
+
+/* Underline links */
+ul#nav li a:hover, ul#nav li a:focus, a:hover, a:focus,
+header h1#logo-text a:hover, header h1#logo-text a:focus
+{
+  text-decoration: underline;
+}
+
+/* Do not underline tagcloud nor pagination */
+#sidebar .tagcloud a, .pagination .page-numbers
+{text-decoration: none;}
+
+/* Allow lowercase in Sidebar Tags */
+#sidebar .tagcloud a {text-transform: none;}
+
+/* Abbreviations */
 div.entry-content abbr {
    font-family: 'opensans-bold', sans-serif;
    font-variant: inherit;
    text-transform: inherit;
    letter-spacing: .5px;
-   color: #93B876;
 }
-
-/* Allow lowercase in Sidebar Tags */
-#sidebar .tagcloud a {text-transform: none;}
 
 /* Improve display for code tag `xxx`  */
 code {
   font-size: 1.05em;
-  background-color: #DBECD0;
   font-weight: bold;
 }
 
@@ -70,7 +247,6 @@ header p#intro {
   font-family: "opensans", sans-serif;
   padding-top: 5px;
 }
-
 
 /* Padding for content-wrap*/
 #content-wrap {padding: 30px 0 0 0;}
@@ -102,33 +278,6 @@ p.tags{margin-bottom: 15px}
 /* Place disc indicators for ul tag in Page and Article content*/
 section.page ul, div.entry-content ul {margin-left: 17px; list-style: disc}
 
-/* Makes the hyperlinks in article content are shown in different color*/
- /* a, div.entry-content h1 a {margin-left: 17px; list-style: disc}*/
-div.entry-content h1 a, div.entry-content h1 a:visited,
-div.entry-content h2 a, div.entry-content h2 a:visited,
-div.entry-content h3 a, div.entry-content h3 a:visited,
-div.entry-content h4 a, div.entry-content h4 a:visited,
-div.entry-content h5 a, div.entry-content h5 a:visited,
-div.entry-content h6 a, div.entry-content h6 a:visited
- {
-   text-decoration: none;
-   outline: 0;
-   color: #93B876;
-
-   -webkit-transition: color .3s ease-in-out;
-   -moz-transition: color .3s ease-in-out;
-   -o-transition: color .3s ease-in-out;
-   transition: color .3s ease-in-out;
-}
-
-div.entry-content h1 a:hover, div.entry-content h1 a:focus,
-div.entry-content h2 a:hover, div.entry-content h2 a:focus,
-div.entry-content h3 a:hover, div.entry-content h3 a:focus,
-div.entry-content h4 a:hover, div.entry-content h4 a:focus,
-div.entry-content h5 a:hover, div.entry-content h5 a:focus,
-div.entry-content h6 a:hover, div.entry-content h6 a:focus
-{ color: #34393A; }
-
 /* makes "strong" the links in posts */
 div.entry-content a{
   font: 15px/30px 'merriweather-bold', sans-serif;
@@ -144,28 +293,15 @@ pre {padding-left: 5px}
 #tipue_search_input {
   float:inherit;
   font:inherit;
-  color: #B1B1B1;
-  background: #E9EBEE;
-  /* padding: inherit; */
   height: 40px;
   box-sizing: inherit;
   outline: inherit;
   margin: inherit;
 }
 
-#tipue_search_input:focus {
-  background: #AFB7BE;
-  color: #FFFFFF;
-}
-
-/* Adjust the color for Published and Modified dates in article info*/
-.entry .entry-meta ul {
-  color: #888888;
-  margin-bottom: 15px;
-}
-.entry .tags {
-  margin-top: 5px;
-}
+/* Adjust margins in metadata*/
+.entry .entry-meta ul {margin-bottom: 15px;}
+.entry .tags {margin-top: 5px;}
 
 /* Centers header image posts */
 .post-thumb img{display: block; margin-left: auto; margin-right: auto;}
@@ -186,7 +322,6 @@ header h1#logo-text a {font-family: 'opensans-semibold'}
 
 /* Font for ToC title */
 .toctitle {
-  color: #444444;
   font-family: 'opensans-semibold', sans-serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -207,7 +342,8 @@ pre {
  line-height:1.5;
  word-break:break-all;
  word-wrap:break-word;
- border:1px solid #CCCCCC;
+ border-width: 1px;
+ border-style: solid;
  border-radius:4px;
  overflow: auto;
  white-space: pre;
@@ -225,10 +361,7 @@ td.linenos {
   text-align: right;
 }
 
-/* adjust the default color for code blocks */
-.highlight pre{
-  color: #FFFFFF;
-}
+
 
 .entry .row{
   display: flex;
