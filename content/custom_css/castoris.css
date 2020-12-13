@@ -38,52 +38,51 @@ December 2019
 }
 }
 
-/* Colors */
+/* Colors solid: 347336, pastel: CCDCCD */
 :root{
-  --color-01: #296E01;
-  --color-02: #6C934D;
-  --color-03: #9FBB58;
-  --color-04: #DBECD0;
-  --color-05: #F5F4F3;
-  --color-06: #E9EBEE;
-  --color-07: #AFB7BE;
-  --color-08: #838A91;
-  --color-09: #57656A;
-  --color-10: #0A0E10;
-  --color-white: #FFFFFF;
-  --color-black: #000000;
+  --color-solid:  #347336;
+  --color-pastel: #CCDCCD; /* (3/4 * (white-solid)) + solid */
+  --color-text:   #252525;
+  --color-gray-1: #404040;
+  --color-gray-2: #646464;
+  --color-gray-3: #808080;
+  --color-gray-4: #e0e0e0;
+  --color-white:  #ffffff;
 }
 
 
 /* Colors */
 /* Top bar. Default: #9FCC7F */
-body {border-top-color: var(--color-01);}
-#nav-wrap {border-top-color: var(--color-01);}
+body {border-top-color: var(--color-solid);}
+#nav-wrap {border-top-color: var(--color-solid);}
 
 /* Navigation bar background. Default: #F5F4F3 */
-#nav-wrap {background: var(--color-05);}
+#nav-wrap {background: var(--color-gray-4);}
 
 /* Navigation bar Links. Defaul #666666 and #222222*/
-ul#nav li a {color: var(--color-09);}
-ul#nav li a:hover, ul#nav li a:focus  {color: var(--color-10);}
+ul#nav li a {color: var(--color-gray-2);}
+ul#nav li a:hover, ul#nav li a:focus  {color: var(--color-gray-1);}
 
 /* top header background */
 #top {background-color: var(--color-white);}
 
 /* logo-text def: #93B876 */
-header h1#logo-text a {color: var(--color-02);}
+header h1#logo-text a {color: var(--color-solid);}
 
 /* Other Links in top  */
-#top a, #top a.visited {color: var(--color-02);}
+#top a, #top a.visited {color: var(--color-solid);}
+
+/* Normal text in top header*/
+header p#intro {color: var(--color-gray-2);}
 
 /* Botton border of Header*/
-header .header-content {border-bottom-color: var(--color-07);}
+header .header-content {border-bottom-color: var(--color-gray-3);}
 
 /* Post Titles*/
-.page h2, .entry h2, .entry h2 a{color:var(--color-10);}
+.page h2, .entry h2, .entry h2 a{color:var(--color-text);}
 
 /* h1, h2, h3, h4, h5, h6 */
-h1, h2, h3, h4, h5, h6 {color:var(--color-10);}
+h1, h2, h3, h4, h5, h6 {color:var(--color-text);}
 
 /* Makes the hyperlinks in article content are shown in different color*/
 /* Keeps font properties but color*/
@@ -95,7 +94,7 @@ div.entry-content h5 a, div.entry-content h5 a:visited,
 div.entry-content h6 a, div.entry-content h6 a:visited
 {
   font: inherit;
-  color: var(--color-02);
+  color: var(--color-solid);
 }
 
 div.entry-content h1 a:hover, div.entry-content h1 a:focus,
@@ -104,11 +103,11 @@ div.entry-content h3 a:hover, div.entry-content h3 a:focus,
 div.entry-content h4 a:hover, div.entry-content h4 a:focus,
 div.entry-content h5 a:hover, div.entry-content h5 a:focus,
 div.entry-content h6 a:hover, div.entry-content h6 a:focus
-{color: var(--color-10);}
+{color: var(--color-gray-1);}
 
 /* metadata */
-.entry .entry-meta ul {color: var(--color-08);}
-.entry .tags {color: var(--color-08);}
+.entry .entry-meta ul {color: var(--color-gray-3);}
+.entry .tags {color: var(--color-gray-3);}
 
 /* entry header (Title and metadata)*/
 .entry-header{background-color: var(--color-white);}
@@ -117,112 +116,112 @@ div.entry-content h6 a:hover, div.entry-content h6 a:focus
 #content-wrap {background-color: var(--color-white);}
 
 /* Text */
-body {color: var(--color-10);}
+body {color: var(--color-text);} /* Text color */
 
 /* Horizontal lines */
-hr {border-color: var(--color-07);}
+hr {border-color: var(--color-gray-3);}
 
 /* Tipue default search bar, Text and Background */
 #tipue_search_input
 {
-  color: var(--color-09);
-  background: var(--color-05);
+  color: var(--color-gray-1);
+  background: var(--color-gray-4);
 }
 
 /* Tipue Hover&Focus search bar, Text and Background */
 #tipue_search_input:focus, #tipue_search_input:focus
 {
-  background: var(--color-04);
-  color: var(--color-09);
+  color: var(--color-gray-1);
+  background: var(--color-pastel);
 }
 
 /* Tagcloud default, Background and Text */
 #sidebar .tagcloud a
 {
-  background-color: var(--color-06);
-  color: var(--color-09)
+  background-color: var(--color-gray-4);
+  color: var(--color-gray-1)
 }
 
 /* Tagcloud Hover&Focus, Background and Text */
 #sidebar .tagcloud a:hover, #sidebar .tagcloud a:focus
 {
-  background-color: var(--color-03);
+  background-color: var(--color-solid);
   color: var(--color-white);
 }
 
 /* Links Default and Hover&Focus */
-a, a:visited {color: var(--color-02);}
-a:hover, a:focus  {color: var(--color-10)}
+a, a:visited {color: var(--color-solid);}
+a:hover, a:focus  {color: var(--color-gray-1)}
 
 /* TOC title */
 .toctitle {
-  color: var(--color-10);
+  color: var(--color-text);
 }
 
 /* Pagination default */
 .pagination .page-numbers
 {
-  color: var(--color-09);
-  background-color: var(--color-06);
+  color: var(--color-gray-1);
+  background-color: var(--color-gray-4);
 }
 /* Pagination Hover&Selcted */
 .pagination .page-numbers:hover
 {
   color: var(--color-white);
-  background-color: var(--color-08);
+  background-color: var(--color-solid);
 }
 /* Pagination innactive */
 .pagination .inactive, .pagination .inactive:hover
 {
-  color: var(--color-07);
-  background-color: var(--color-06);
+  visibility: hidden;
+  color: var(--color-gray-3);
+  background-color: var(--color-gray-4);
 }
 /* Pagination current */
 .pagination .current, .pagination .current:hover
 {
   color: var(--color-white);
-  background-color: var(--color-03);
+  background-color: var(--color-solid);
 }
 
 /* Footer background */
-body {background-color: var(--color-05);}
+body {background-color: var(--color-gray-4);}
 
 /* FA in footer */
-footer ul li a, footer ul li a:visited { color: var(--color-09); }
-footer ul li a:hover, footer ul li a:focus { color: var(--color-03); }
+footer ul li a, footer ul li a:visited { color: var(--color-gray-1); }
+footer ul li a:hover, footer ul li a:focus { color: var(--color-solid); }
 
 /* Links in footer */
-footer a, footer a:visited {color: var(--color-02);}
-footer a:hover, footer a:focus {color: var(--color-10);}
+footer a, footer a:visited {color: var(--color-solid);}
+footer a:hover, footer a:focus {color: var(--color-gray-1);}
 
 /* FA Icons in posts and pages */
-a.link-icon, a.link-icon:visited {color: var(--color-09);}
-a.link-icon:hover, a.link-icon:focus { color: var(--color-03); }
+a.link-icon, a.link-icon:visited {color: var(--color-gray-1);}
+a.link-icon:hover, a.link-icon:focus { color: var(--color-solid); }
 
 /* Abbreviations */
-div.entry-content abbr { color: var(--color-02); }
+div.entry-content abbr { color: var(--color-solid); }
 
 /* Footer text */
-footer {color: var(--color-10);}
+footer {color: var(--color-gray-2);}
 
 /* sign in Cathegories #9FCC7F */
-ul#nav li.has-children > a::after { color: var(--color-02);}
+ul#nav li.has-children > a::after { color: var(--color-solid);}
 
 /* Go-top button */
-#go-top a, #go-top a:visited {background-color: var(--color-09); }
-#go-top a:hover, #go-top a:focus {background-color: var(--color-03); }
+#go-top a, #go-top a:visited {background-color: var(--color-gray-1); }
+#go-top a:hover, #go-top a:focus {background-color: var(--color-solid); }
 
 /* Improve display for code tag i.e, `xxx` in Markdown  */
 code
 {
-  color: var(--color-10);
-  background-color: var(--color-04);
+  color: var(--color-gray-2);
+  background-color: var(--color-pastel);
 }
-
 
 /* Boder for line number and code for Code blocks*/
 /* improve code block display, one line with scroll */
-pre { border-color: var(--color-07); }
+pre { border-color: var(--color-gray-4); }
 
 /* adjust the default color for code blocks */
 .highlight pre{ color: var(--color-white); }
@@ -270,7 +269,6 @@ header h1#logo-text a {letter-spacing: 0px;}
 
 /* Subtitle format */
 header p#intro {
-  color: inherit;
   font-size: 22px;
   font-family: "opensans", sans-serif;
   padding-top: 5px;
