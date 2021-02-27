@@ -80,7 +80,7 @@ SOCIAL = (
           ('Twitter', 'https://twitter.com/r_cassani'),
           ('LinkedIn', 'https://www.linkedin.com/in/rcassani/'),
           ('user-graduate', 'https://scholar.google.com/citations?hl=en&user=3A9_Ww8AAAAJ'),
-          ('address-card', '/files/cv_rcg.pdf'),
+#          ('address-card', '/files/cv_rcg.pdf'),
           ('envelope', '#'),
          )
 
