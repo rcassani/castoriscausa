@@ -152,6 +152,7 @@ hr {border-color: var(--color-gray-3);}
 /* Links Default and Hover&Focus */
 a, a:visited {color: var(--color-solid);}
 a:hover, a:focus  {color: var(--color-gray-1)}
+a:hover { cursor:pointer; } /*pointer for <a> with onclick  */
 
 /* TOC title */
 .toctitle {
