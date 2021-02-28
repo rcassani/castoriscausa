@@ -7,5 +7,5 @@ invoke clean
 invoke build
 invoke serve
 
-sleep 5
-firefox -private-window http://localhost:8000/
+#sleep 5
+#firefox -private-window http://localhost:8000/
