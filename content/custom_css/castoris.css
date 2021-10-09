@@ -3,7 +3,7 @@ Custom CSS for CastorisCausa
 This customs CSS is aimed to work with the pelican-kis theme
 
 Raymundo Cassani
-December 2019
+
 /* Width of the row, original 1008px 94%*/
 .row {max-width: 1320px; width: 100%;}
 
@@ -161,6 +161,26 @@ a:hover { cursor:pointer; } /*pointer for <a> with onclick  */
 /* TOC title */
 .toctitle {
   color: var(--color-text);
+}
+
+/* Permalinks in headers */
+a.headerlink {visibility: hidden;}
+
+/* Make permalinks visible on hover on headers */
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink
+{visibility: visible;}
+
+/* Icon for permalinks in headers, same as class fa-link*/
+a.headerlink::after
+{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c1";
 }
 
 /* Pagination default */
