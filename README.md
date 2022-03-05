@@ -1,24 +1,46 @@
-# castoriscausa
-Files for Static Site www.castoriscausa.com
+# CastorisCausa
+Files for static site: [https://www.castoriscausa.com/](https://www.castoriscausa.com/)
 
-# Generating Static website
-1. Create and activate an (conda) environment with Python 3.5+
+## Environment to generate static website
+1. Create and activate an ([conda](https://docs.conda.io/projects/conda/en/latest/index.html)) environment with Python 3
 2. Using `pip` install Pelican and some dependencies
 ```
   $ pip install pelican markdown typogrify bs4 invoke
 ```
-    2.1. The environment file X wwas created on 2019-12-11
+>💡 Alternatively, create the environment from the [`pelican.yml`](pelican.yml) (March 2022)
 
-3. The Pelican theme is `pelican-bootstrap3`  
-  [https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3]()
-   The theme can be downloaded with [DownGit](https://minhaskamal.github.io/DownGit/#/home). And place it in `.`
+## Pelican configuration
+All the details are in [`pelicanconf.py`](pelicanconf.py)
 
-   3.1. The `pelican-bootstrap3` requires the [`i18n_subsites`](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites) plugin. Download it and place it in `.\plugins`.
+### Theme
+The Pelican theme is `pelican-kis`  
+  [https://github.com/rcassani/pelican-kis](https://github.com/rcassani/pelican-kis)
 
-4. To build and serve the site, run the script `reserve.sh`
+### Plugins
+ * tipue_search
+ * sitemap
+ * series
+ * render_math
 
-5. Open [http://localhost:8000/](http://localhost:8000/) in the web browser
+### Custom CSS
+Custom CSS [castoris.css](/content/custom_css/castoris.css) to:
+  * Set two columns 9+3 (instead of 8+4)
+  * Colors
+  * Fonts
 
-6. When the website is ready to be uploaded, run the script `prepare_html_repo.sh`, this will copy all the content to `..\castoris-html`
+### Custom JS
+Custom JS [castoris.js](/content/custom_js/castoris.js) to:
+  * Hide email
+  * Confirmation button in publications
 
-7. Just commit and push `castoris-html`
+### Publications
+Publication format is IEEE
+
+## Build and deployment
+1. To build and serve the site, run the script `reserve.sh`
+
+2. Open [http://localhost:8000/](http://localhost:8000/) in the web browser
+
+3. When the website is ready to be uploaded, run the script `prepare_html_repo.sh`, this will copy all the content to `..\castoris-html`
+
+4. Just commit and push `castoris-html` to [https://github.com/rcassani/rcassani.github.io]()
