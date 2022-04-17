@@ -242,6 +242,16 @@ code
 {
   color: var(--color-gray-2);
   background-color: var(--color-pastel);
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+/* Do not change display for code tag inside .highlighttable */
+.highlighttable code{
+  color: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 /* Boder for line number and code for Code blocks*/
@@ -282,12 +292,6 @@ div.entry-content abbr {
    font-variant: inherit;
    text-transform: inherit;
    letter-spacing: .5px;
-}
-
-/* Improve display for code tag `xxx`  */
-code {
-  font-size: 1.05em;
-  font-weight: bold;
 }
 
 /* Total header height, original 288 */
