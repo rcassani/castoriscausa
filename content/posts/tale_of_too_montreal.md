@@ -1,9 +1,14 @@
 Title: A tale of too (many) Montreal
 Date: 2022-04-15 18:00
-Tags:
+Modified: 2022-05-02 20:00
+Tags: Montreal, GIS, maps
 Author: Raymundo Cassani
 Slug: tale-of-too-montreal
 Thumbnail: montreals_map.png
+
+<hr>
+**Updated**: The content of this post was featured in [MTL Blog](https://www.mtlblog.com/montreal/do-you-really-live-in-montreal-this-map-shows-all-the-confusing-definitions-of-montreal), and prompted an exciting discussion on [r/montreal](https://www.reddit.com/r/montreal/comments/u7eywu/its_an_island_its_a_city_its_an_agglomeration_all/). Lastly, check [this awesome video](https://youtu.be/S37u9lPGmas) to know more on why it's important to know the terms that **Montreal** can make reference, as they can be used to mislead in important socioeconomic issues.
+<hr>
 
 > P1: I live in Montreal  
 > P2: What does that mean?  
