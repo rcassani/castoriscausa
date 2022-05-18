@@ -1,5 +1,6 @@
 Title: Hook with systemd to disable wake-up from USB device
 Date: 2020-03-09 17:32
+Modified: 2022-05-18 14:00
 Tags: Arch, Linux, systemd
 Author: Raymundo Cassani
 Slug: hook-systemd-disable-wakeup-from-usb-device
@@ -36,7 +37,7 @@ These are the instructions for the 2nd way:
 
 2. That device will be disabled from the wake-up list each time the computers goes to suspension
 
-3. Create a file `suspend-mouse-fix.service` in `/etc/systemd/system` with this content:
+3. Create a file `suspend-usb-fix.service` in `/etc/systemd/system` with this content:
 
 		:::bash
 		[Unit]
@@ -64,13 +65,13 @@ These are the instructions for the 2nd way:
 4. Change the permissions of the service file
 
 		:::bash
-		# chmod 664 /etc/systemd/system/suspend-mouse-fix.service
+		# chmod 664 /etc/systemd/system/suspend-usb-fix.service
 
 5. Enable the service:
 
 		:::bash
-		systemctl enable suspend-mouse-fix.service
+		systemctl enable suspend-usb-fix.service
 
 6. If there any update in the service file, run ```$ systemctl daemon-reload``` after modifying it
 
-7. Lastly, the status and last calls of the service are obtained with `$ systemctl status suspend-mouse-fix.service`. And this information can be also found with `$ journalctl`
+7. Lastly, the status and last calls of the service are obtained with `$ systemctl status suspend-usb-fix.service`. And this information can be also found with `$ journalctl`
