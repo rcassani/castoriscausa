@@ -114,6 +114,13 @@ MARKDOWN = {
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
         'markdown.extensions.toc': {'title': 'Contents:', 'permalink': ' '},
+        'mdx_include': {
+            'base_path': "content",
+            'recursive_relative_path': True,
+            'allow_local': True,
+            'allow_remote': True,
+            'recurs_local': True,
+            'recurs_remote': True}
     },
     'output_format': 'html5',
 }
