@@ -54,9 +54,8 @@ SIDEBAR_TEXT = u'A brief text that will appear in de siderbar, this can be anyth
 
 # Blogroll
 LINKS = (
-         ('Home', SITEURL),
-         ('MuSAE Lab', 'https://musaelab.ca/'),
-         ('neuroSPEED Lab', 'https://www.neurospeed-bailletlab.org/')
+         (' • neuroSPEED Lab', 'https://www.neurospeed-bailletlab.org/'),
+         (' • MuSAE Lab', 'https://musaelab.ca/')
         )
 
 # Show Metadata in Indexes and Articles
