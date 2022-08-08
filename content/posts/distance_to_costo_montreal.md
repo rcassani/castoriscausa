@@ -1,9 +1,14 @@
 Title: How far is a Costco in Montreal?
 Date: 2022-05-28 14:00
+Modified: 2022-08-07 20:00
 Tags: Montreal, Python, GIS, maps, GeoPandas
 Author: Raymundo Cassani
 Slug: distance_to_costo_montreal
 Thumbnail: dist_costco_montreal.png
+
+<hr>
+**Updated**: After receiving feedback on this post, I updated this post by adding at the end a similar map but using the driving times, rather than the Euclidean distances.
+<hr>
 
 Once clarified the [different meanings of Montreal]({filename}tale_of_too_montreal.md), I'm in a better position to solve a question inspired by a conversation with a friend, the question is:
 
@@ -43,6 +48,15 @@ With all the information at hand, making the map as straight forward:
 
 This as a fun project, it can be easily modified to do the same analysis with other points for interest.
 
+## Using driving times
+How does the map change if driving times are used instead of linear distances?
+To obtain map below, the [isochrone maps](https://en.wikipedia.org/wiki/Isochrone_map) were obtained for each store location with [Openrouteservice](https://openrouteservice.org/). Then, for each point in the map grid the minimum driving time to a store was selected. This is the result.
+
+<center>
+[<img src="/images/time_costco_montreal.png" style="width: 100%;"/>](/images/time_costco_montreal.png)  
+<br>
+</center>  
+
 ## Relation with population density?
 As a quick exploration, this distance-to-Costco map above was plotted on the [2021 population density map of the area](https://www12.statcan.gc.ca/census-recensement/2021/geo/maps-cartes/thematicmaps-cartesthematiques/pd-pl/map-eng.cfm?lang=E&mapid=5&dguid=2021S0503462). The result is interesting, and led to make the prediction:
 
@@ -53,6 +67,3 @@ As a quick exploration, this distance-to-Costco map above was plotted on the [20
 <br>
 Red background shades indicates high population density.
 </center>  
-
-## Limitations and future
-Yes, so far it's a linear distance, that does not take into account streets (nor water canals!). An update would be to use a transit (or transportation) API to change distance to time, to show accessibility.
