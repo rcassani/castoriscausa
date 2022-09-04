@@ -8,6 +8,8 @@ Thumbnail: dist_costco_montreal.png
 
 <hr>
 **Updated**: After receiving feedback on this post, I updated this post by adding at the end a similar map but using the driving times, rather than the Euclidean distances.
+
+**Interactive maps**: [Minimum linear distance to a Costco](/htmls/dist_costco_montreal.html) and [Minimum driving time to a Costco](/htmls/time_costco_montreal.html)  
 <hr>
 
 Once clarified the [different meanings of Montreal]({filename}tale_of_too_montreal.md), I'm in a better position to solve a question inspired by a conversation with a friend, the question is:
