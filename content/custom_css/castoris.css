@@ -372,6 +372,7 @@ div.entry-content{
 
 /* Font and size for links in Link and Categorie sidebar*/
 .widget_categories a {font-family: 'opensans-semibold', sans-serif; font-size: 20px;}
+.widget_links a {font-family: 'opensans-semibold', sans-serif; font-size: 20px;}
 
 /* Font main header */
 header h1#logo-text a {font-family: 'opensans-semibold'}
