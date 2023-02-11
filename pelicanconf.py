@@ -20,9 +20,9 @@ DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 
 # Site general information
-AUTHOR = u'Raymundo Cassani'
+AUTHOR   = u'Raymundo Cassani'
 SITENAME = u'CastorisCausa'
-SITEURL = u'https://www.castoriscausa.com'
+SITEURL  = u'https://www.castoriscausa.com'
 SITELOGO = u'castoris_s.png'
 
 # Delete Output files everytime Pelican runs
@@ -37,7 +37,9 @@ RELATIVE_URLS = True
 ###########################
 # KIS theme
 ###########################
-THEME = ".//theme//pelican-kis"
+THEME   = "./theme/pelican-kis"
+FAVICON = './images/favicon.png'
+
 # Subtitle string
 SITESUBTITLE = u'Personal blog and hacks by <a href="../pages/about-me">Raymundo&nbspCassani</a>'
 
