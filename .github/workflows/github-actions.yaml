@@ -1,18 +1,52 @@
-name: GitHub Actions
-on: [push]
+# Workflow name
+name: Generate and publish CastorisCausa website
+# Name for each run
+run-name: "🛠️🦫 : ${{ github.event.head_commit.message }}"
+# Run on Push to 'main' or 'master' branch
+on:
+  push:
+    branches:
+      - main
+      - master
 jobs:
-  First-GitHub-Actions:
-    runs-on: ubuntu-latest
+  # Job name
+  Generate-Copy-Push:
+    defaults:
+      run:
+        shell: bash -l {0}      # This is needed to use setup-miniconda
+    runs-on: ubuntu-latest      # GitHub-hosted runner
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v2
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: Count number of posts
+      - name: Checkout 'castoriscausa' repo on ./castoriscausa
+        uses: actions/checkout@v3
+        with:
+          path: castoriscausa
+      - name: Checkout 'pelican-kis' repo on ./castoriscausa/theme/
+        uses: actions/checkout@v3
+        with:
+          repository: rcassani/pelican-kis
+          path: castoriscausa/theme/pelican-kis
+      - name: Checkout 'rcassani.github.io' repo on ./castoris-html
+        uses: actions/checkout@v3
+        with:
+          repository: rcassani/rcassani.github.io
+          ref: 'master'
+          token: ${{ secrets.TOKEN_CC }}  # TOKEN_CC is a PAT in secrets in castoriscausa
+          path: castoris-html
+      - name: Create conda environment
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: github-runner
+          environment-file: ./castoriscausa/pelican.yaml
+          auto-activate-base: false
+      - name: Generate website to publish
         run: |
-          echo "Number of posts: $(ls ${{ github.workspace }}/content/posts/*md | wc -l)"
-      - run: echo "🍏 This job's status is ${{ job.status }}."
-
+             cd $GITHUB_WORKSPACE/castoriscausa
+             ./prepare_html_repo.sh
+      - name: Push to rcassani.github.io repo
+        run: |
+             cd $GITHUB_WORKSPACE/castoris-html
+             git config user.name rcassani
+             git config user.email raymundo.cassani@gmail.com
+             git add --all
+             git commit -m "${{ github.event.head_commit.message }}"
+             git push
