@@ -54,6 +54,10 @@ Raymundo Cassani
 div.entry-content a{
   font: 15px/30px 'merriweather-bold', sans-serif;
 }
+/* makes "strong" the links in pages */
+section.page a{
+  font: 15px/30px 'merriweather-bold', sans-serif;
+}
 
 /* Colors */
 /* Top bar. Default: #9FCC7F */
