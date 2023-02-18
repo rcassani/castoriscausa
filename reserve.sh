@@ -1,11 +1,9 @@
-# Bash script, to clean, build and serve the Pelican Website
-# Using Script Package for Atom, in Linux
-# Run this file with Ctr-Shift-b
+# Bash script, to clean, build and local serve the Pelican Website
+# Content dir: castoriscausa
 
-kill $(lsof -i:8000 | awk 'NR==2{print$2}')
+# Clean castoriscausa/output/
 invoke clean
+# Generate with base settings
 invoke build
+# Serve site at http://localhost:8000
 invoke serve
-
-#sleep 5
-#firefox -private-window http://localhost:8000/

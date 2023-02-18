@@ -1,22 +1,17 @@
 # Bash script, to prepare the files to update the rcassani.github.io repo
-# Using Script Package for Atom, in Linux
-# Run this file with Ctr-Shift-b
+# Content dir: castoriscausa
+# HMTL dir:    castoris-html
 
-# dir wit the HTML repo
-
-# Build
+# Clean castoriscausa/output/
 invoke clean
+# Generate with publish settings
 invoke preview
 
-# Current directory
-WD=`pwd`
-
-# HTML repo in ../castoris-html
-# Delete old files in HTML repo
+# Clean old in HTML dir
 cd ../castoris-html
 ls | grep -v '.git' | xargs rm -rf
-# https://unix.stackexchange.com/questions/153862/remove-all-files-directories-except-for-one-fileco
+# https://unix.stackexchange.com/questions/153862
 
-# Copy new files to repo
-cd $WD
+# Copy new files to HTML dir
+cd ../castoriscausa
 cp -a ./output/. ../castoris-html
