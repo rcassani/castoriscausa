@@ -143,6 +143,38 @@ hr {border-color: var(--color-gray-3);}
   background: var(--color-pastel);
 }
 
+/* Buttons */
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  text-transform: none;
+  background: var(--color-gray-4);
+  color: var(--color-gray-1)
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  text-transform: none;
+  background: var(--color-solid);
+  color: var(--color-white);
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  text-transform: none;
+  background: var(--color-solid);
+  color: var(--color-white);
+}
+
 /* Tagcloud default, Background and Text */
 #sidebar .tagcloud a
 {
