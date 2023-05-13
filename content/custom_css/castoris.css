@@ -143,6 +143,24 @@ hr {border-color: var(--color-gray-3);}
   background: var(--color-pastel);
 }
 
+/* Text input */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  background: var(--color-gray-4);
+  color: var(--color-gray-1);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  background: var(--color-pastel);
+  color: var(--color-gray-1);
+}
+
 /* Buttons */
 .button,
 .button:visited,
