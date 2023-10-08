@@ -6,6 +6,9 @@ Sortorder: 2
 
 This is list of some of the projects I have contributed. Most of the code is already available in my [GitHub account](https://github.com/rcassani), or it is available under request.
 
+* [**Brainstorm**](https://neuroimage.usc.edu/brainstorm/) is a collaborative, open-source application dedicated to the analysis of brain recordings: MEG, EEG, fNIRS, ECoG, iEEG, depth electrodes and multiunit electrophysiology. Brainstorm is developed with Matlab (and Java), it does not require users to own a Matlab license: an executable, platform-independent (Windows, MacOS, Linux) version is made available.  
+
+
 * The [**MuSAE Lab EEG Server (MuLES)**](https://github.com/MuSAELab/MuLES) is an EEG acquisition and streaming server programmed in LabVIEW. It creates a standard interface for portable EEG. Latest version is compatible with Interaxon Muse (2014), Emotiv EEG, Neuroelectrics Enobio, and OpenBCI devices.  
 
 
