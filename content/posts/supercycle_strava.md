@@ -1,9 +1,12 @@
 Title: SuperCycle data to Strava
 Date: 2023-10-07 19:00
+Modified: 2023-10-22 17:00
 Tags: bike, SQLite, Python, REST
 Author: Raymundo Cassani
 Slug: supercycle_strava
 Thumbnail: supercycle2gpx2strava.png
+
+**Updated**: Now exporting rides from the [Zeopoxa cycling](https://www.zeopoxa.com/cycling.html) app to GPX files is also supported.
 
 Recently I moved to the [Strava app](https://www.strava.com) to register the my biking activity. However, I had plenty of data recorded with the [SuperCycle app](http://www.osborntech.com/). So, I code my way to migrate the data. First, each ride recorded with SuperCycle was stored as [GPX, or GPS Exchange Format files](https://en.wikipedia.org/wiki/GPS_Exchange_Format), after converting all the rides, the GPX files were uploaded to Strava using their API. The codes for this project can be found in:
 
@@ -17,6 +20,14 @@ SuperCycle data is stored in a [SQLite](https://www.sqlite.org/index.html) datab
 * **ride_detail**:  Localization resolved at one-second for each ride
 
 Reading the database tables and writing the GPX files is done with [`supercyle2gpx.py`](https://github.com/rcassani/supercycle_strava/blob/main/supercyle2gpx.py)
+
+## Zeopoxa data to GPX
+Zeopoxa data is also stored in a SQLite database, but its schema table is different. A copy of the database can be generated with the **Backup** option in the the app. Among all the data in the database, we are interested in only tables:
+
+* **main_table** : Information for rides with localization resolved at one-second
+* **bicycle_table** : Information for bikes
+
+Reading the database tables and writing the GPX files is done with [`zeopoxa2gpx.py`](https://github.com/rcassani/supercycle_strava/blob/main/zeopoxa2gpx.py)
 
 ## Upload GPX files to Strava
 Strava allows to manually upload GPX files using [this page](https://www.strava.com/upload/select).
