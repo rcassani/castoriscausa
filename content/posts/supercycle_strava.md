@@ -24,7 +24,7 @@ Reading the database tables and writing the GPX files is done with [`supercyle2g
 ## Zeopoxa data to GPX
 Zeopoxa data is also stored in a SQLite database, but its schema table is different. A copy of the database can be generated with the **Backup** option in the the app. Among all the data in the database, we are interested in only tables:
 
-* **main_table** : Information for rides with localization resolved at one-second
+* **main_table** : Information for rides with localization resolved every six seconds
 * **bicycle_table** : Information for bikes
 
 Reading the database tables and writing the GPX files is done with [`zeopoxa2gpx.py`](https://github.com/rcassani/supercycle_strava/blob/main/zeopoxa2gpx.py)
