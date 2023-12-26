@@ -8,6 +8,8 @@ on:
     branches:
       - main
       - master
+  workflow_dispatch:
+
 jobs:
   # Job name
   Generate-Copy-Push:
