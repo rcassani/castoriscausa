@@ -8,6 +8,7 @@ Thumbnail: pyscript_pelican.png
 PyScript_JS: https://pyscript.net/releases/2023.11.2/core.js
 
 **Updated**:
+
 * HTML has been updated to use a specific version of PyScript (2023.11.2)
 * Python code has been updated for that versions of PyScript
 
