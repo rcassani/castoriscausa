@@ -14,10 +14,10 @@ This post shows a simple game created using [PyScript](https://pyscript.net/) in
   <script type="py" src="/scripts/guess_game.py" id="py-internal-0"></script>
   <strong><p id="game-message-txt"></p></strong>
   <input id="new-guess-txt" class="py-input" type="text">
-  <button id="new-guess-btn" class="py-button" type="submit" py-click="new_guess()">
+  <button id="new-guess-btn" class="py-button" type="submit" py-click="new_guess">
   Submit guess
   </button>
-  <button id="reset-game-btn" class="py-button" type="submit" py-click="new_game()">
+  <button id="reset-game-btn" class="py-button" type="submit" py-click="new_game">
   Reset
   </button>
 </div>
