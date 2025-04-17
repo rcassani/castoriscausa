@@ -44,11 +44,18 @@ jobs:
         run: |
              cd $GITHUB_WORKSPACE/castoriscausa
              ./prepare_html_repo.sh
+      - name: Set variable with commit message
+        run: |
+             if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+               echo "COMMIT_MESSAGE=Triggered by workflow_dispatch" >> $GITHUB_ENV
+             else
+               echo "COMMIT_MESSAGE=${{ github.event.head_commit.message }}" >> $GITHUB_ENV
+             fi
       - name: Push to rcassani.github.io repo
         run: |
              cd $GITHUB_WORKSPACE/castoris-html
              git config user.name rcassani
              git config user.email raymundo.cassani@gmail.com
              git add --all
-             git commit -m "${{ github.event.head_commit.message }}"
+             git commit -m "$COMMIT_MESSAGE"
              git push
