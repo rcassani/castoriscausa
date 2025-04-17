@@ -4,7 +4,7 @@ Tags: Python, tutorial, WebDevelopment
 Author: Raymundo Cassani
 Slug: pyscript_toy_example
 Thumbnail: pyscript_pelican.png
-PyScript: JS
+PyScript_JS: https://pyscript.net/releases/2023.11.2/core.js
 
 This post shows a simple game created using [PyScript](https://pyscript.net/) in this static website created with [Pelican](https://docs.getpelican.com/en/latest/) and [Markdown](https://en.wikipedia.org/wiki/Markdown) files.
 
