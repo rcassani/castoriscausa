@@ -41,6 +41,4 @@ def new_guess(e):
 
 def new_guess_event(e):
     if e.key == "Enter":
-        new_guess()
-
-new_guess_txt.onkeypress = new_guess_event
+        new_guess(e)
