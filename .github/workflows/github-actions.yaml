@@ -49,7 +49,8 @@ jobs:
              if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
                echo "COMMIT_MESSAGE=Triggered by workflow_dispatch" >> $GITHUB_ENV
              else
-               echo "COMMIT_MESSAGE=${{ github.event.head_commit.message }}" >> $GITHUB_ENV
+               FIRST_LINE_COMMIT=$(echo "${{ github.event.head_commit.message }}" | head -n 1)
+               echo "COMMIT_MESSAGE=$FIRST_LINE_COMMIT" >> $GITHUB_ENV
              fi
       - name: Push to rcassani.github.io repo
         run: |
