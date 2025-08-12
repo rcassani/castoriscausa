@@ -41,6 +41,4 @@ Publication format is IEEE
 
 2. Open [http://localhost:8000/](http://localhost:8000/) in the web browser
 
-3. When the website is ready to be uploaded, run the script `prepare_html_repo.sh`, this will copy all the content to `..\castoris-html`
-
-4. Just commit and push `castoris-html` to [https://github.com/rcassani/rcassani.github.io]()
+3. When the website is ready just commit and push it to https://github.com/rcassani/castoriscausa. There is a [GitHub action](https://github.com/rcassani/castoriscausa/blob/master/.github/workflows/github-actions.yaml) that will generate the static website and push it to https://github.com/rcassani/rcassani.github.io
