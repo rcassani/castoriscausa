@@ -35,7 +35,10 @@ In a nutshell, Distrobox creates a containerized environment based on an Ubuntu 
 1. Install additional Ubuntu packages that Matlab 2022b needs:
 
         :::bash
-        $ sudo apt-get install libnss3 libatk-bridge2.0-0 libasound2 libxt6 libxft2
+        $ sudo apt-get install libnss3 libatk-bridge2.0-0 libasound2 libxt6 libxft2 libsndfile1
+
+    the list of required Ubuntu packages may grow depending on the Matlab features that are required.  
+    I'll keep updating this list as I encounter missing packages.
 
 4. Download the Matlab installer, unzip it and run the `install` script.  
     Use the default installation path: `/usr/local/MATLAB/R2022b`
