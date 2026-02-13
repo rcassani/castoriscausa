@@ -1,6 +1,6 @@
 Title: French names for businesses
 Date: 2023-02-25 17:06
-Tags: French, Writing
+Tags: French, writing
 Author: Raymundo Cassani
 Slug: french-business-names
 Thumbnail: ouvert.jpg

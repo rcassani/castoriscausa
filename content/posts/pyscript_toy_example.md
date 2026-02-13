@@ -1,7 +1,7 @@
 Title: Using PyScript with Pelican: Toy example
 Date: 2023-05-13 19:00
 Modified: 2025-04-16 23:00
-Tags: Python, tutorial, WebDevelopment
+Tags: Python, tutorial, webdev
 Author: Raymundo Cassani
 Slug: pyscript_toy_example
 Thumbnail: pyscript_pelican.png
