@@ -79,8 +79,8 @@ CUSTOM_JS = 'castoris.js'
 # https://fontawesome.com/icons?d=gallery&m=free
 SOCIAL = (
           ('GitHub', 'https://github.com/rcassani'),
-          ('Twitter', 'https://twitter.com/r_cassani'),
-          ('LinkedIn', 'https://www.linkedin.com/in/rcassani/'),
+#          ('Twitter', 'https://twitter.com/r_cassani'),
+#          ('LinkedIn', 'https://www.linkedin.com/in/rcassani/'),
           ('user-graduate', 'https://scholar.google.com/citations?hl=en&user=3A9_Ww8AAAAJ'),
 #          ('address-card', '/files/cv_rcg.pdf'),
           ('envelope', '#'),

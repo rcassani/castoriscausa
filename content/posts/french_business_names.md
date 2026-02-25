@@ -13,7 +13,7 @@ When learning French, it is overwhelming the large quantity of [homophones](http
 | **Name** | **Description** |
 | ---  | ---         |
 |   ____   |   ___________         |
-| **Lièvrason [adjectif]** &emsp; | Delevery service (preferentially with a hare) mascot |
+| **Lièvrason [adjectif]** &emsp; | Delivery service (preferentially with a hare) mascot |
 | **Bélangerie** | Bakery on Bélanger street |
 | **Kayak Cartier** | Manufacturer or store for aquatic sport equipment |
 | **Can-nuk**|  Winter accessories for dogs |
