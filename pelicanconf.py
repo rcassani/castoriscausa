@@ -136,10 +136,14 @@ MARKDOWN = {
 ############################
 #  Content
 ############################
-PATH = 'content'            # Content root directory
+PATH          = 'content'   # Content root directory
 ARTICLE_PATHS = ['posts']   # Article directories
-PAGE_PATHS = ['pages']      # Page directories
-IGNORE_FILES = ['drafts']   # Ignored files
+PAGE_PATHS    = ['pages']   # Page directories
+IGNORE_FILES  = ['drafts']  # Ignored files
+
+# ARTICLE_PATHS is comprised of Year dirs, do NOT these dirs for categories
+USE_FOLDER_AS_CATEGORY = False
+DEFAULT_CATEGORY = 'posts'
 
 # Directories to be copied to Output (paths relative to Content)
 STATIC_PATHS = ['images', 'files', 'custom_css', 'custom_js', 'extra/CNAME', 'extra/robots.txt', 'htmls', 'scripts']
@@ -174,7 +178,7 @@ TAG_SAVE_AS = TAG_URL + 'index.html'                 # tag index filename
 # Add the field Sortorder to the page MD documentm e.g. Sortorder: 2
 PAGES_SORT_ATTRIBUTE = 'sortorder' # Sort pages by a 'sortorder' attribute
 SUMMARY_MAX_LENGTH = 50            # Summary for Index (words)
-DEFAULT_PAGINATION = 6             # Number of articles per page
+DEFAULT_PAGINATION = 8             # Number of articles per page
 NEWEST_FIRST_ARCHIVES = True       # Order of Articles
 
 ############################
