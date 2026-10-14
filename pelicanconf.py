@@ -7,9 +7,10 @@ from __future__ import unicode_literals
 # 2. Open http://localhost:8000/index.html in browser
 
 # To deplot online:
-# 0. Set to false RELATIVE_URLS
-# 1. $ ./prepare_html_repo.sh
-# 2. Commit and Push castoris-html
+# 1. Push source files to the repo: https://github.com/rcassani/castoriscausa
+# 2. Push tiggers the GitHub action (.github/workflows/github-actions.yaml), which does
+#   1. ./prepare_html_repo.sh
+#   2. Commit and Push to repo: https://github.com/rcassani/rcassani.github.io
 
 ###########################
 # General Pelican
