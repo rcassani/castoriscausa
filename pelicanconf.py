@@ -167,12 +167,16 @@ PAGE_URL = 'pages/{slug}'                            # page URL
 ARTICLE_LANG_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/{lang}/' # article lang URL
 CATEGORY_URL = 'category/{slug}/'                    # category index URL
 TAG_URL = 'tags/{slug}/'                             # tag index URL
+ARCHIVES_URL = 'posts/'                              # main archive page
+YEAR_ARCHIVE_URL = 'posts/{date:%Y}/'                # year archive index URL
 
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'         # article filename
 PAGE_SAVE_AS = PAGE_URL + '.html'                    # page filename
 ARTICLE_LANG_SAVE_AS = ARTICLE_LANG_URL + 'index.html' # article lang filename
 CATEGORY_SAVE_AS = CATEGORY_URL + 'index.html'       # category index filename
 TAG_SAVE_AS = TAG_URL + 'index.html'                 # tag index filename
+ARCHIVES_SAVE_AS = ARCHIVES_URL + 'index.html'       # main archive filename
+YEAR_ARCHIVE_SAVE_AS = YEAR_ARCHIVE_URL + 'index.html' # year archive filename
 
 
 # Add the field Sortorder to the page MD documentm e.g. Sortorder: 2
