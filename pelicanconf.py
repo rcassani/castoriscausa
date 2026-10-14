@@ -18,6 +18,11 @@ from __future__ import unicode_literals
 TIMEZONE = 'America/Montreal'
 DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%Y/%m/%d'
+LANGUAGE_NAMES = {
+    u'en': 'English',
+    u'es': 'Español',
+    u'fr': 'Français',
+}
 
 # Site general information
 AUTHOR   = u'Raymundo Cassani'
@@ -65,6 +70,7 @@ SHOW_ARTICLE_TAGS = True
 SHOW_ARTICLE_AUTHOR = False
 SHOW_ARTICLE_CATEGORY = False
 SHOW_ARTICLE_DATEMODIFIED = True
+SHOW_ARTICLE_TRANSLATIONS = True
 
 # Customized CSS file for CastorisCausa
 CUSTOM_CSS = 'castoris.css'

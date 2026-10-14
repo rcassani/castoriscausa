@@ -1,6 +1,5 @@
 Title: First post
 Date: 2016-10-22 22:00
-Tags: Español
 Slug: first-post
 Author: Raymundo Cassani
 Thumbnail: default.png
