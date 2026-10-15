@@ -12,13 +12,13 @@ Thumbnail: dist_costco_montreal.png
 **Interactive maps**: [Minimum linear distance to a Costco](/htmls/dist_costco_montreal.html) and [Minimum driving time to a Costco](/htmls/time_costco_montreal.html)  
 <hr>
 
-Once clarified the [different meanings of Montreal]({filename}tale_of_too_montreal.md), I'm in a better position to solve a question inspired by a conversation with a friend, the question is:
+Once clarified the [different meanings of Montreal]({filename}/posts/2022/tale_of_too_montreal.md), I'm in a better position to solve a question inspired by a conversation with a friend, the question is:
 
 <center>
 **How far from a Costco is everyone in the Montreal?**
 </center>
 
-For city, I'll be using a map, that encompasses [all the interpretations of Montreal]({filename}tale_of_too_montreal.md).
+For city, I'll be using a map, that encompasses [all the interpretations of Montreal]({filename}/posts/2022/tale_of_too_montreal.md),.
 
 <center>
 [<img src="/images/montreals_map.png" style="width: 60%;"/>](/images/montreals_map.png)  

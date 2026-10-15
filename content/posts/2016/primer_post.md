@@ -3,6 +3,7 @@ Date: 2016-10-22 22:00
 Slug: first-post
 Translation: true
 Lang: es
+Thumbnail: default.png
 Author: Raymundo Cassani
 
 Este post es un ejemplo de como escribir posts en diferentes idiomas.
