@@ -35,11 +35,12 @@ jobs:
           token: ${{ secrets.TOKEN_CC }}  # TOKEN_CC is a PAT in secrets in castoriscausa
           path: castoris-html
       - name: Create conda environment
-        uses: conda-incubator/setup-miniconda@v2
+        uses: conda-incubator/setup-miniconda@v4
         with:
           activate-environment: github-runner
           environment-file: ./castoriscausa/pelican.yaml
           auto-activate-base: false
+          miniconda-version: "latest"
       - name: Generate website to publish
         run: |
              cd $GITHUB_WORKSPACE/castoriscausa
